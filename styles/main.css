@@ -60,7 +60,8 @@ body {
 	padding: 0;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler:focus,
+.close:focus {
 	outline: none;
 	border: none;
 }
