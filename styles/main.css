@@ -16,11 +16,15 @@ body {
 }
 
 .grey {
-	color: #898F9E !important;
+	color: #898f9e !important;
+}
+
+.mt-30px-mobile {
+	margin-top: 30px !important;
 }
 
 .primary-color {
-	color: #312D75 !important;
+	color: #312d75 !important;
 }
 
 .no-display-web {
@@ -94,7 +98,7 @@ body {
 /* halaman tentang kami */
 
 .head-title {
-	margin-top: 50px;
+	margin-top: 50px !important;
 	margin-bottom: 70px;
 	/* background: #1057db; */
 	background: #2a6ff5;
@@ -1463,7 +1467,7 @@ section.pabrik .right .info a:hover {
 
 @media (max-width: 576px) {
 	.head-title {
-		margin-top: -1px;
+		margin-top: 30px !important;
 		margin-bottom: 35px;
 	}
 

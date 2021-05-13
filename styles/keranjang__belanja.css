@@ -43,6 +43,14 @@
 	margin-bottom: 100px;
 }
 
+.ml-2px {
+	margin-left: 2px;
+}
+
+.pr-5px {
+	padding-right: 5px !important;
+}
+
 .rectangle {
 	border: 1px solid #c0c4cd;
 	box-sizing: border-box;
@@ -306,8 +314,8 @@
 	}
 
 	.rectangle .items .items-value-order .items-prices {
-		font-size: 20px;
-		margin-left: 53px;
+		font-size: 17px;
+		margin-left: 64px;
 	}
 
 	.items-info {
@@ -362,5 +370,9 @@
 
 	.delivery-partner {
 		margin-top: 50px;
+	}
+
+	.rectangle .items .items-value-order input {
+		font-size: 21px;
 	}
 }
