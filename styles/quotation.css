@@ -1,0 +1,510 @@
+.btn-back a img {
+	transform: rotate(180deg);
+	margin-right: 20px;
+}
+
+.btn-back a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
+	color: #ed1c24;
+}
+
+.btn-keranjang {
+	border: 1.5px solid #312d75;
+	box-sizing: border-box;
+	border-radius: 2px;
+	padding: 5px 10px;
+	background: none;
+}
+
+.btn-keranjang-fill {
+	background: #312d75;
+}
+
+.bantuan {
+	margin-top: 50px;
+}
+
+.wa-btn {
+	margin-top: 50px;
+}
+
+.items {
+	border-bottom: 1px solid #c0c4cd;
+}
+
+.items-info {
+	padding: 20px 30px 10px 20px;
+}
+
+.items-image {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width: 100%;
+	height: 170px;
+}
+
+.value {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+p {
+	margin-bottom: 0.5rem !important;
+}
+
+.items .items-value-order input {
+	border: none;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.items .items-value-order input:focus {
+	box-shadow: none;
+	outline: none;
+	text-decoration: none;
+	border: none;
+}
+
+.items .items-value-order .items-prices {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.btn-delete {
+	border: 1px solid #312d75;
+	box-sizing: border-box;
+	border-radius: 2px;
+	padding: 8px 15px;
+	font-size: 14px;
+}
+
+.delete {
+	margin-top: 20px;
+}
+
+.items-choose .items-title {
+	font-weight: 600;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.items-choose .items-desc {
+	margin-top: 8px;
+	color: #898f9e;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.items-choose .items-desc .items-code {
+	margin-top: 10px;
+}
+
+.items-choose .other-action {
+	margin-top: 30px;
+}
+
+.col-8 {
+	padding-right: 0px;
+}
+
+.right-padding {
+	padding: 30px;
+}
+
+.right-info {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.total-items {
+	padding: 40px 20px;
+}
+
+.total-items .send-request {
+	border: 1px solid #ffc90a;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: 600;
+	padding: 10px 10px;
+	font-size: 20px;
+	margin: 0px 20px;
+}
+
+.total-items a {
+	text-decoration: none;
+	color: #312d75;
+}
+
+.total-items-price .total-title {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.total-items-price .total-items-value,
+.total-items-price .total-items-prices {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.total-items .total-items-price .info-total {
+	text-align: right;
+	color: #898f9e;
+	font-size: 10px;
+}
+
+.css-button {
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	font-size: 16px;
+	border-radius: 10px;
+	border: 0px #3866a3 solid;
+	background-color: #0ad35a;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+.css-button:hover {
+	background-color: #1dc639;
+	text-decoration: none;
+}
+.css-button-icon {
+	padding: 10px 23px;
+	border-radius: 10px 0 0 10px;
+	background-color: #1dc639;
+}
+.css-button-icon img {
+	position: relative;
+	max-width: 40px;
+}
+.css-button-text {
+	padding: 14px 90px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.css-button-email {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 16px;
+	border-radius: 10px;
+	border: 0px #3866a3 solid;
+	background-color: #fd927d;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+.css-button-email:hover {
+	background-color: #f4846d;
+	text-decoration: none;
+}
+.css-button-email-icon {
+	padding: 14px 23px;
+	border-radius: 10px 0 0 10px;
+	background-color: #f4846d;
+}
+.css-button-email-icon img {
+	position: relative;
+	max-width: 40px;
+}
+.css-button-email-text {
+	padding: 15px 108px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.rectangle {
+	width: 100%;
+	border: 1px solid #c0c4cd;
+	background: #c0c4cd;
+	opacity: 0.4;
+	border-radius: 3px;
+	padding: 20px;
+}
+
+.quotation-title {
+	font-weight: bold;
+	font-size: 18px;
+	color: #312d75;
+}
+
+.heading-18-500 {
+	font-weight: 500 !important;
+	font-size: 18px !important;
+	opacity: 1;
+}
+
+.rectangle .form-group input::placeholder {
+	font-weight: 300;
+	font-size: 16px;
+	color: #c0c4cd;
+}
+
+.rectangle .form-group input {
+	font-size: 16px;
+}
+
+.rectangle .form-group textarea::placeholder {
+	font-weight: 300;
+	font-size: 16px;
+	color: #c0c4cd;
+}
+
+.rectangle .form-group textarea {
+	padding: 10px 15px !important;
+}
+
+.rectangle .form-group textarea:active {
+	padding: 20px;
+}
+
+/* dropdown option select */
+.custom-select {
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	max-width: 480px;
+	padding: 1.3rem 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	/* background: #fff
+		url(
+			data:image/svg + xml,
+			%3csvgxmlns='http://www.w3.org/2000/svg'width='4'height='5'viewBox='0 0 4 5'%3e%3cpathfill='%23343a40'd='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e
+		)
+		right 0.75rem center/8px 10px no-repeat; */
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+.select-items div {
+	padding: 15px 18px !important;
+}
+
+.select-selected {
+	margin-top: -12px !important;
+	padding: 0px !important;
+}
+
+/* .select-selected {
+	background-color: #ffff;
+} */
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+	position: absolute;
+	content: '';
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	/* top: 7px; */
+}
+
+.border-blue {
+	border: 1px solid #1891f6;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+	color: #312d75;
+	padding: 2px 16px;
+	cursor: pointer;
+	user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+	position: absolute;
+	background: #ffffff;
+	box-shadow: 0px 2px 8px rgba(103, 122, 132, 0.12);
+	border-radius: 6px;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+	background-color: #eaf5ff;
+}
+
+@media (max-width: 578px) {
+	.custom-select {
+		width: 100%;
+	}
+}
+
+/* end dropdwon */
+
+.btn-primaryku {
+	width: 100%;
+	background: linear-gradient(160.02deg, #3496f7 -1.9%, #2a6ff5 79.64%);
+	border-radius: 6px;
+	padding: 18px 0px !important;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 20px;
+	border: 1px solid transparent;
+}
+
+.btn-primaryku:hover {
+	background: none;
+	border: 1px solid #ffc90a;
+	padding: 18px 0px !important;
+	color: #312d75;
+}
+
+.content {
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
+.no-display-web {
+	display: none !important;
+}
+
+@media screen and (max-width: 578px) {
+	.btn-back a {
+		display: flex;
+		margin-top: 30px;
+	}
+
+	.items-info {
+		padding: 0px;
+	}
+
+	.items-choose .items-title {
+		font-size: 14px;
+	}
+
+	.items-choose .items-desc {
+		font-size: 10px;
+	}
+
+	.items-choose .item-info .items-value-order .items-value .value,
+	.items-choose .item-info .items-value-order .items-prices {
+		font-size: 14px;
+	}
+
+	.items-choose .other-action .items-action-info {
+		font-size: 10px;
+	}
+
+	.items-choose .other-action {
+		margin-top: 15px;
+	}
+
+	.items-image {
+		border: 1px solid #c0c4cd;
+		box-sizing: border-box;
+		border-radius: 3px;
+		width: 80%;
+		height: 120px;
+	}
+
+	.items-image img {
+		max-width: 50%;
+	}
+
+	.image-center-mobile {
+		display: flex;
+		justify-content: center;
+	}
+
+	.no-pl {
+		padding-left: 0px;
+	}
+
+	.items {
+		margin-top: 30px;
+		padding-bottom: 20px;
+	}
+
+	.no-display-mobile {
+		display: none !important;
+	}
+
+	.show-mobile {
+		display: block !important;
+	}
+
+	.content {
+		margin-top: 0px !important;
+	}
+
+	.rectangle {
+		width: 100%;
+		border: 1px solid #c0c4cd;
+		background: none;
+		opacity: 10 !important;
+		border-radius: 3px;
+		padding: 20px;
+	}
+
+	.heading-24-400 {
+		font-size: 14px !important;
+	}
+
+	.heading-24-700 {
+		font-size: 16px;
+	}
+
+	.css-button-text {
+		padding: 0px 60px;
+		font-size: 16px;
+	}
+
+	.css-button-icon,
+	.css-button-email-icon {
+		padding: 10px 23px;
+	}
+
+	.css-button-email-text {
+		padding: 16px 65px;
+		font-size: 16px;
+	}
+
+	.mt-4-mobile {
+		margin-top: 1.4rem !important;
+	}
+
+	.mt-50-mobile {
+		margin-top: 50px;
+	}
+
+	.btn-primaryku {
+		font-size: 16px;
+	}
+}

@@ -98,7 +98,7 @@
 	background-color: #1dc639;
 }
 .css-button-icon {
-	padding: 18px 23px;
+	padding: 14px 23px;
 	border-radius: 10px 0 0 10px;
 	background-color: #1dc639;
 }
@@ -107,7 +107,7 @@
 	font-size: 30px;
 }
 .css-button-text {
-	padding: 18px 90px;
+	padding: 14px 90px;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 20px;
@@ -129,7 +129,7 @@
 	background-color: #f4846d;
 }
 .css-button-email-icon {
-	padding: 21px 23px;
+	padding: 17px 23px;
 	border-radius: 10px 0 0 10px;
 	background-color: #f4846d;
 }
@@ -138,7 +138,7 @@
 	font-size: 30px;
 }
 .css-button-email-text {
-	padding: 21px 108px;
+	padding: 17px 108px;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 20px;
@@ -159,10 +159,10 @@
 }
 
 .btn-primaryku {
-	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
+	background: linear-gradient(160.02deg, #3496f7 -1.9%, #2a6ff5 79.64%);
 	border-radius: 6px;
-	padding: 20px 0px !important;
-	color: #312d75;
+	padding: 18px 0px !important;
+	color: #ffffff;
 	font-size: 20px;
 	font-weight: 600;
 	margin-top: 20px;
@@ -172,7 +172,7 @@
 .btn-primaryku:hover {
 	background: none;
 	border: 1px solid #ffc90a;
-	padding: 20px 0px !important;
+	padding: 18px 0px !important;
 	color: #312d75;
 }
 
@@ -227,7 +227,15 @@
 
 	.css-button-text,
 	.css-button-email-text {
-		font-size: 16px;
+		font-size: 17px;
+	}
+
+	.css-button-icon {
+		padding: 10px 23px;
+	}
+
+	.css-button-email-icon {
+		padding: 13px 23px;
 	}
 
 	.wa-btn .css-button-icon img,
@@ -274,5 +282,14 @@
 	.special {
 		line-height: 35px;
 		height: 120px !important;
+	}
+
+	.column-reverse-mobile {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.mt-3-mobile {
+		margin-top: 30px;
 	}
 }

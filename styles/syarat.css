@@ -12,7 +12,7 @@
 .content p {
 	font-weight: 400;
 	margin-top: 20px;
-	color: #898f9e;
+	color: #718096;
 	font-size: 16px;
 	line-height: 26px;
 }
@@ -28,7 +28,7 @@
 }
 
 .heading {
-	color: #898f9e !important;
+	color: #718096 !important;
 	font-weight: 500 !important;
 }
 

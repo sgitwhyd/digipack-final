@@ -183,39 +183,37 @@ window.addEventListener('click', function (e) {
 	}
 });
 
-// window.addEventListener('click', function () {
-// 	for (const trigger of document.querySelectorAll('#trigger')) {
-// 		let borderBlueActive = trigger.classList.contains('border-blue');
-// 		if (borderBlueActive) {
-// 			trigger.classList.remove('border-blue');
-// 			console.log('contain');
-// 		}
-// 	}
-// });
-// if (document.querySelector('div').classList.contains('.custom-select open')) {
-// 	for (const selectMenu of document.querySelectorAll(
-// 		'.custom-select__trigger'
-// 	)) {
-// 		selectMenu.addEventListener('click', function () {
-// 			selectMenu.classList.add('border-blue');
-// 			console.log('1');
-// 		});
-// 	}
-// } else {
-// 	for (const selectMenu of document.querySelectorAll(
-// 		'.custom-select__trigger'
-// 	)) {
-// 		selectMenu.addEventListener('click', function () {
-// 			selectMenu.classList.remove('border-blue');
-// 			console.log(0);
-// 		});
-// 	}
-// }
+// password hide eye
+function myFunc() {
+	var togglePassword = document.getElementById('togglePassword');
+	var password = document.getElementById('password');
 
-// window.addEventListener('click', function () {
-// 	for (const menuSelect of document.querySelectorAll(
-// 		'.custom-select__trigger'
-// 	)) {
-// 		menuSelect.classList.remove('border-blue');
-// 	}
-// });
+	togglePassword.addEventListener('click', function (e) {
+		// toggle the type attribute
+		if (password.type === 'password') {
+			password.type = 'text';
+			togglePassword.classList.toggle('fa-eye');
+		} else {
+			password.type = 'password';
+			togglePassword.classList.toggle('fa-eye-slash');
+		}
+
+		return password;
+		// toggle the eye slash icon
+		// this.classList.toggle('fa-eye-slash');
+	});
+}
+
+function passVis() {
+	var x = document.getElementById('password');
+	if (x.type === 'password') {
+		x.type = 'text';
+		const togglePassword = document.querySelector('#togglePassword');
+		togglePassword.classList.toggle('fa-eye-slash');
+	} else {
+		x.type = 'password';
+		const togglePassword = document.querySelector('#togglePassword');
+		togglePassword.classList.toggle('fa-eye');
+		return togglePassword;
+	}
+}

@@ -118,10 +118,10 @@
 									<label for="password">Password</label>
 									<div class="input-pass">
 										<div class="input-group">
-											<input type="password" placeholder="Password" />
+											<input type="password" name="password" id="password" placeholder="Password" />
 											<div class="input-group-append">
 												<span class="input-group-text">
-													<i class="fa fa-eye-slash" aria-hidden="true"></i>
+													<i class="fa fa-eye-slash" onclick="myFunc()" id="togglePassword"></i>
 												</span>
 											</div>
 										</div>
@@ -250,18 +250,18 @@
 										/>
 									</div>
 									<div class="password">
-										<label for="password">Password</label>
-										<div class="input-pass">
-											<div class="input-group">
-												<input type="password" placeholder="Password" />
-												<div class="input-group-append">
-													<span class="input-group-text">
-														<i class="fa fa-eye-slash" aria-hidden="true"></i>
-													</span>
-												</div>
+									<label for="password">Password</label>
+									<div class="input-pass">
+										<div class="input-group">
+											<input type="password" name="password" id="password" placeholder="Password" />
+											<div class="input-group-append">
+												<span class="input-group-text">
+													<i class="fa fa-eye-slash" onclick="myFunc()" id="togglePassword"></i>
+												</span>
 											</div>
 										</div>
 									</div>
+								</div>
 									<small
 										id="emailHelp"
 										class="form-text text-muted password_help"

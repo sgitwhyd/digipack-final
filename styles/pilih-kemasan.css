@@ -147,6 +147,17 @@ body {
 	padding: 13px 26px;
 	background: none;
 	color: #312d75;
+	border-radius: 8px !important;
+}
+
+.btn-primary {
+	border: 1px solid transparent;
+	padding: 13px 26px;
+	background: none;
+	color: #ffffff;
+	background: linear-gradient(160.02deg, #3496f7 -1.9%, #2a6ff5 79.64%);
+
+	border-radius: 8px !important;
 }
 
 .btn-second:hover {
@@ -198,7 +209,17 @@ body {
 } */
 
 .form-produk {
-	margin-top: 50px;
+	margin-top: 120px;
+}
+
+.heading-4 {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.heading-desc {
+	font-weight: 300;
+	font-size: 18px;
 }
 
 .form-produk h4 {
@@ -247,7 +268,7 @@ body {
 
 /* custom select */
 
-.custom-select-wrapper {
+/* .custom-select-wrapper {
 	position: relative;
 	user-select: none;
 	width: 100%;
@@ -258,21 +279,21 @@ body {
 	flex-direction: column;
 	border-width: 0 0px 0 0px;
 	width: 510px;
-	/* border-style: solid;
-	border-color: #394a6d; */
+	 border-style: solid;
+	border-color: #394a6d;
+} */
+
+.margin-3 {
+	margin-top: 30px !important;
 }
 
-.margin-5 {
-	margin-top: 50px !important;
-}
-
-.custom-select {
+/* .custom-select {
 	background: none !important;
 }
 
 .border-blue {
 	border: 1px solid #1891f6 !important;
-}
+} */
 
 /* .default {
 	color: #312d75 !important;
@@ -281,7 +302,7 @@ body {
 .option-selected {
 	color: #312d75 !important;
 } */
-
+/* 
 .custom-select__trigger {
 	margin-left: -10px;
 	max-width: 480px;
@@ -378,9 +399,85 @@ body {
 .open .arrow::after {
 	left: 5px;
 	transform: rotate(45deg);
-}
+} */
 
 /* end custom select */
+
+/* keunggulan produk */
+
+.img-produk-wrapper {
+	    position: relative;
+    overflow: hidden;
+}
+
+.keunggulan-produk .list-keunggulan .keunggulan-produk-img .bg {
+	max-width: 430px;
+	height: 350px;
+	float: right;
+	background-clip: content-box;
+}
+
+.keunggulan-produk .list-keunggulan .keunggulan-produk-img .img-produk {
+	top: 55px;
+	right: 20px;
+	overflow: hidden;
+	position: absolute;
+	max-width: 240px;
+	background-clip: content-box;
+}
+
+.keunggulan-produk-info .keunggulan-produk-desc {
+	width: 80%;
+	color: #718096 !important;
+}
+
+.heading-5 {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.keunggulan-produk .poin-keunggulan {
+	display: grid;
+	grid-template-columns: 150px 200px;
+	grid-column-gap: 30px;
+}
+
+@media (max-width: 578px) {
+	.keunggulan-produk .list-keunggulan .keunggulan-produk-img .bg {
+		width: 100%;
+		height: auto;
+		padding: 0px 30px;
+	}
+
+	.keunggulan-produk .list-keunggulan .keunggulan-produk-img .img-produk {
+		top: 45px;
+		right: 1px;
+		overflow: hidden;
+		position: absolute;
+		max-width: 260px;
+	}
+
+	.keunggulan-produk-info {
+		/* text-align: center; */
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	.keunggulan-produk .keunggulan-produk-info .keunggulan-produk-title {
+		text-align: center;
+	}
+
+	.keunggulan-produk-info .keunggulan-produk-desc {
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+		margin-bottom: 40px !important;
+	}
+
+	.keunggulan-produk .poin-keunggulan {
+		grid-column-gap: 50px;
+	}
+}
 
 /* piliaan kemasan 578px */
 
@@ -419,6 +516,7 @@ body {
 		margin-bottom: 30px;
 		line-height: 20px;
 		padding: 0px 15px;
+		color: #718096 !important;
 	}
 
 	.img-produk {
@@ -431,7 +529,7 @@ body {
 
 	.form-produk {
 		padding: 0px 15px;
-		margin-top: 30px !important;
+		margin-top: 80px !important;
 	}
 
 	.form-produk h2 {
@@ -511,6 +609,109 @@ body {
 		cursor: pointer;
 	}
 }
+
+/* dropdown option select */
+.custom-select {
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	max-width: 480px;
+	padding: 1.3rem 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	/* background: #fff
+		url(
+			data:image/svg + xml,
+			%3csvgxmlns='http://www.w3.org/2000/svg'width='4'height='5'viewBox='0 0 4 5'%3e%3cpathfill='%23343a40'd='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e
+		)
+		right 0.75rem center/8px 10px no-repeat; */
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+.select-items div {
+	padding: 15px 18px !important;
+}
+
+.select-selected {
+	margin-top: -12px !important;
+	padding: 0px !important;
+}
+
+/* .select-selected {
+	background-color: #ffff;
+} */
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+	position: absolute;
+	content: '';
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	/* top: 7px; */
+}
+
+.border-blue {
+	border: 1px solid #1891f6;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+	color: #312d75;
+	padding: 2px 16px;
+	cursor: pointer;
+	user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+	position: absolute;
+	background: #ffffff;
+	box-shadow: 0px 2px 8px rgba(103, 122, 132, 0.12);
+	border-radius: 6px;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+	background-color: #eaf5ff;
+}
+
+@media (max-width: 578px) {
+	.custom-select {
+		width: 100%;
+	}
+}
+
+/* end dropdwon */
 
 @media (max-width: 1199.98px) {
 	.navbar-collapse ul li a {
@@ -866,6 +1067,86 @@ section.pabrik .right .info a:hover {
 #header .navbar-nav li {
 	position: relative;
 	font-size: 14px;
+}
+
+/* modal addtochart */
+.bingkai {
+	width: 100%;
+	border: 1px solid #c0c4cd;
+	height: fit-content;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bingkai img {
+	max-width: 100px;
+}
+
+.w-full {
+	width: 100% !important;
+}
+
+.modal-body .item-name {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.modal-body .item-desc {
+	font-size: 18px;
+	font-weight: 400;
+	color: #898f9e;
+}
+
+.modal-body .item-value {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.modal-body .item {
+	border-bottom: 1px solid #c0c4cd;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+.btn-font {
+	font-size: 16px !important;
+	font-weight: 500 !important;
+}
+
+@media (max-width: 578px) {
+	.modal-body .item {
+		text-align: center;
+	}
+
+	.col-mobile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mt-3-mobile {
+		margin-top: 15px;
+	}
+
+	.modal-body .item-name {
+		margin-top: 40px;
+	}
+
+	.modal-body .item-desc .item-code,
+	.modal-body .item-value .item-price {
+		margin-top: 15px;
+	}
+
+	.bingkai {
+		width: fit-content;
+	}
+
+	.mobile-justify-content-center {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 @media (min-width: 576px) {
@@ -2590,6 +2871,7 @@ input.price-form:focus ~ .highlight {
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 40px;
+		color: #718096;
 	}
 
 	.w-full {
@@ -2600,13 +2882,37 @@ input.price-form:focus ~ .highlight {
 	}
 	.primary-button {
 		background-color: white;
-		border: solid 1.5px transparent;
+		border-radius: 6px !important;
+		border: solid 1.5px #ffc90a;
 		background-image: linear-gradient(
 				rgba(255, 255, 255, 0),
 				rgba(255, 255, 255, 0)
 			),
-			linear-gradient(180deg, #fdf025, #ffc90a);
+			linear-gradient(160.02deg, #3496f7 -1.9%, #2a6ff5 79.64%);
+
+		/* background-image: linear-gradient(160.02deg, #3496f7 -1.9%, #2a6ff5 79.64%); */
 	}
+
+	.choose-btn {
+		border: 1px solid #fbab20;
+		border-radius: 6px;
+		padding: 1rem 2rem;
+		font-weight: 500;
+		font-size: 18px;
+	}
+
+	.choose-btn:hover {
+		background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
+		color: #312d75;
+		border: 1px solid transparent;
+	}
+
+	.choose-active {
+		background: linear-gradient(160.02deg, #3496f7 -1.9%, #2a6ff5 79.64%);
+		color: #ffffff;
+		border: 1px solid transparent;
+	}
+
 	.secondary-button {
 		background-color: #eaf5ff;
 		border-color: #eaf5ff;
