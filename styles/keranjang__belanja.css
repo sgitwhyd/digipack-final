@@ -291,7 +291,7 @@
 	}
 
 	.items-choose .items-desc {
-		font-size: 10px;
+		font-size: 9px;
 		width: 115%;
 	}
 
@@ -314,7 +314,7 @@
 	}
 
 	.rectangle .items .items-value-order .items-prices {
-		font-size: 17px;
+		font-size: 15px;
 		margin-left: 64px;
 	}
 
@@ -373,6 +373,6 @@
 	}
 
 	.rectangle .items .items-value-order input {
-		font-size: 21px;
+		font-size: 20px;
 	}
 }
