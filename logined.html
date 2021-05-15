@@ -11,6 +11,12 @@
 		<title>digipack</title>
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<!-- Place favicon.ico in the root directory -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css"
+			integrity="sha512-Nqct4Jg8iYwFRs/C34hjAF5og5HONE2mrrUV1JZUswB+YU7vYSPyIjGMq+EAQYDmOsMuO9VIhKpRUa7GjRKVlg=="
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="styles/vendor.css" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/modal.css" />
@@ -45,8 +51,8 @@
 						</button>
 
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto" id="navbar-nav-mobile">
-								<li class="nav-item active">
+							<ul class="navbar-nav" id="navbar-nav-mobile">
+								<li class="nav-item">
 									<a class="nav-link" href="index.html">Beranda</a>
 								</li>
 								<li class="nav-item">
@@ -61,31 +67,153 @@
 									<a class="nav-link" href="blog.html">Blog</a>
 								</li>
 							</ul>
-							<div class="menu-act my-2 my-lg-0 d-flex">
-								<ul class="pl-0 ml-0 mb-0 menu-log">
-									<li class="singin">
-										<a
-											href="#"
-											class="btn rounded"
-											data-toggle="modal"
-											type="button"
-											data-target="#modalLogin"
-											>Masuk</a
-										>
-									</li>
-									<li class="singup">
-										<a href="daftar.html" class="btn rounded">Daftar</a>
-									</li>
-								</ul>
-								<ul class="lang mb-0 pl-0">
-									<li class="active"><a href="#">ID</a></li>
-									<li class="mr-0"><a href="#">EN</a></li>
-								</ul>
+							<div
+								class="
+									menu-act
+									ml-auto
+									mr-5
+									my-2 my-lg-0
+									d-flex
+									align-items-center
+								"
+							>
+								<div class="info-user">
+									<div class="notif-user" id="notif__user">
+										<a href="#" class="notification">
+											<img src="./images/Notification.png" alt="" />
+											<!-- <span class="badge">3</span> -->
+										</a>
+									</div>
+									<div class="bag-user" id="bag__user">
+										<a href="#" class="notification">
+											<img src="./images/Bag.png" alt="" />
+											<span class="badge">3</span>
+										</a>
+									</div>
+									<div
+										class="user-active d-flex align-items-center"
+										id="user__panel"
+									>
+										<div class="dropdown d-flex">
+											<img
+												src="./images/User.png"
+												style="cursor: pointer"
+												alt=""
+											/>
+											<button class="btn dropdown-toggle">
+												<span class="user">Atika Widjaya</span>
+												<img src="./images/down.png" class="ml-4" alt="" />
+											</button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</nav>
 				</div>
+
+				<!-- user-action -->
+				<div class="position-relative">
+					<div class="user-action" id="user_notif">
+						<div class="user-action-title">Notifikasi</div>
+						<hr />
+						<div class="user-action-notif">
+							<div class="notif">
+								<div class="user-notif">
+									<a href="#">
+										<div class="notif-value">Anda Mendapatkan 3000 poin</div>
+										<div class="receive-notif">12 Mei 2021</div>
+									</a>
+								</div>
+								<hr />
+							</div>
+							<div class="notif">
+								<div class="user-notif">
+									<a href="#">
+										<div class="notif-value">Anda Mendapatkan 3000 poin</div>
+										<div class="receive-notif">12 Mei 2021</div>
+									</a>
+								</div>
+								<hr />
+							</div>
+							<div class="notif">
+								<div class="user-notif">
+									<a href="#">
+										<div class="notif-value">Anda Mendapatkan 3000 poin</div>
+										<div class="receive-notif">12 Mei 2021</div>
+									</a>
+								</div>
+								<hr />
+							</div>
+						</div>
+						<div class="user-action-all text-center">
+							<a href="#">Lihat Semua</a>
+						</div>
+					</div>
+				</div>
+				<!-- end user action -->
+				<!-- user-notif -->
+				<div class="position-relative">
+					<div class="bag-notif" id="user-bag">
+						<div class="bag-img d-flex justify-content-center">
+							<img
+								src="./images/standing-pouch.png"
+								width="100px
+                        "
+								alt=""
+							/>
+						</div>
+						<div class="bag-info text-center mt-5">
+							Ops <br />
+							Keranjang Belanja Masih Kosong Nih
+						</div>
+						<div class="d-flex justify-content-center mt-3 mb-3">
+							<div class="btn btn-primaryku">Yuk Mulai Belanja</div>
+						</div>
+					</div>
+				</div>
+				<!-- end user notif -->
+				<!-- user-notif -->
+				<div class="position-relative">
+					<div class="user-action-panel" id="user-action-panel">
+						<div class="user-info">
+							<img src="./images/User.png" class="mr-3" alt="" />
+							<span>Atika Widjaya</span>
+						</div>
+						<hr />
+						<div class="action-menu">
+							<div class="user-action-menu">
+								<img src="./images/edit-profile-icon.png" class="mr-3" alt="" />
+								<a href="#">Edit Profile</a>
+							</div>
+
+							<div class="user-action-menu">
+								<img src="./images/ubah-katasandi.png" class="mr-3" alt="" />
+								<a href="#">Ubah Kata Sandi</a>
+							</div>
+							<div class="user-action-menu">
+								<img src="./images/transaksi.png" class="mr-3" alt="" />
+								<a href="#">Transaksi</a>
+							</div>
+							<div class="user-action-menu">
+								<img src="./images/alamat.png" class="mr-3" alt="" />
+								<a href="#">Alamat</a>
+							</div>
+							<div class="user-action-menu">
+								<img src="./images/permainan.png" class="mr-3" alt="" />
+								<a href="#">Permainan</a>
+							</div>
+							<div class="user-action-menu">
+								<img src="./images/logout.png" class="mr-3" alt="" />
+								<a href="#">Logout</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end user notif -->
 			</div>
+
+			<!-- masukan konten disini -->
 			<div class="content-wrapper pt-5 mt-5">
 				<div id="home-slider" class="mt-5 wow fadeInDown" data-wow-delay="0.2s">
 					<div class="container">
@@ -522,239 +650,244 @@
 						/></a>
 					</div>
 				</div>
-			</div>
+				<div id="footer" class="">
+					<div class="container">
+						<div class="row">
+							<div class="logo col-12 mb-5">
+								<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="block" id="min-m-mobile">
+									<div class="title-section">Alamat</div>
+									<div class="column-address">
+										<div class="desc">
+											<p class="mb-0">
+												Kawasan Industri Jababeka II Jalan Industri Selatan Blok
+												LL No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 -
+												Indonesia
+											</p>
+											<strong>Jam Operasional</strong>
+											<p>
+												Senin - Jumat
+												<span class="d-block">08:00 - 17:00 WIB</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="block">
+									<div class="title-section">Hubungi Kami</div>
+									<div class="column">
+										<div class="list-contact">
+											<ul class="pl-0 ml-0">
+												<li class="mb-2">
+													<span class="font-weight-bold">Email :</span
+													><a href="mailto:marketing@supernova-id.com"
+														>marketing@supernova-id.com</a
+													>
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">No.Telpon :</span>+62
+													21 8983 1969
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">Fax :</span>+62 21 8983
+													1967
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">Whatsapp :</span>+62
+													8231 7714 488
+												</li>
+											</ul>
+										</div>
+										<div class="list-sosmed my-sm-5 my-4">
+											<ul class="pl-0 ml-0">
+												<li>
+													<a href="https://www.facebook.com/" target="_blank"
+														><i class="fab fa-facebook-f"></i
+													></a>
+												</li>
+												<li>
+													<a href="https://www.instagram.com/" target="_blank"
+														><i class="fab fa-instagram"></i
+													></a>
+												</li>
+												<li>
+													<a href="https://www.linkedin.com/" target="_blank"
+														><i class="fab fa-linkedin-in"></i
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="block pl-sm-5">
+									<div class="title-section">Informasi</div>
+									<div class="column">
+										<div class="menus">
+											<ul class="ml-0 pl-0">
+												<li class="mb-2">
+													<a href="about-us.html">Tentang Supernova Digipack</a>
+												</li>
+												<li class="mb-2">
+													<a href="pilih-kemasan.html">Pilihan Kemasan</a>
+												</li>
+												<li class="mb-2"><a href="blog.html">Blog</a></li>
+												<li class="mb-2">
+													<a href="panduan_belanja.html">Panduan Belanja</a>
+												</li>
+												<li class="mb-2">
+													<a href="syarat_ketentuan.html">Syarat & Ketentuan</a>
+												</li>
+												<li class="mb-2">
+													<a href="kebijakan.html">Kebijakan Privasi</a>
+												</li>
+												<li class="mb-2"><a href="faq.html">FAQs</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="copyright">
+							<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
+								Copyright &copy; 2021 Supernova Digipack
+								<span id="hide-on-mobile">-</span> PT Supernova Flexible
+								Packaging
+							</p>
+						</div>
+						<div class="floating position-fixed">
+							<a href="#"
+								><img src="images/wa.svg" alt="" class="img-fluid"
+							/></a>
+						</div>
+					</div>
 
-			<div id="footer" class="">
-				<div class="container">
-					<div class="row">
-						<div class="logo col-12 mb-5">
-							<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="block" id="min-m-mobile">
-								<div class="title-section">Alamat</div>
-								<div class="column-address">
-									<div class="desc">
-										<p class="mb-0">
-											Kawasan Industri Jababeka II Jalan Industri Selatan Blok
-											LL No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 -
-											Indonesia
-										</p>
-										<strong>Jam Operasional</strong>
-										<p>
-											Senin - Jumat
-											<span class="d-block">08:00 - 17:00 WIB</span>
-										</p>
-									</div>
+					<!-- Modal login -->
+					<div
+						class="modal fade"
+						id="modalLogin"
+						tabindex="-1"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
+									<button
+										type="button"
+										class="close"
+										data-dismiss="modal"
+										aria-label="Close"
+									>
+										<span aria-hidden="true">&times;</span>
+									</button>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="block">
-								<div class="title-section">Hubungi Kami</div>
-								<div class="column">
-									<div class="list-contact">
-										<ul class="pl-0 ml-0">
-											<li class="mb-2">
-												<span class="font-weight-bold">Email :</span
-												><a href="mailto:marketing@supernova-id.com"
-													>marketing@supernova-id.com</a
-												>
-											</li>
-											<li class="mb-2">
-												<span class="font-weight-bold">No.Telpon :</span>+62 21
-												8983 1969
-											</li>
-											<li class="mb-2">
-												<span class="font-weight-bold">Fax :</span>+62 21 8983
-												1967
-											</li>
-											<li class="mb-2">
-												<span class="font-weight-bold">Whatsapp :</span>+62 8231
-												7714 488
-											</li>
-										</ul>
-									</div>
-									<div class="list-sosmed my-sm-5 my-4">
-										<ul class="pl-0 ml-0">
-											<li>
-												<a href="https://www.facebook.com/" target="_blank"
-													><i class="fab fa-facebook-f"></i
-												></a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/" target="_blank"
-													><i class="fab fa-instagram"></i
-												></a>
-											</li>
-											<li>
-												<a href="https://www.linkedin.com/" target="_blank"
-													><i class="fab fa-linkedin-in"></i
-												></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="block pl-sm-5">
-								<div class="title-section">Informasi</div>
-								<div class="column">
-									<div class="menus">
-										<ul class="ml-0 pl-0">
-											<li class="mb-2">
-												<a href="about-us.html">Tentang Supernova Digipack</a>
-											</li>
-											<li class="mb-2">
-												<a href="pilih-kemasan.html">Pilihan Kemasan</a>
-											</li>
-											<li class="mb-2"><a href="blog.html">Blog</a></li>
-											<li class="mb-2">
-												<a href="panduan_belanja.html">Panduan Belanja</a>
-											</li>
-											<li class="mb-2">
-												<a href="syarat_ketentuan.html">Syarat & Ketentuan</a>
-											</li>
-											<li class="mb-2">
-												<a href="kebijakan.html">Kebijakan Privasi</a>
-											</li>
-											<li class="mb-2"><a href="faq.html">FAQs</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="copyright">
-						<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
-							Copyright &copy; 2021 Supernova Digipack
-							<span id="hide-on-mobile">-</span> PT Supernova Flexible Packaging
-						</p>
-					</div>
-					<div class="floating position-fixed">
-						<a href="#"><img src="images/wa.svg" alt="" class="img-fluid" /></a>
-					</div>
-				</div>
-
-				<!-- Modal login -->
-				<div
-					class="modal fade"
-					id="modalLogin"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
-								<button
-									type="button"
-									class="close"
-									data-dismiss="modal"
-									aria-label="Close"
-								>
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<form action="">
-									<div class="form-group">
-										<label for="email">Email</label>
-										<input
-											type="email"
-											class="form-control custom"
-											id="email"
-											placeholder="Alamat Email"
-										/>
-									</div>
-									<div class="password">
-										<label for="password">Password</label>
-										<div class="input-pass">
-											<div class="input-group">
-												<input type="password" placeholder="Password" />
-												<div class="input-group-append">
-													<span class="input-group-text">
-														<i class="fa fa-eye-slash" aria-hidden="true"></i>
-													</span>
+								<div class="modal-body">
+									<form action="">
+										<div class="form-group">
+											<label for="email">Email</label>
+											<input
+												type="email"
+												class="form-control custom"
+												id="email"
+												placeholder="Alamat Email"
+											/>
+										</div>
+										<div class="password">
+											<label for="password">Password</label>
+											<div class="input-pass">
+												<div class="input-group">
+													<input type="password" placeholder="Password" />
+													<div class="input-group-append">
+														<span class="input-group-text">
+															<i class="fa fa-eye-slash" aria-hidden="true"></i>
+														</span>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<small
-										id="emailHelp"
-										class="form-text text-muted password_help"
-									>
-										<a href="">Lupa Password ?</a>
-									</small>
-									<a href="logined.html" class="btn btn-daftar">Lanjut</a>
-									<div class="show-web no-display-mobile">
-										<h4>
-											Belum punya akun ?
-											<span><a href="">Ayo Daftar</a></span>
-										</h4>
-										<div class="alternative d-flex align-items-center">
-											Atau Daftar Menggunakan
+										<small
+											id="emailHelp"
+											class="form-text text-muted password_help"
+										>
+											<a href="">Lupa Password ?</a>
+										</small>
+										<button class="btn btn-daftar">Lanjut</button>
+										<div class="show-web no-display-mobile">
+											<h4>
+												Belum punya akun ?
+												<span><a href="">Ayo Daftar</a></span>
+											</h4>
+											<div class="alternative d-flex align-items-center">
+												Atau Daftar Menggunakan
 
-											<div class="btn-alter ml-4 d-flex align-items-center">
-												<button class="btn border mr-3 google">
-													<img src="./images/google.png" alt="" />
-												</button>
-												<button class="btn border fb pb-8px">
-													<img src="./images/fb.png" alt="" />
-												</button>
+												<div class="btn-alter ml-4 d-flex align-items-center">
+													<button class="btn border mr-3 google">
+														<img src="./images/google.png" alt="" />
+													</button>
+													<button class="btn border fb pb-8px">
+														<img src="./images/fb.png" alt="" />
+													</button>
+												</div>
+											</div>
+											<hr />
+											<!-- <div class="line"></div> -->
+											<div class="text">
+												Dengan melakukan login, anda setuju dengan Syarat &
+												Ketentuan Supernova Digipack.
+											</div>
+											<div class="text-alert">
+												This site is protected by reCAPTCHA and the Google
+												<span><a href=""> Privacy Policy</a></span> and
+												<span><a href="">Terms of Service</a></span> apply.
 											</div>
 										</div>
-										<hr />
-										<!-- <div class="line"></div> -->
-										<div class="text">
-											Dengan melakukan login, anda setuju dengan Syarat &
-											Ketentuan Supernova Digipack.
-										</div>
-										<div class="text-alert">
-											This site is protected by reCAPTCHA and the Google
-											<span><a href=""> Privacy Policy</a></span> and
-											<span><a href="">Terms of Service</a></span> apply.
-										</div>
-									</div>
-									<div class="show-mobile no-display-web">
-										<h4>Atau masuk dengan</h4>
-										<div class="alternative">
-											<div class="btn-alter d-flex">
-												<button class="btn border mr-3">
-													<img src="./images/google.png" alt="" />
-												</button>
-												<button class="btn border fb pb-8px">
-													<img src="./images/fb.png" alt="" />
-												</button>
+										<div class="show-mobile no-display-web">
+											<h4>Atau masuk dengan</h4>
+											<div class="alternative">
+												<div class="btn-alter d-flex">
+													<button class="btn border mr-3">
+														<img src="./images/google.png" alt="" />
+													</button>
+													<button class="btn border fb pb-8px">
+														<img src="./images/fb.png" alt="" />
+													</button>
+												</div>
+											</div>
+											<h4>
+												Belum punya akun ?
+												<span><a href="">Ayo Daftar</a></span>
+											</h4>
+											<hr />
+											<!-- <div class="line"></div> -->
+											<div class="text">
+												Dengan melakukan login, anda setuju dengan Syarat &
+												Ketentuan Supernova Digipack.
+											</div>
+											<div class="text-alert">
+												This site is protected by reCAPTCHA and the Google
+												<span><a href=""> Privacy Policy</a></span> and
+												<span><a href="">Terms of Service</a></span> apply.
 											</div>
 										</div>
-										<h4>
-											Belum punya akun ?
-											<span><a href="">Ayo Daftar</a></span>
-										</h4>
-										<hr />
-										<!-- <div class="line"></div> -->
-										<div class="text">
-											Dengan melakukan login, anda setuju dengan Syarat &
-											Ketentuan Supernova Digipack.
-										</div>
-										<div class="text-alert">
-											This site is protected by reCAPTCHA and the Google
-											<span><a href=""> Privacy Policy</a></span> and
-											<span><a href="">Terms of Service</a></span> apply.
-										</div>
-									</div>
-								</form>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- end masukan konten disini -->
 		</div>
+
+		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 			(function (b, o, i, l, e, r) {

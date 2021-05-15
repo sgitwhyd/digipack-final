@@ -292,4 +292,8 @@
 	.mt-3-mobile {
 		margin-top: 30px;
 	}
+
+	.page-title {
+		font-size: 14px !important;
+	}
 }

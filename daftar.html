@@ -103,6 +103,7 @@
 										class="form-control custom"
 										id="nama"
 										placeholder="Nama Lengkap"
+										oninput="inputNama()"
 									/>
 								</div>
 								<div class="form-group">
@@ -112,13 +113,14 @@
 										class="form-control custom"
 										id="email"
 										placeholder="Alamat Email"
+										oninput="inputEmail()"
 									/>
 								</div>
 								<div class="password">
 									<label for="password">Password</label>
-									<div class="input-pass">
+									<div class="input-pass" id="input-pass">
 										<div class="input-group">
-											<input type="password" name="password" id="password" placeholder="Password" />
+											<input type="password" name="password" oninput="inputPassword()" id="password" placeholder="Password" />
 											<div class="input-group-append">
 												<span class="input-group-text">
 													<i class="fa fa-eye-slash" onclick="myFunc()" id="togglePassword"></i>
@@ -127,7 +129,7 @@
 										</div>
 									</div>
 								</div>
-								<button class="btn btn-daftar">Lanjut</button>
+								<a href="logined.html" class="btn btn-daftar">Lanjut</a>
 								<div class="show-web no-display-mobile">
 										<h4>
 											Sudah punya akun ?
@@ -253,10 +255,10 @@
 									<label for="password">Password</label>
 									<div class="input-pass">
 										<div class="input-group">
-											<input type="password" name="password" id="password" placeholder="Password" />
+											<input type="password" name="password" id="password1" placeholder="Password" />
 											<div class="input-group-append">
 												<span class="input-group-text">
-													<i class="fa fa-eye-slash" onclick="myFunc()" id="togglePassword"></i>
+													<i class="fa fa-eye-slash" onclick="myFunc2()" id="togglePassword"></i>
 												</span>
 											</div>
 										</div>
@@ -268,7 +270,7 @@
 									>
 										<a href="">Lupa Password ?</a>
 									</small>
-									<button class="btn btn-daftar">Lanjut</button>
+									<a href="logined.html" class="btn btn-daftar">Lanjut</a>
 									<div class="show-web no-display-mobile">
 										<h4>
 											Belum punya akun ?

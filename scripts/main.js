@@ -139,6 +139,41 @@ function inputProduk() {
 	return produk;
 }
 
+function inputEmail() {
+	var input = document.getElementById('email').value;
+	console.log(1);
+	if (input.length > 0) {
+		document.getElementById('email').classList.add('border-blue');
+	} else if (input.length <= 0) {
+		document.getElementById('email').classList.remove('border-blue');
+	}
+	return input;
+}
+
+function inputNama() {
+	var input = document.getElementById('nama').value;
+	console.log(1);
+	if (input.length > 0) {
+		document.getElementById('nama').classList.add('border-blue');
+	} else if (input.length <= 0) {
+		document.getElementById('nama').classList.remove('border-blue');
+	}
+	return input;
+}
+function inputPassword() {
+	var input = document.getElementById('password').value;
+	var password_wrapper = document.getElementById('input-pass');
+	console.log(1);
+	if (input.length > 0) {
+		password_wrapper.classList.add('border-blue');
+		document.getElementById('password').classList.add('bg-grey');
+	} else if (input.length <= 0) {
+		password_wrapper.classList.remove('border-blue');
+		document.getElementById('password').classList.remove('bg-grey');
+	}
+	return input;
+}
+
 for (const dropdown of document.querySelectorAll('.custom-select-wrapper')) {
 	dropdown.addEventListener('click', function () {
 		this.querySelector('.custom-select').classList.toggle('open');
@@ -204,6 +239,26 @@ function myFunc() {
 	});
 }
 
+function myFunc2() {
+	var togglePassword = document.getElementById('togglePassword');
+	var password = document.getElementById('password-1');
+
+	togglePassword.addEventListener('click', function (e) {
+		// toggle the type attribute
+		if (password.type === 'password') {
+			password.type = 'text';
+			togglePassword.classList.toggle('fa-eye');
+		} else {
+			password.type = 'password';
+			togglePassword.classList.toggle('fa-eye-slash');
+		}
+
+		return password;
+		// toggle the eye slash icon
+		// this.classList.toggle('fa-eye-slash');
+	});
+}
+
 function passVis() {
 	var x = document.getElementById('password');
 	if (x.type === 'password') {
@@ -217,3 +272,66 @@ function passVis() {
 		return togglePassword;
 	}
 }
+
+// user menu
+
+let user_panel = document.getElementById('user__panel');
+let bag_user = document.getElementById('bag__user');
+let notif_user = document.getElementById('notif__user');
+// user bag dropdown
+let user_panel_action = document.getElementById('user-action-panel');
+let user_bag = document.getElementById('user-bag');
+let user_notif = document.getElementById('user_notif');
+let overlay = document.getElementById('overlay');
+
+user_panel.addEventListener('click', function () {
+	user_panel_action.classList.toggle('show-overlay');
+	user_bag.classList.remove('show-overlay');
+	user_notif.classList.remove('show-overlay');
+	overlay.classList.remove('show-overlay');
+
+	if (user_panel_action.classList.contains('show-overlay')) {
+		overlay.classList.add('show-overlay');
+	} else {
+		overlay.classList.remove('show-overlay');
+	}
+
+	return;
+});
+
+bag_user.addEventListener('click', function () {
+	user_bag.classList.toggle('show-overlay');
+	user_panel_action.classList.remove('show-overlay');
+	user_notif.classList.remove('show-overlay');
+	// overlay.classList.toggle('show-overlay');
+
+	if (user_bag.classList.contains('show-overlay')) {
+		overlay.classList.add('show-overlay');
+	} else {
+		overlay.classList.remove('show-overlay');
+	}
+
+	return;
+});
+
+notif_user.addEventListener('click', function () {
+	user_notif.classList.toggle('show-overlay');
+	user_bag.classList.remove('show-overlay');
+	user_panel_action.classList.remove('show-overlay');
+	// overlay.classList.toggle('show-overlay');
+
+	if (user_notif.classList.contains('show-overlay')) {
+		overlay.classList.add('show-overlay');
+	} else {
+		overlay.classList.remove('show-overlay');
+	}
+
+	return;
+});
+
+overlay.addEventListener('click', function () {
+	user_bag.classList.remove('show-overlay');
+	user_panel_action.classList.remove('show-overlay');
+	user_notif.classList.remove('show-overlay');
+	overlay.classList.remove('show-overlay');
+});

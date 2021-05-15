@@ -110,11 +110,19 @@ label {
 .btn-daftar {
 	background: linear-gradient(172.04deg, #1891f6 10.75%, #1a38e3 139.85%);
 	border-radius: 6px;
+	padding: 10px 40px;
+	margin: 40px 0px;
+}
+
+.btn-daftar a {
+	text-decoration: none;
 	color: #ffff;
 	font-weight: 500;
 	font-size: 12px;
-	padding: 10px 40px;
-	margin: 40px 0px;
+}
+
+.btn-daftar:hover {
+	color: #312d75;
 }
 
 /* .btn-daftar:hover {

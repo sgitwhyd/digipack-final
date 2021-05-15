@@ -406,8 +406,8 @@ body {
 /* keunggulan produk */
 
 .img-produk-wrapper {
-	    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .keunggulan-produk .list-keunggulan .keunggulan-produk-img .bg {
@@ -672,6 +672,7 @@ body {
 
 .border-blue {
 	border: 1px solid #1891f6;
+	background: #e8f0fe;
 }
 
 /*style the items (options), including the selected item:*/
@@ -681,6 +682,10 @@ body {
 	padding: 2px 16px;
 	cursor: pointer;
 	user-select: none;
+}
+
+.bg-grey {
+	background: #e8f0fe;
 }
 
 /*style items (options):*/
@@ -2867,7 +2872,7 @@ input.price-form:focus ~ .highlight {
 		cursor: default !important;
 	}
 	.p-description {
-		width: 76%;
+		width: 80%;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 40px;
