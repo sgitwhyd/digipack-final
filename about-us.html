@@ -211,7 +211,7 @@
 										</div>
 										<div class="total-harga d-flex py-2">
 											<p>Total Harga</p>
-											<p class="prices" style="margin-right: -2px;">Rp <span><a href="#"> Hubungi Kami</a></span></p>
+											<p class="prices">Rp <span><a href="#"> Hubungi Kami</a></span></p>
 										</div>
 									</div>
 								</div>
@@ -437,12 +437,17 @@
 									</div>
 									<div class="password">
 										<label for="password">Password</label>
-										<div class="input-pass">
+										<div class="input-pass" id="input-pass">
 											<div class="input-group">
-												<input type="password" placeholder="Password" />
+												<input
+													type="password"
+													id="password"
+													name="password"
+													placeholder="Password"
+												/>
 												<div class="input-group-append">
-													<span class="input-group-text">
-														<i class="fa fa-eye-slash" aria-hidden="true"></i>
+													<span class="input-group-text" id="password-eye">
+														<i class="fa fa-eye-slash" id="icon-eye"></i>
 													</span>
 												</div>
 											</div>

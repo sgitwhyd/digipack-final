@@ -122,7 +122,7 @@
 										<div class="input-group">
 											<input type="password" name="password" oninput="inputPassword()" id="password" placeholder="Password" />
 											<div class="input-group-append">
-												<span class="input-group-text">
+												<span class="input-group-text" id="password-trigger">
 													<i class="fa fa-eye-slash" onclick="myFunc()" id="togglePassword"></i>
 												</span>
 											</div>
@@ -252,14 +252,21 @@
 										/>
 									</div>
 									<div class="password">
-									<label for="password">Password</label>
-									<div class="input-pass">
-										<div class="input-group">
-											<input type="password" name="password" id="password1" placeholder="Password" />
-											<div class="input-group-append">
-												<span class="input-group-text">
-													<i class="fa fa-eye-slash" onclick="myFunc2()" id="togglePassword"></i>
-												</span>
+									<div class="password">
+										<label for="password">Password</label>
+										<div class="input-pass" id="input-pass">
+											<div class="input-group">
+												<input
+													type="password"
+													id="password"
+													name="password"
+													placeholder="Password"
+												/>
+												<div class="input-group-append">
+													<span class="input-group-text" id="password-eye">
+														<i class="fa fa-eye-slash" id="icon-eye"></i>
+													</span>
+												</div>
 											</div>
 										</div>
 									</div>

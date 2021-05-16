@@ -113,7 +113,8 @@
 					</nav>
 				</div>
 
-				<!-- user-action -->
+				<div class="container">
+					<!-- user-action -->
 				<div class="position-relative">
 					<div class="user-action" id="user_notif">
 						<div class="user-action-title">Notifikasi</div>
@@ -164,13 +165,20 @@
 								alt=""
 							/> -->
 						</div>
-						<div class="bag-info text-center mt-5">
-							Ops <br />
-							Keranjang Belanja Masih Kosong Nih
-						</div>
-						<div class="d-flex justify-content-center mt-3 mb-3">
-							<div class="btn btn-blue">Yuk Mulai Belanja</div>
-						</div>
+						<div class="posititon-relative">
+								<div
+									class="position-absolute"
+									style="position: absolute; bottom: 30px; padding: 0px 50px"
+								>
+									<div class="bag-info text-center mt-5">
+										Ops <br />
+										Keranjang Belanja Masih Kosong Nih
+									</div>
+									<div class="d-flex justify-content-center mt-3 mb-3">
+										<div class="btn btn-blue">Yuk Mulai Belanja</div>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 				<!-- end user notif -->
@@ -228,6 +236,7 @@
 					</div>
 				</div>
 				<!-- end user notif -->
+				</div>
 			</div>
 
 			<!-- masukan konten disini -->
@@ -689,6 +698,69 @@
 			})(window, document, 'script', 'ga');
 			ga('create', 'UA-XXXXX-X');
 			ga('send', 'pageview');
+
+
+			// user menu
+			let user_panel = document.getElementById('user__panel');
+			let bag_user = document.getElementById('bag__user');
+			let notif_user = document.getElementById('notif__user');
+			// user bag dropdown
+			let user_panel_action = document.getElementById('user-action-panel');
+			let user_bag = document.getElementById('user-bag');
+			let user_notif = document.getElementById('user_notif');
+			let overlay = document.getElementById('overlay');
+
+			user_panel.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			bag_user.addEventListener('click', function () {
+				user_bag.classList.toggle('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_bag.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			notif_user.addEventListener('click', function () {
+				user_notif.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_notif.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			overlay.addEventListener('click', function () {
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+			});
 		</script>
 		<script src="scripts/vendor.js"></script>
 		<script src="scripts/main.js"></script>

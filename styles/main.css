@@ -391,7 +391,9 @@ section.pabrik .left .serve-title .total-harga {
 	position: absolute;
 } */
 
-/* test */
+.prices {
+	margin-right: -27px !important;
+}
 
 section.pabrik .left .serve-title .total-harga .prices span a {
 	font-weight: 300;
@@ -537,8 +539,8 @@ section.pabrik .right .info a:hover {
 	background: #fff;
 	padding: 20px 0px;
 	border-radius: 0px 0px 10px 10px;
-	width: 350px;
-	right: 130px;
+	width: 370px;
+	right: 0px;
 	height: fit-content;
 	display: none;
 	z-index: 999;
@@ -572,14 +574,14 @@ section.pabrik .right .info a:hover {
 }
 
 .bag-notif {
-	right: 130px;
+	right: 0px;
 	position: absolute;
 	top: 10px;
 	background: #fff;
 	padding: 20px 0px;
 	border-radius: 0px 0px 10px 10px;
-	width: 350px;
-	height: fit-content;
+	width: 370px;
+	height: 350px;
 	display: none;
 	z-index: 999;
 }
@@ -609,13 +611,13 @@ section.pabrik .right .info a:hover {
 }
 
 .user-action-panel {
-	right: 130px;
+	right: 0px;
 	position: absolute;
 	top: 10px;
 	background: #fff;
 	padding: 20px 0px;
 	border-radius: 0px 0px 10px 10px;
-	width: 350px;
+	width: 370px;
 	height: fit-content;
 	display: none;
 	z-index: 999;
@@ -636,7 +638,7 @@ section.pabrik .right .info a:hover {
 	top: 0px;
 	position: fixed;
 	display: none;
-	z-index: 2;
+	z-index: 99;
 }
 
 /* end .overlay css */
@@ -1893,6 +1895,10 @@ section.pabrik .right .info a:hover {
 		margin-right: 27%;
 	}
 
+	.section.pabrik .left .serve-title .total-harga .prices {
+		margin-right: -2px;
+	}
+
 	/* section.pabrik .left .serve-title .serve-info .item {
 		margin-right: 25%;
 	} */
@@ -1964,6 +1970,10 @@ section.pabrik .right .info a:hover {
 		font-size: 14px;
 		text-decoration: none;
 		color: rgb(49, 45, 117);
+	}
+
+	.prices {
+		margin-right: -2px !important;
 	}
 
 	.show-mobile {

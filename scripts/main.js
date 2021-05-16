@@ -222,116 +222,31 @@ window.addEventListener('click', function (e) {
 function myFunc() {
 	var togglePassword = document.getElementById('togglePassword');
 	var password = document.getElementById('password');
+	var password_trigger = document.getElementById('password-trigger');
 
-	togglePassword.addEventListener('click', function (e) {
-		// toggle the type attribute
+	password_trigger.addEventListener('click', function (e) {
 		if (password.type === 'password') {
 			password.type = 'text';
-			togglePassword.classList.toggle('fa-eye');
+			password_trigger.innerHTML = `<i class="fa fa-eye" id="icon-eye"></i>`;
 		} else {
 			password.type = 'password';
-			togglePassword.classList.toggle('fa-eye-slash');
+			password_trigger.innerHTML = `<i class="fa fa-eye-slash" id="icon-eye"></i>`;
 		}
-
-		return password;
-		// toggle the eye slash icon
-		// this.classList.toggle('fa-eye-slash');
+		return password_trigger;
 	});
 }
 
-function myFunc2() {
-	var togglePassword = document.getElementById('togglePassword');
-	var password = document.getElementById('password-1');
+let check_password = document.getElementById('password');
+let password__eye = document.getElementById('password-eye');
+let password_icon = document.getElementById('icon-eye');
 
-	togglePassword.addEventListener('click', function (e) {
-		// toggle the type attribute
-		if (password.type === 'password') {
-			password.type = 'text';
-			togglePassword.classList.toggle('fa-eye');
-		} else {
-			password.type = 'password';
-			togglePassword.classList.toggle('fa-eye-slash');
-		}
-
-		return password;
-		// toggle the eye slash icon
-		// this.classList.toggle('fa-eye-slash');
-	});
-}
-
-function passVis() {
-	var x = document.getElementById('password');
-	if (x.type === 'password') {
-		x.type = 'text';
-		const togglePassword = document.querySelector('#togglePassword');
-		togglePassword.classList.toggle('fa-eye-slash');
+password__eye.addEventListener('click', function () {
+	if (check_password.type === 'password') {
+		check_password.type = 'text';
+		password__eye.innerHTML = `<i class="fa fa-eye" id="icon-eye"></i>`;
 	} else {
-		x.type = 'password';
-		const togglePassword = document.querySelector('#togglePassword');
-		togglePassword.classList.toggle('fa-eye');
-		return togglePassword;
+		check_password.type = 'password';
+		password__eye.innerHTML = `<i class="fa fa-eye-slash" id="icon-eye"></i>`;
 	}
-}
-
-// user menu
-
-let user_panel = document.getElementById('user__panel');
-let bag_user = document.getElementById('bag__user');
-let notif_user = document.getElementById('notif__user');
-// user bag dropdown
-let user_panel_action = document.getElementById('user-action-panel');
-let user_bag = document.getElementById('user-bag');
-let user_notif = document.getElementById('user_notif');
-let overlay = document.getElementById('overlay');
-
-user_panel.addEventListener('click', function () {
-	user_panel_action.classList.toggle('show-overlay');
-	user_bag.classList.remove('show-overlay');
-	user_notif.classList.remove('show-overlay');
-	overlay.classList.remove('show-overlay');
-
-	if (user_panel_action.classList.contains('show-overlay')) {
-		overlay.classList.add('show-overlay');
-	} else {
-		overlay.classList.remove('show-overlay');
-	}
-
-	return;
-});
-
-bag_user.addEventListener('click', function () {
-	user_bag.classList.toggle('show-overlay');
-	user_panel_action.classList.remove('show-overlay');
-	user_notif.classList.remove('show-overlay');
-	// overlay.classList.toggle('show-overlay');
-
-	if (user_bag.classList.contains('show-overlay')) {
-		overlay.classList.add('show-overlay');
-	} else {
-		overlay.classList.remove('show-overlay');
-	}
-
-	return;
-});
-
-notif_user.addEventListener('click', function () {
-	user_notif.classList.toggle('show-overlay');
-	user_bag.classList.remove('show-overlay');
-	user_panel_action.classList.remove('show-overlay');
-	// overlay.classList.toggle('show-overlay');
-
-	if (user_notif.classList.contains('show-overlay')) {
-		overlay.classList.add('show-overlay');
-	} else {
-		overlay.classList.remove('show-overlay');
-	}
-
-	return;
-});
-
-overlay.addEventListener('click', function () {
-	user_bag.classList.remove('show-overlay');
-	user_panel_action.classList.remove('show-overlay');
-	user_notif.classList.remove('show-overlay');
-	overlay.classList.remove('show-overlay');
+	return password__eye;
 });
