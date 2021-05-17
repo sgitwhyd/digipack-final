@@ -529,6 +529,11 @@ section.pabrik .right .info a:hover {
 
 /* overlay css */
 
+.user-interaction {
+	z-index: 998 !important;
+	margin-top: -10px;
+}
+
 .position-relative {
 	position: relative;
 }
@@ -543,7 +548,8 @@ section.pabrik .right .info a:hover {
 	right: 0px;
 	height: fit-content;
 	display: none;
-	z-index: 999;
+	z-index: 998;
+	box-shadow: inset 3px 4px 5px rgba(9, 7, 37, 0.0454);
 }
 
 .user-action .user-notif {
@@ -583,7 +589,8 @@ section.pabrik .right .info a:hover {
 	width: 370px;
 	height: 350px;
 	display: none;
-	z-index: 999;
+	z-index: 998;
+	box-shadow: inset 3px 4px 5px rgba(9, 7, 37, 0.0454);
 }
 
 .bag-info {
@@ -620,7 +627,8 @@ section.pabrik .right .info a:hover {
 	width: 370px;
 	height: fit-content;
 	display: none;
-	z-index: 999;
+	z-index: 998;
+	box-shadow: inset 3px 4px 5px rgba(9, 7, 37, 0.0454);
 }
 
 .action-menu {
@@ -629,6 +637,15 @@ section.pabrik .right .info a:hover {
 
 .user-action-menu {
 	padding: 15px 0px;
+}
+
+.user-action-menu a {
+	text-decoration: none;
+	color: #312d75;
+}
+
+.user-action-menu a:hover {
+	color: #ffc90a !important;
 }
 
 .content-overlay {

@@ -201,7 +201,7 @@ body {
 }
 
 .pl-15rem {
-	padding-left: 7rem;
+	padding-left: 4.5rem;
 }
 
 /* .owl-carousel .owl-item img {
@@ -2873,7 +2873,7 @@ input.price-form:focus ~ .highlight {
 		cursor: default !important;
 	}
 	.p-description {
-		width: 80%;
+		width: 90%;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 40px;

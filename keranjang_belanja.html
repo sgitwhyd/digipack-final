@@ -33,206 +33,229 @@
 		<![endif]-->
 		<div id="wrapper" class="position-relative">
 			<div class="overlay d-none"></div>
-			<div id="header" class="position-fixed">
-				<div class="container">
-					<nav class="navbar navbar-expand-lg navbar-light p-0">
-						<a class="navbar-brand" href="#"
-							><img src="images/logo.svg" alt="" class="img-fluid logo-top"
-						/></a>
-						<button
-							class="navbar-toggler collapsed"
-							type="button"
-							data-toggle="collapse"
-							data-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
-						</button>
-
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav" id="navbar-nav-mobile">
-								<li class="nav-item">
-									<a class="nav-link" href="index.html">Beranda</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="about-us.html">Tentang Kami</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="pilih-kemasan.html"
-										>Pilihan Kemasan</a
-									>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="blog.html">Blog</a>
-								</li>
-							</ul>
-							<div
-								class="
-									menu-act
-									ml-auto
-									mr-5
-									my-2 my-lg-0
-									d-flex
-									align-items-center
-								"
+			<div class="position-fixed" style="z-index: 999; width: 100%">
+				<div id="header">
+					<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light p-0">
+							<a class="navbar-brand" href="#"
+								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
+							/></a>
+							<button
+								class="navbar-toggler collapsed"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
 							>
-								<div class="info-user">
-									<div class="notif-user" id="notif__user">
-										<a href="#" class="notification">
-											<img src="./images/Notification.png" alt="" />
-											<!-- <span class="badge">3</span> -->
-										</a>
-									</div>
-									<div class="bag-user" id="bag__user">
-										<a href="#" class="notification">
-											<img src="./images/Bag.png" alt="" />
-											<span class="badge">3</span>
-										</a>
-									</div>
-									<div
-										class="user-active d-flex align-items-center"
-										id="user__panel"
-									>
-										<div class="dropdown d-flex">
-											<img
-												src="./images/User.png"
-												style="cursor: pointer"
-												alt=""
-											/>
-											<button class="btn dropdown-toggle">
-												<span class="user">Atika Widjaya</span>
-												<img src="./images/down.png" class="ml-4" alt="" />
-											</button>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav" id="navbar-nav-mobile">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Beranda</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">Tentang Kami</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="pilih-kemasan.html"
+											>Pilihan Kemasan</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="blog.html">Blog</a>
+									</li>
+								</ul>
+								<div
+									class="
+										menu-act
+										ml-auto
+										mr-5
+										my-2 my-lg-0
+										d-flex
+										align-items-center
+									"
+								>
+									<div class="info-user">
+										<div class="notif-user" id="notif__user">
+											<a href="#" class="notification">
+												<img src="./images/Notification.png" alt="" />
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+										<div class="bag-user" id="bag__user">
+											<a href="#" class="notification">
+												<img src="./images/Bag.png" alt="" />
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+										<div
+											class="user-active d-flex align-items-center"
+											id="user__panel"
+										>
+											<div class="dropdown d-flex">
+												<img
+													src="./images/User.png"
+													style="cursor: pointer"
+													alt=""
+												/>
+												<button class="btn dropdown-toggle">
+													<span class="user">Atika Widjaya</span>
+													<img src="./images/down.png" class="ml-4" alt="" />
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</nav>
+						</nav>
+					</div>
 				</div>
 
 				<div class="container">
-					<!-- user-action -->
-				<div class="position-relative">
-					<div class="user-action" id="user_notif">
-						<div class="user-action-title">Notifikasi</div>
-						<hr />
-						<div class="user-action-notif">
-							<div class="notif">
-								<div class="user-notif">
-									<a href="#">
-										<div class="notif-value">Anda Mendapatkan 3000 poin</div>
-										<div class="receive-notif">12 Mei 2021</div>
-									</a>
+					<div class="user-interaction">
+						<div class="container">
+							<!-- user-action -->
+							<div class="position-relative">
+								<div class="user-action" id="user_notif">
+									<div class="user-action-title">Notifikasi</div>
+									<hr />
+									<div class="user-action-notif">
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+									</div>
+									<div class="user-action-all text-center">
+										<a href="#">Lihat Semua</a>
+									</div>
 								</div>
-								<hr />
 							</div>
-							<div class="notif">
-								<div class="user-notif">
-									<a href="#">
-										<div class="notif-value">Anda Mendapatkan 3000 poin</div>
-										<div class="receive-notif">12 Mei 2021</div>
-									</a>
-								</div>
-								<hr />
-							</div>
-							<div class="notif">
-								<div class="user-notif">
-									<a href="#">
-										<div class="notif-value">Anda Mendapatkan 3000 poin</div>
-										<div class="receive-notif">12 Mei 2021</div>
-									</a>
-								</div>
-								<hr />
-							</div>
-						</div>
-						<div class="user-action-all text-center">
-							<a href="#">Lihat Semua</a>
-						</div>
-					</div>
-				</div>
-				<!-- end user action -->
-				<!-- user-notif -->
-				<div class="position-relative">
-					<div class="bag-notif" id="user-bag">
-						<div class="bag-img d-flex justify-content-center">
-							<!-- <img
+							<!-- end user action -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="bag-notif" id="user-bag">
+									<div class="bag-img d-flex justify-content-center">
+										<!-- <img
 								src="./images/standing-pouch.png"
 								width="100px
                         "
 								alt=""
 							/> -->
-						</div>
-						<div class="posititon-relative">
-							<div class="position-absolute" style="position: absolute; bottom: 30px; padding: 0px 50px;">
-								<div class="bag-info text-center mt-5">
-							Ops <br />
-							Keranjang Belanja Masih Kosong Nih
-						</div>
-						<div class="d-flex justify-content-center mt-3 mb-3">
-							<div class="btn btn-blue">Yuk Mulai Belanja</div>
-						</div>
+									</div>
+									<div class="posititon-relative">
+										<div
+											class="position-absolute"
+											style="
+												position: absolute;
+												bottom: 30px;
+												padding: 0px 50px;
+											"
+										>
+											<div class="bag-info text-center mt-5">
+												Ops <br />
+												Keranjang Belanja Masih Kosong Nih
+											</div>
+											<div class="d-flex justify-content-center mt-3 mb-3">
+												<div class="btn btn-blue">Yuk Mulai Belanja</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end user notif -->
-				<!-- user-notif -->
-				<div class="position-relative">
-					<div class="user-action-panel" id="user-action-panel">
-						<div class="user-info">
-							<img src="./images/User.png" class="mr-3" alt="" />
-							<span>Atika Widjaya</span>
-						</div>
-						<hr />
-						<div class="action-menu">
-							<div class="user-action-menu d-flex align-items-center">
-								<a href="#">
-									<img
-										src="./images/edit-profile-icon.png"
-										class="mr-3"
-										alt=""
-									/>
-									Edit Profile
-								</a>
-							</div>
+							<!-- end user notif -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="user-action-panel" id="user-action-panel">
+									<div class="user-info">
+										<img src="./images/User.png" class="mr-3" alt="" />
+										<span>Atika Widjaya</span>
+									</div>
+									<hr />
+									<div class="action-menu">
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/edit-profile-icon.png"
+													class="mr-3"
+													alt=""
+												/>
+												Edit Profile
+											</a>
+										</div>
 
-							<div class="user-action-menu d-flex align-items-center">
-								<a href="#">
-									<img src="./images/ubah-katasandi.png" class="mr-3" alt="" />
-									Ubah Kata Sandi
-								</a>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/ubah-katasandi.png"
+													class="mr-3"
+													alt=""
+												/>
+												Ubah Kata Sandi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/transaksi.png" class="mr-3" alt="" />
+												Transaksi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/alamat.png" class="mr-3" alt="" />
+												Alamat
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/permainan.png" class="mr-3" alt="" />
+												Permainan
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/logout.png" class="mr-3" alt="" />
+												Logout
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="user-action-menu d-flex align-items-center">
-								<a href="#">
-									<img src="./images/transaksi.png" class="mr-3" alt="" />
-									Transaksi
-								</a>
-							</div>
-							<div class="user-action-menu d-flex align-items-center">
-								<a href="#">
-									<img src="./images/alamat.png" class="mr-3" alt="" />
-									Alamat
-								</a>
-							</div>
-							<div class="user-action-menu d-flex align-items-center">
-								<a href="#">
-									<img src="./images/permainan.png" class="mr-3" alt="" />
-									Permainan
-								</a>
-							</div>
-							<div class="user-action-menu d-flex align-items-center">
-								<a href="#">
-									<img src="./images/logout.png" class="mr-3" alt="" />
-									Logout
-								</a>
-							</div>
+							<!-- end user notif -->
 						</div>
 					</div>
-				</div>
-				<!-- end user notif -->
 				</div>
 			</div>
 
