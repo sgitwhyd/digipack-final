@@ -554,6 +554,17 @@ section.pabrik .right .info a:hover {
 
 .user-action .user-notif {
 	padding: 0px 20px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.user-notif a {
+	text-decoration: none;
+	color: #312d75;
+}
+
+.user-notif a:hover {
+	color: #fbab20;
 }
 
 .user-action .user-action-title {
@@ -637,11 +648,13 @@ section.pabrik .right .info a:hover {
 
 .user-action-menu {
 	padding: 15px 0px;
+	width: 100%;
 }
 
 .user-action-menu a {
 	text-decoration: none;
 	color: #312d75;
+	width: 100%;
 }
 
 .user-action-menu a:hover {
