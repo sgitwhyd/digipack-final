@@ -8,6 +8,7 @@ $(document).ready(function () {
 	});
 	$('.navbar-toggler').click(function () {
 		$('.overlay').toggleClass('d-none');
+		$('.show-overlay').removeClass('show-overlay');
 	});
 	$('.single-item').slick({
 		responsive: [
