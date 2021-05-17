@@ -505,9 +505,8 @@ section.pabrik .right .info a:hover {
 	box-shadow: none;
 }
 
-.notif-user,
 .bag-user {
-	margin-top: 12px;
+	margin-top: 8px;
 }
 /* end navar login */
 
@@ -669,6 +668,10 @@ section.pabrik .right .info a:hover {
 	position: fixed;
 	display: none;
 	z-index: 99;
+}
+
+.menu-act img {
+	max-width: 50px;
 }
 
 /* end .overlay css */
