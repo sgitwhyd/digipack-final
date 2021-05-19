@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="styles/vendor.css" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/modal.css" />
-		<link rel="stylesheet" href="styles/quotation.css">
+		<link rel="stylesheet" href="styles/quotation.css" />
 		<script src="scripts/modernizr.js"></script>
 	</head>
 	<body>
@@ -258,15 +258,15 @@
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<!-- masukan konten disini -->
-			<div class="content-wrapper pt-5 mt-5">
-				<div class="head-title min-mrgn mobile-min-mrgn wow fadeInUp">
-					<div class="">
-						<div class="page-title">Permintaan Quotation</div>
-						<div class="container">
-							<img src="./images/bg-title.jpg" alt="about-us" />
-						</div>
+		<!-- masukan konten disini -->
+		<div class="content-wrapper pt-5 mt-5">
+			<div class="head-title min-mrgn mobile-min-mrgn wow fadeInUp">
+				<div class="">
+					<div class="page-title">Permintaan Quotation</div>
+					<div class="container">
+						<img src="./images/bg-title.jpg" alt="about-us" />
 					</div>
 				</div>
 			</div>
@@ -563,7 +563,6 @@
 				</div>
 			</div>
 			<!-- end content -->
-
 			<div id="before-footer">
 				<div class="container">
 					<a href="#" class="d-none d-sm-block"
@@ -580,8 +579,6 @@
 					/></a>
 				</div>
 			</div>
-
-
 			<div id="footer" class="">
 				<div class="container">
 					<div class="row">
@@ -696,9 +693,126 @@
 						<a href="#"><img src="images/wa.svg" alt="" class="img-fluid" /></a>
 					</div> -->
 				</div>
+
+				<!-- Modal login -->
+				<div
+					class="modal fade"
+					id="modalLogin"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input
+											type="email"
+											class="form-control custom"
+											id="email"
+											placeholder="Alamat Email"
+										/>
+									</div>
+									<div class="password">
+										<label for="password">Password</label>
+										<div class="input-pass">
+											<div class="input-group">
+												<input
+													type="password"
+													id="password"
+													placeholder="Password"
+												/>
+												<div class="input-group-append">
+													<span class="input-group-text" id="password-eye">
+														<i class="fa fa-eye-slash" id="icon-eye"></i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<small
+										id="emailHelp"
+										class="form-text text-muted password_help"
+									>
+										<a href="">Lupa Password ?</a>
+									</small>
+									<a href="logined.html" class="btn btn-daftar">Lanjut</a>
+									<div class="show-web no-display-mobile">
+										<h4>
+											Belum punya akun ?
+											<span><a href="">Ayo Daftar</a></span>
+										</h4>
+										<div class="alternative d-flex align-items-center">
+											Atau Daftar Menggunakan
+
+											<div class="btn-alter ml-4 d-flex align-items-center">
+												<button class="btn border mr-3 google">
+													<img src="./images/google.png" alt="" />
+												</button>
+												<button class="btn border fb pb-8px">
+													<img src="./images/fb.png" alt="" />
+												</button>
+											</div>
+										</div>
+										<hr />
+										<!-- <div class="line"></div> -->
+										<div class="text">
+											Dengan melakukan login, anda setuju dengan Syarat &
+											Ketentuan Supernova Digipack.
+										</div>
+										<div class="text-alert">
+											This site is protected by reCAPTCHA and the Google
+											<span><a href=""> Privacy Policy</a></span> and
+											<span><a href="">Terms of Service</a></span> apply.
+										</div>
+									</div>
+									<div class="show-mobile no-display-web">
+										<h4>Atau masuk dengan</h4>
+										<div class="alternative">
+											<div class="btn-alter d-flex">
+												<button class="btn border mr-3">
+													<img src="./images/google.png" alt="" />
+												</button>
+												<button class="btn border fb pb-8px">
+													<img src="./images/fb.png" alt="" />
+												</button>
+											</div>
+										</div>
+										<h4>
+											Belum punya akun ?
+											<span><a href="">Ayo Daftar</a></span>
+										</h4>
+										<hr />
+										<!-- <div class="line"></div> -->
+										<div class="text">
+											Dengan melakukan login, anda setuju dengan Syarat &
+											Ketentuan Supernova Digipack.
+										</div>
+										<div class="text-alert">
+											This site is protected by reCAPTCHA and the Google
+											<span><a href=""> Privacy Policy</a></span> and
+											<span><a href="">Terms of Service</a></span> apply.
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- end masukan konten disini -->
 		</div>
 
 		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
@@ -718,7 +832,6 @@
 			})(window, document, 'script', 'ga');
 			ga('create', 'UA-XXXXX-X');
 			ga('send', 'pageview');
-
 
 			// user menu
 			let user_panel = document.getElementById('user__panel');
@@ -781,6 +894,96 @@
 				user_notif.classList.remove('show-overlay');
 				overlay.classList.remove('show-overlay');
 			});
+
+			// selcect
+			var x, i, j, l, ll, selElmnt, a, b, c;
+			/*look for any elements with the class "custom-select":*/
+			x = document.getElementsByClassName('custom-select');
+			l = x.length;
+			for (i = 0; i < l; i++) {
+				selElmnt = x[i].getElementsByTagName('select')[0];
+				ll = selElmnt.length;
+				/*for each element, create a new DIV that will act as the selected item:*/
+				a = document.createElement('DIV');
+				a.setAttribute('class', 'select-selected');
+				a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+				x[i].appendChild(a);
+				/*for each element, create a new DIV that will contain the option list:*/
+				b = document.createElement('DIV');
+				b.setAttribute('class', 'select-items select-hide');
+				for (j = 1; j < ll; j++) {
+					/*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+					c = document.createElement('DIV');
+					c.innerHTML = selElmnt.options[j].innerHTML;
+					c.addEventListener('click', function (e) {
+						/*when an item is clicked, update the original select box,
+        and the selected item:*/
+						var y, i, k, s, h, sl, yl;
+						s = this.parentNode.parentNode.getElementsByTagName('select')[0];
+						sl = s.length;
+						h = this.parentNode.previousSibling;
+						for (i = 0; i < sl; i++) {
+							if (s.options[i].innerHTML == this.innerHTML) {
+								s.selectedIndex = i;
+								h.innerHTML = this.innerHTML;
+								y = this.parentNode.getElementsByClassName('same-as-selected');
+								yl = y.length;
+								for (k = 0; k < yl; k++) {
+									y[k].removeAttribute('class');
+								}
+								this.setAttribute('class', 'same-as-selected');
+								console.log(s.value);
+								break;
+							}
+						}
+						h.click();
+					});
+					b.appendChild(c);
+				}
+				x[i].appendChild(b);
+				a.addEventListener('click', function (e) {
+					/*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+					e.stopPropagation();
+					closeAllSelect(this);
+					this.nextSibling.classList.toggle('select-hide');
+					this.classList.toggle('select-arrow-active');
+				});
+			}
+			function closeAllSelect(elmnt) {
+				/*a function that will close all select boxes in the document,
+  except the current select box:*/
+				var x,
+					y,
+					i,
+					xl,
+					yl,
+					custom_select,
+					arrNo = [];
+				x = document.getElementsByClassName('select-items');
+				y = document.getElementsByClassName('select-selected');
+				custom_select = document.getElementsByClassName('custom-select');
+				xl = x.length;
+				yl = y.length;
+				for (i = 0; i < yl; i++) {
+					if (elmnt == y[i]) {
+						arrNo.push(i);
+						custom_select[i].classList.add('border-blue');
+						y[i].classList.toggle('bg-grey');
+					} else {
+						y[i].classList.remove('select-arrow-active');
+					}
+				}
+				for (i = 0; i < xl; i++) {
+					if (arrNo.indexOf(i)) {
+						x[i].classList.add('select-hide');
+					}
+				}
+			}
+			/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+			document.addEventListener('click', closeAllSelect);
 		</script>
 		<script src="scripts/vendor.js"></script>
 		<script src="scripts/main.js"></script>

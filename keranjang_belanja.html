@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="styles/vendor.css" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/modal.css" />
-		<link rel="stylesheet" href="styles/keranjang__belanja.css">
+		<link rel="stylesheet" href="styles/keranjang__belanja.css" />
 		<script src="scripts/modernizr.js"></script>
 	</head>
 	<body>
@@ -258,18 +258,19 @@
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<!-- masukan konten disini -->
-			<div class="content-wrapper pt-5 mt-5">
-				<div class="head-title min-mrgn mobile-min-mrgn wow fadeInUp">
-					<div class="">
-						<div class="page-title">Keranjang Belanja</div>
-						<div class="container">
-							<img src="./images/bg-title.jpg" alt="about-us" />
-						</div>
+		<!-- masukan konten disini -->
+		<div class="content-wrapper pt-5 mt-5">
+			<div class="head-title min-mrgn mobile-min-mrgn wow fadeInUp">
+				<div class="">
+					<div class="page-title">Keranjang Belanja</div>
+					<div class="container">
+						<img src="./images/bg-title.jpg" alt="about-us" />
 					</div>
 				</div>
 			</div>
+
 			<!-- content -->
 			<div class="content container">
 				<div class="form-group form-check">
@@ -286,7 +287,9 @@
 								<div class="items-info">
 									<div class="form-check">
 										<input type="checkbox" class="form-check-input" />
-										<div class="row form-check-label align-center-mobile ml-2px">
+										<div
+											class="row form-check-label align-center-mobile ml-2px"
+										>
 											<div class="col-md-3 col-6">
 												<div
 													class="
@@ -435,7 +438,9 @@
 										<div class="input">
 											<input type="checkbox" class="form-check-input pr-5" />
 										</div>
-										<div class="row form-check-label align-center-mobile ml-2px">
+										<div
+											class="row form-check-label align-center-mobile ml-2px"
+										>
 											<div class="col-md-3 col-6">
 												<div
 													class="
@@ -577,11 +582,7 @@
 									<div class="col-md-7 col-12 no-display-mobile">
 										<a href="quotation.html">
 											<div class="send-request">
-												<img
-													src="./images/permintaan.png"
-													class="mr-2"
-													alt=""
-												/>
+												<img src="./images/quotation.svg" class="mr-2" alt="" />
 												Kirim Permintaan Quotation
 											</div>
 										</a>
@@ -724,25 +725,22 @@
 				</div>
 			</div>
 			<!-- end content -->
-
-
-				<div id="before-footer">
-					<div class="container">
-						<a href="#" class="d-none d-sm-block"
-							><img
-								src="images/before-footer.jpg"
-								alt=""
-								class="img-fluid wow slideInRight"
-						/></a>
-						<a href="#" class="d-sm-none d-block"
-							><img
-								src="images/cta-mobile.png"
-								alt=""
-								class="img-fluid wow slideInRight"
-						/></a>
-					</div>
+			<div id="before-footer">
+				<div class="container">
+					<a href="#" class="d-none d-sm-block"
+						><img
+							src="images/before-footer.jpg"
+							alt=""
+							class="img-fluid wow slideInRight"
+					/></a>
+					<a href="#" class="d-sm-none d-block"
+						><img
+							src="images/cta-mobile.png"
+							alt=""
+							class="img-fluid wow slideInRight"
+					/></a>
 				</div>
-
+			</div>
 			<div id="footer" class="">
 				<div class="container">
 					<div class="row">
@@ -857,9 +855,126 @@
 						<a href="#"><img src="images/wa.svg" alt="" class="img-fluid" /></a>
 					</div> -->
 				</div>
+
+				<!-- Modal login -->
+				<div
+					class="modal fade"
+					id="modalLogin"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input
+											type="email"
+											class="form-control custom"
+											id="email"
+											placeholder="Alamat Email"
+										/>
+									</div>
+									<div class="password">
+										<label for="password">Password</label>
+										<div class="input-pass">
+											<div class="input-group">
+												<input
+													type="password"
+													id="password"
+													placeholder="Password"
+												/>
+												<div class="input-group-append">
+													<span class="input-group-text" id="password-eye">
+														<i class="fa fa-eye-slash" id="icon-eye"></i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<small
+										id="emailHelp"
+										class="form-text text-muted password_help"
+									>
+										<a href="">Lupa Password ?</a>
+									</small>
+									<a href="logined.html" class="btn btn-daftar">Lanjut</a>
+									<div class="show-web no-display-mobile">
+										<h4>
+											Belum punya akun ?
+											<span><a href="">Ayo Daftar</a></span>
+										</h4>
+										<div class="alternative d-flex align-items-center">
+											Atau Daftar Menggunakan
+
+											<div class="btn-alter ml-4 d-flex align-items-center">
+												<button class="btn border mr-3 google">
+													<img src="./images/google.png" alt="" />
+												</button>
+												<button class="btn border fb pb-8px">
+													<img src="./images/fb.png" alt="" />
+												</button>
+											</div>
+										</div>
+										<hr />
+										<!-- <div class="line"></div> -->
+										<div class="text">
+											Dengan melakukan login, anda setuju dengan Syarat &
+											Ketentuan Supernova Digipack.
+										</div>
+										<div class="text-alert">
+											This site is protected by reCAPTCHA and the Google
+											<span><a href=""> Privacy Policy</a></span> and
+											<span><a href="">Terms of Service</a></span> apply.
+										</div>
+									</div>
+									<div class="show-mobile no-display-web">
+										<h4>Atau masuk dengan</h4>
+										<div class="alternative">
+											<div class="btn-alter d-flex">
+												<button class="btn border mr-3">
+													<img src="./images/google.png" alt="" />
+												</button>
+												<button class="btn border fb pb-8px">
+													<img src="./images/fb.png" alt="" />
+												</button>
+											</div>
+										</div>
+										<h4>
+											Belum punya akun ?
+											<span><a href="">Ayo Daftar</a></span>
+										</h4>
+										<hr />
+										<!-- <div class="line"></div> -->
+										<div class="text">
+											Dengan melakukan login, anda setuju dengan Syarat &
+											Ketentuan Supernova Digipack.
+										</div>
+										<div class="text-alert">
+											This site is protected by reCAPTCHA and the Google
+											<span><a href=""> Privacy Policy</a></span> and
+											<span><a href="">Terms of Service</a></span> apply.
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- end masukan konten disini -->
 		</div>
 
 		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
@@ -879,7 +994,6 @@
 			})(window, document, 'script', 'ga');
 			ga('create', 'UA-XXXXX-X');
 			ga('send', 'pageview');
-
 
 			// user menu
 			let user_panel = document.getElementById('user__panel');

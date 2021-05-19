@@ -125,8 +125,6 @@ $(document).ready(function () {
 });
 //# sourceMappingURL=main.js.map
 
-// custom select
-
 function inputProduk() {
 	var produk = document.getElementById('input-produk-name').value;
 	if (produk.length > 0) {
