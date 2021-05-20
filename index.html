@@ -15,6 +15,14 @@
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/modal.css" />
 		<script src="scripts/modernizr.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<!--[if IE]>
@@ -89,19 +97,21 @@
 			<div class="content-wrapper pt-5 mt-5">
 				<div id="home-slider" class="mt-5 wow fadeInDown" data-wow-delay="0.2s">
 					<div class="container">
-						<div class="slider single-item">
-							<div class="block">
-								<div class="img">
-									<a href="#"
-										><img src="images/banner-1.jpg" alt="" class="img-fluid"
-									/></a>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="images/banner-1.jpg" alt="" class="img-fluid" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="images/banner-1.jpg" alt="" class="img-fluid" />
+									</a>
 								</div>
 							</div>
-							<div class="block">
-								<div class="img">
-									<img src="images/banner-1.jpg" alt="" class="img-fluid" />
-								</div>
-							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>

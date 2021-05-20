@@ -123,7 +123,22 @@ $(document).ready(function () {
 			"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 	});
 });
+
 //# sourceMappingURL=main.js.map
+var swiper = new Swiper('.swiper-container', {
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+// swiper banner index
 
 function inputProduk() {
 	var produk = document.getElementById('input-produk-name').value;
