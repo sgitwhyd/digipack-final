@@ -221,8 +221,8 @@ p {
 
 .rectangle {
 	width: 100%;
-	border: 1px solid #c0c4cd;
-	background: #dfe1e5;
+	border: 1px solid transparent;
+	background: #e6e7eb;
 	border-radius: 3px;
 	padding: 20px;
 }

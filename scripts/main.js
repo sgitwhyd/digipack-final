@@ -125,20 +125,6 @@ $(document).ready(function () {
 });
 
 //# sourceMappingURL=main.js.map
-var swiper = new Swiper('.swiper-container', {
-	spaceBetween: 30,
-	centeredSlides: true,
-	autoplay: {
-		delay: 2500,
-		disableOnInteraction: false,
-	},
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-});
-// swiper banner index
 
 function inputProduk() {
 	var produk = document.getElementById('input-produk-name').value;
@@ -232,8 +218,8 @@ window.addEventListener('click', function (e) {
 	}
 });
 
-// password hide eye
-function myFunc() {
+// daftar password hide eye
+function hidePass() {
 	var togglePassword = document.getElementById('togglePassword');
 	var password = document.getElementById('password');
 	var password_trigger = document.getElementById('password-trigger');
@@ -250,6 +236,7 @@ function myFunc() {
 	});
 }
 
+// modal hide/show password
 let check_password = document.getElementById('password');
 let password__eye = document.getElementById('password-eye');
 let password_icon = document.getElementById('icon-eye');
@@ -263,4 +250,19 @@ password__eye.addEventListener('click', function () {
 		password__eye.innerHTML = `<i class="fa fa-eye-slash" id="icon-eye"></i>`;
 	}
 	return password__eye;
+});
+
+// swiper banner index
+var swiper = new Swiper('.swiper-container', {
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 });
