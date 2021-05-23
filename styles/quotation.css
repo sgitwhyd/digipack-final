@@ -155,68 +155,50 @@ p {
 	font-size: 10px;
 }
 
-.css-button {
-	font-family: 'Poppins', sans-serif;
-	color: #ffffff;
-	font-size: 16px;
-	border-radius: 10px;
-	border: 0px #3866a3 solid;
-	background-color: #0ad35a;
-	cursor: pointer;
-	display: inline-flex;
-	align-items: center;
+.btn-wa-wrapper {
+	border: 1px solid transparent;
 	width: 100%;
-}
-.css-button:hover {
-	background-color: #1dc639;
-	text-decoration: none;
-}
-.css-button-icon {
-	padding: 10px 23px;
-	border-radius: 10px 0 0 10px;
-	background-color: #1dc639;
-}
-.css-button-icon img {
-	position: relative;
-	max-width: 40px;
-}
-.css-button-text {
-	padding: 14px 90px;
-	color: #ffffff;
-	font-weight: 700;
-	font-size: 20px;
+	background: #0ad35b;
+	border-radius: 8px;
 }
 
-.css-button-email {
-	font-family: Arial;
-	color: #ffffff;
-	font-size: 16px;
-	border-radius: 10px;
-	border: 0px #3866a3 solid;
-	background-color: #fd927d;
-	cursor: pointer;
-	display: inline-flex;
-	align-items: center;
+.btn-email-wrapper {
+	border: 1px solid transparent;
 	width: 100%;
+	background: #fd927d;
+	border-radius: 8px;
 }
-.css-button-email:hover {
-	background-color: #f4846d;
-	text-decoration: none;
+
+.btn-wa-wrapper:hover {
+	background-color: #1dc638;
 }
-.css-button-email-icon {
-	padding: 14px 23px;
-	border-radius: 10px 0 0 10px;
-	background-color: #f4846d;
+.btn-email-wrapper:hover {
+	background-color: #f4836d;
 }
-.css-button-email-icon img {
-	position: relative;
-	max-width: 40px;
+
+.wa-icon {
+	background-color: #1dc638;
+	padding: 15px;
+	border-radius: 8px 0px 0px 8px;
 }
-.css-button-email-text {
-	padding: 15px 108px;
-	color: #ffffff;
+
+.email-icon {
+	padding: 15px;
+	border-radius: 8px 0px 0px 8px;
+	background-color: #f4836d;
+}
+
+.btn-bantuan-info {
+	width: 100%;
+	/* background-color: #0ad35b; */
+	color: #fff;
+	font-size: 24px;
 	font-weight: 700;
-	font-size: 20px;
+}
+
+.btn-wa-wrapper a:hover,
+.btn-email-wrapper a:hover {
+	text-decoration: none !important;
 }
 
 .rectangle {
@@ -480,21 +462,6 @@ p {
 		font-size: 16px;
 	}
 
-	.css-button-text {
-		padding: 0px 60px;
-		font-size: 16px;
-	}
-
-	.css-button-icon,
-	.css-button-email-icon {
-		padding: 10px 23px;
-	}
-
-	.css-button-email-text {
-		padding: 16px 65px;
-		font-size: 16px;
-	}
-
 	.mt-4-mobile {
 		margin-top: 1.4rem !important;
 	}
@@ -503,7 +470,7 @@ p {
 		margin-top: 50px;
 	}
 
-	.btn-primaryku {
-		font-size: 16px;
+	.btn-bantuan-info {
+		font-size: 20px;
 	}
 }

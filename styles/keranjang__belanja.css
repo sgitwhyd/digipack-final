@@ -106,6 +106,10 @@
 	font-weight: 600;
 }
 
+.items-value input {
+	color: #312d75;
+}
+
 .btn-delete {
 	border: 1px solid #312d75;
 	box-sizing: border-box;
@@ -168,19 +172,15 @@
 	border-radius: 5px;
 	text-align: center;
 	font-weight: 600;
-	padding: 10px 10px;
+	padding: 20px;
 	font-size: 18px;
 	margin: 0px 20px;
 }
 
 .total-items .send-request:hover {
-	background: linear-gradient(
-		160.02deg,
-		rgb(52, 150, 247) -1.9%,
-		rgb(42, 111, 245) 79.64%
-	);
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
+	color: #312d75;
 	border: 1px solid transparent;
-	color: #ffff;
 }
 
 .total-items a {
@@ -272,9 +272,9 @@
 }
 
 .deal-button:hover {
-	border: 1px solid #fbab20;
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
 	color: #312d75;
-	background: none;
+	border: 1px solid transparent;
 }
 
 .no-display-web {
