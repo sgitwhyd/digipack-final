@@ -324,7 +324,7 @@
 
 	.total-items .send-request {
 		font-weight: 500;
-		font-size: 12px;
+		/* font-size: 12px; */
 	}
 
 	.total-items .send-request img {

@@ -473,4 +473,9 @@ p {
 	.btn-bantuan-info {
 		font-size: 20px;
 	}
+
+	.wa-icon,
+	.email-icon {
+		padding: 15px 25px;
+	}
 }
