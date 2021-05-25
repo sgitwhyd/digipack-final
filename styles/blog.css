@@ -131,7 +131,7 @@
 
 .page-active {
 	border: 1px solid #3496f7;
-	color: #3496f7;
+	color: #3496f7 !important;
 	box-sizing: border-box;
 	border-radius: 6px;
 }
