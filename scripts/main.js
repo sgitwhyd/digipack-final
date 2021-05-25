@@ -252,6 +252,17 @@ password__eye.addEventListener('click', function () {
 	return password__eye;
 });
 
+const artikel__desc = document.querySelectorAll('.article-desc');
+for (let i = 0; i < artikel__desc.length; i++) {
+	// console.log(artikel__desc[i].innerText.length);
+	var desc = artikel__desc[i].innerText.substring(
+		artikel__desc[i].innerText.length - 30,
+		artikel__desc[i].innerText.length
+	);
+	var titik = desc.replace(desc, '...');
+	console.log(artikel__desc[i].innerText + titik);
+}
+
 // swiper banner index
 var swiper = new Swiper('.swiper-container', {
 	spaceBetween: 30,

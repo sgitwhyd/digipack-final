@@ -137,7 +137,7 @@
 }
 
 .items-choose .items-desc {
-	margin-top: 8px;
+	margin-top: -20px;
 	color: #898f9e;
 	font-size: 18px;
 	margin-bottom: 10px;
@@ -293,6 +293,11 @@
 	.items-choose .items-desc {
 		font-size: 9px;
 		width: 115%;
+		margin-top: 8px;
+	}
+
+	.unit-price {
+		margin-top: -20px;
 	}
 
 	.align-center-mobile {

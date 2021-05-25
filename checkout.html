@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>digipack</title>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<!-- Place favicon.ico in the root directory -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css"
+			integrity="sha512-Nqct4Jg8iYwFRs/C34hjAF5og5HONE2mrrUV1JZUswB+YU7vYSPyIjGMq+EAQYDmOsMuO9VIhKpRUa7GjRKVlg=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/vendor.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/modal.css" />
+		<link rel="stylesheet" href="styles/checkout.css" />
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<!--[if IE]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve
+				your experience.
+			</p>
+		<![endif]-->
+		<div id="wrapper" class="position-relative">
+			<div class="overlay d-none"></div>
+			<div class="position-fixed" style="z-index: 999; width: 100%">
+				<div id="header">
+					<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light p-0">
+							<a class="navbar-brand" href="#"
+								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
+							/></a>
+							<button
+								class="navbar-toggler collapsed"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav" id="navbar-nav-mobile">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Beranda</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">Tentang Kami</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="pilih-kemasan.html"
+											>Pilihan Kemasan</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="blog.html">Blog</a>
+									</li>
+								</ul>
+								<div
+									class="
+										menu-act
+										ml-auto
+										mr-5
+										my-2 my-lg-0
+										d-flex
+										align-items-center
+									"
+								>
+									<div class="info-user">
+										<div class="notif-user">
+											<a href="#" class="notification">
+												<img
+													src="./images/Notification.svg"
+													id="notif__user"
+													alt=""
+												/>
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+										<div class="bag-user">
+											<a href="#" class="notification">
+												<img src="./images/Bag.svg" id="bag__user" alt="" />
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+										<div
+											class="user-active d-flex align-items-center"
+											id="user__panel"
+										>
+											<div class="dropdown d-flex">
+												<img
+													src="./images/Profile.svg"
+													style="cursor: pointer"
+													alt=""
+												/>
+												<button class="btn dropdown-toggle">
+													<span class="user">Atika Widjaya</span>
+													<img src="./images/down.svg" class="ml-4" alt="" />
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="user-interaction">
+						<div class="container">
+							<!-- user-action -->
+							<div class="position-relative">
+								<div class="user-action" id="user_notif">
+									<div class="user-action-title">Notifikasi</div>
+									<hr />
+									<div class="user-action-notif">
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+									</div>
+									<div class="user-action-all text-center">
+										<a href="#">Lihat Semua</a>
+									</div>
+								</div>
+							</div>
+							<!-- end user action -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="bag-notif" id="user-bag">
+									<div class="bag-img d-flex justify-content-center">
+										<!-- <img
+								src="./images/standing-pouch.png"
+								width="100px
+                        "
+								alt=""
+							/> -->
+									</div>
+									<div class="posititon-relative">
+										<div
+											class="position-absolute"
+											style="
+												position: absolute;
+												bottom: 30px;
+												padding: 0px 50px;
+											"
+										>
+											<div class="bag-info text-center mt-5">
+												Ops <br />
+												Keranjang Belanja Masih Kosong Nih
+											</div>
+											<div class="d-flex justify-content-center mt-3 mb-3">
+												<div class="btn btn-blue">Yuk Mulai Belanja</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="user-action-panel" id="user-action-panel">
+									<div class="user-info">
+										<img src="./images/Profile.svg" class="mr-3" alt="" />
+										<span>Atika Widjaya</span>
+									</div>
+									<hr />
+									<div class="action-menu">
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/edit-profile-icon.svg"
+													class="mr-3"
+													alt=""
+												/>
+												Edit Profile
+											</a>
+										</div>
+
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/ubah-katasandi.svg"
+													class="mr-3"
+													alt=""
+												/>
+												Ubah Kata Sandi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/transaksi.svg" class="mr-3" alt="" />
+												Transaksi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/alamat.svg" class="mr-3" alt="" />
+												Alamat
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/permainan.svg" class="mr-3" alt="" />
+												Permainan
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/logout.svg" class="mr-3" alt="" />
+												Logout
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- masukan konten disini -->
+		<div class="content-wrapper pt-5 mt-5">
+			<div class="checkout-flow">
+				<div class="container">
+					<div class="d-flex align-items-center justify-content-center">
+						<div class="checkout d-flex flex-column align-items-center mr-5">
+							<img src="./images/checkout-icon.svg" class="icon" alt="" />
+							<div class="checkout-flow-title heading-18-600">Checkout</div>
+						</div>
+						<div class="checkout-flow-line">
+							<img src="./images/line.svg" alt="" />
+						</div>
+						<div class="payment d-flex flex-column align-items-center mx-5">
+							<img src="./images/payment-icon.svg" class="icon" alt="" />
+							<div class="checkout-flow-title heading-18-600 grey">Payment</div>
+						</div>
+						<div class="checkout-flow-line">
+							<img src="./images/line.svg" alt="" />
+						</div>
+						<div
+							class="confirmation d-flex flex-column align-items-center ml-5"
+						>
+							<img src="./images/confirm-icon.svg" class="icon" alt="" />
+							<div class="checkout-flow-title heading-18-600 grey">
+								Confirmation
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-md-7 col-sm-12">
+						<div class="produk-pesanan">
+							<div class="produk-pesanan-title heading-24-600">
+								Produk Pesanan
+							</div>
+							<!-- items -->
+							<div class="produk-pesanan-items d-flex justify-content-between">
+								<div
+									class="
+										produk-img
+										d-flex
+										align-items-center
+										justify-content-center
+									"
+								>
+									<img src="./images/standing-pouch.png" alt="" />
+								</div>
+								<div class="produk-pesanan-info">
+									<div class="produk-name heading-18-600">keripik milenial</div>
+									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
+										Standing Pouch + Zipper
+									</div>
+									<div class="produk-pesanan-kode heading-16-400 grey">
+										OPP Matte20/VMPET12/LLDPE60
+									</div>
+								</div>
+								<div class="produk-pesanan-total">
+									<div class="produk-pesanan-prices heading-18-400">
+										Rp 2.738
+									</div>
+									<div class="produk-pesanan-value my-3 heading-18-400">
+										x 500
+									</div>
+									<div class="produk-pesanan-total-price heading-18-600">
+										Rp 1.369.000
+									</div>
+								</div>
+							</div>
+							<div class="border-bottom"></div>
+							<!-- end items -->
+							<!-- items -->
+							<div class="produk-pesanan-items d-flex justify-content-between">
+								<div
+									class="
+										produk-img
+										d-flex
+										align-items-center
+										justify-content-center
+									"
+								>
+									<img src="./images/standing-pouch.png" alt="" />
+								</div>
+								<div class="produk-pesanan-info">
+									<div class="produk-name heading-18-600">keripik milenial</div>
+									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
+										Standing Pouch + Zipper
+									</div>
+									<div class="produk-pesanan-kode heading-16-400 grey">
+										OPP Matte20/VMPET12/LLDPE60
+									</div>
+								</div>
+								<div class="produk-pesanan-total">
+									<div class="produk-pesanan-prices heading-18-400">
+										Rp 2.738
+									</div>
+									<div class="produk-pesanan-value my-3 heading-18-400">
+										x 500
+									</div>
+									<div class="produk-pesanan-total-price heading-18-600">
+										Rp 1.369.000
+									</div>
+								</div>
+							</div>
+							<div class="border-bottom"></div>
+							<!-- end items -->
+						</div>
+
+						<div class="alamat mt-3">
+							<div class="alamat-title heading-24-600">Alamat Pengiriman</div>
+							<div class="alamat-user d-flex mt-3">
+								<div class="user-info-alamat heading-16-500">
+									<div class="user-nama">Atika Widjaya</div>
+									<div class="user-nohp grey">081283238328</div>
+								</div>
+								<div class="user-alamat mx-4">
+									<div class="alamat-title heading-16-400">Alamat Kantor</div>
+									<div class="alamat-info grey">
+										Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
+										Selatan, Kab. Bekasi 17560
+									</div>
+								</div>
+								<div class="alamat-action">
+									<a href="#" class="heading-16-500">Ubah</a>
+								</div>
+							</div>
+							<div class="btn-action-alamat d-flex justify-content-center mt-4">
+								<div class="btn btn-orange py-3 mr-3 heading-16-500">
+									Tambah Alamat Baru
+								</div>
+								<div class="btn btn-orange py-3 heading-16-500">
+									Pilih Alamat Lain
+								</div>
+							</div>
+						</div>
+
+						<div class="jasa-pengiriman mt-3">
+							<div
+								class="
+									pengiriman-action
+									d-flex
+									justify-content-between
+									align-content-center
+								"
+							>
+								<div class="pengiriman-title heading-24-600">
+									Jasa Pengiriman
+								</div>
+								<div class="cek-ongkir pt-2">
+									<a href="#" class="heading-16-500 primary-color"
+										>Cek Detail Ongkir</a
+									>
+								</div>
+							</div>
+							<div class="pengirman-dropdown mt-3">
+								<a
+									data-toggle="collapse"
+									href="#virtualAccount"
+									role="button"
+									aria-expanded="false"
+									aria-controls="virtualAccount"
+								>
+									<div class="dropdown-wrapper d-flex justify-content-between">
+										<div
+											class="
+												title
+												d-flex
+												align-center-center
+												heading-16-600
+												primary-color
+											"
+										>
+											Pilih Jasa Pengiriman
+										</div>
+										<div class="down d-flex align-items-center">
+											<img
+												src="./images/down-chevron.svg"
+												width="20px"
+												alt=""
+											/>
+										</div>
+									</div>
+								</a>
+
+								<div class="collapse show" id="virtualAccount">
+									<div
+										class="
+											card
+											no-border no-padding-bottom
+											card-body
+											heading-16-400
+										"
+									>
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="flexRadioDefault"
+												id="flexRadioDefault1"
+											/>
+											<label
+												class="
+													form-check-label
+													d-flex
+													align-items-center
+													justify-content-between
+													ml-2
+												"
+												for="flexRadioDefault1"
+											>
+												<div class="ekpedisi-info d-flex align-center-center">
+													<div class="ekpedisi-logo mr-3">
+														<img src="./images/JNE.png" alt="" />
+													</div>
+													<div class="ekpedisi-name pt-1 heading-16-400">
+														JNE
+													</div>
+												</div>
+												<div class="down d-flex align-items-center">
+													<div class="ekpedisi-harga mr-3 heading-16-400">
+														Rp 69.300
+													</div>
+												</div>
+											</label>
+										</div>
+									</div>
+									<div
+										class="
+											card
+											no-border no-padding-bottom
+											card-body
+											heading-16-400
+										"
+									>
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="flexRadioDefault"
+												id="flexRadioDefault2"
+											/>
+											<label
+												class="
+													form-check-label
+													d-flex
+													align-items-center
+													justify-content-between
+													ml-2
+												"
+												for="flexRadioDefault2"
+											>
+												<div class="ekpedisi-info d-flex align-center-center">
+													<div class="ekpedisi-logo mr-3">
+														<img src="./images/JNT.png" alt="" />
+													</div>
+													<div class="ekpedisi-name pt-1 heading-16-400">
+														JNT
+													</div>
+												</div>
+												<div class="down d-flex align-items-center">
+													<div class="ekpedisi-harga mr-3 heading-16-400">
+														Rp 69.300
+													</div>
+												</div>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="catatan-pemesanan mt-3">
+							<div class="catatan-pemesanan-title heading-24-600">
+								Catatan Pemesanan
+							</div>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								rows="3"
+							></textarea>
+							<div
+								class="
+									catatan-pemesanan-info
+									text-right
+									heading-16-400
+									grey
+									mt-3
+								"
+							>
+								0/50 Karakter
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-12">
+						<div class="detail-pembayaran">
+							<div class="detail-pembayaran-title heading-24-600">
+								Detail pembayaran
+							</div>
+							<div class="d-flex justify-content-between pembayaran-content">
+								<div class="detail-pembayaran-menu heading-18-400 grey">
+									<div class="total-harga-produk">Total Harga Produk</div>
+									<div class="potongan-harga my-3">Potongan Harga</div>
+									<div class="ongkos-kirim">
+										Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
+									</div>
+								</div>
+								<div class="detail-pembayaran-harga heading-18-400">
+									<div class="total-harga">Rp 2.738.000</div>
+									<div class="diskon my-3">Rp 0</div>
+									<div class="ongkir">Rp 69.300</div>
+								</div>
+							</div>
+							<hr />
+							<div
+								class="
+									produk-total
+									d-flex
+									justify-content-between
+									heading-18-600
+								"
+							>
+								<div class="total-pembayaran">Total Pembayaran</div>
+								<div class="total-harga-produk-all">Rp 2.807.300</div>
+							</div>
+							<div class="d-flex justify-content-center">
+								<a href="payment.html" style="width: 100%">
+									<div class="btn btn-primaryku heading-20-500">
+										Pilih Metode Pembayaran
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function (b, o, i, l, e, r) {
+				b.GoogleAnalyticsObject = l;
+				b[l] ||
+					(b[l] = function () {
+						(b[l].q = b[l].q || []).push(arguments);
+					});
+				b[l].l = +new Date();
+				e = o.createElement(i);
+				r = o.getElementsByTagName(i)[0];
+				e.src = 'https://www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e, r);
+			})(window, document, 'script', 'ga');
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+
+			// user menu
+			let user_panel = document.getElementById('user__panel');
+			let bag_user = document.getElementById('bag__user');
+			let notif_user = document.getElementById('notif__user');
+			// user bag dropdown
+			let user_panel_action = document.getElementById('user-action-panel');
+			let user_bag = document.getElementById('user-bag');
+			let user_notif = document.getElementById('user_notif');
+			let overlay = document.getElementById('overlay');
+
+			user_panel.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			bag_user.addEventListener('click', function () {
+				user_bag.classList.toggle('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_bag.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			notif_user.addEventListener('click', function () {
+				user_notif.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_notif.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			overlay.addEventListener('click', function () {
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+			});
+
+			// selcect
+			var x, i, j, l, ll, selElmnt, a, b, c;
+			/*look for any elements with the class "custom-select":*/
+			x = document.getElementsByClassName('custom-select');
+			l = x.length;
+			for (i = 0; i < l; i++) {
+				selElmnt = x[i].getElementsByTagName('select')[0];
+				ll = selElmnt.length;
+				/*for each element, create a new DIV that will act as the selected item:*/
+				a = document.createElement('DIV');
+				a.setAttribute('class', 'select-selected');
+				a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+				x[i].appendChild(a);
+				/*for each element, create a new DIV that will contain the option list:*/
+				b = document.createElement('DIV');
+				b.setAttribute('class', 'select-items select-hide');
+				for (j = 1; j < ll; j++) {
+					/*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+					c = document.createElement('DIV');
+					c.innerHTML = selElmnt.options[j].innerHTML;
+					c.addEventListener('click', function (e) {
+						/*when an item is clicked, update the original select box,
+        and the selected item:*/
+						var y, i, k, s, h, sl, yl;
+						s = this.parentNode.parentNode.getElementsByTagName('select')[0];
+						sl = s.length;
+						h = this.parentNode.previousSibling;
+						for (i = 0; i < sl; i++) {
+							if (s.options[i].innerHTML == this.innerHTML) {
+								s.selectedIndex = i;
+								h.innerHTML = this.innerHTML;
+								y = this.parentNode.getElementsByClassName('same-as-selected');
+								yl = y.length;
+								for (k = 0; k < yl; k++) {
+									y[k].removeAttribute('class');
+								}
+								this.setAttribute('class', 'same-as-selected');
+								console.log(s.value);
+								break;
+							}
+						}
+						h.click();
+					});
+					b.appendChild(c);
+				}
+				x[i].appendChild(b);
+				a.addEventListener('click', function (e) {
+					/*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+					e.stopPropagation();
+					closeAllSelect(this);
+					this.nextSibling.classList.toggle('select-hide');
+					this.classList.toggle('select-arrow-active');
+				});
+			}
+			function closeAllSelect(elmnt) {
+				/*a function that will close all select boxes in the document,
+  except the current select box:*/
+				var x,
+					y,
+					i,
+					xl,
+					yl,
+					custom_select,
+					arrNo = [];
+				x = document.getElementsByClassName('select-items');
+				y = document.getElementsByClassName('select-selected');
+				custom_select = document.getElementsByClassName('custom-select');
+				xl = x.length;
+				yl = y.length;
+				for (i = 0; i < yl; i++) {
+					if (elmnt == y[i]) {
+						arrNo.push(i);
+						custom_select[i].classList.add('border-blue');
+						y[i].classList.toggle('bg-grey');
+					} else {
+						y[i].classList.remove('select-arrow-active');
+					}
+				}
+				for (i = 0; i < xl; i++) {
+					if (arrNo.indexOf(i)) {
+						x[i].classList.add('select-hide');
+					}
+				}
+			}
+			/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+			document.addEventListener('click', closeAllSelect);
+		</script>
+		<script src="scripts/vendor.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>

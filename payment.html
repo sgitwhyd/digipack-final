@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>digipack</title>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<!-- Place favicon.ico in the root directory -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css"
+			integrity="sha512-Nqct4Jg8iYwFRs/C34hjAF5og5HONE2mrrUV1JZUswB+YU7vYSPyIjGMq+EAQYDmOsMuO9VIhKpRUa7GjRKVlg=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/vendor.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/modal.css" />
+		<link rel="stylesheet" href="styles/checkout.css" />
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<!--[if IE]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve
+				your experience.
+			</p>
+		<![endif]-->
+		<div id="wrapper" class="position-relative">
+			<div class="overlay d-none"></div>
+			<div class="position-fixed" style="z-index: 999; width: 100%">
+				<div id="header">
+					<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light p-0">
+							<a class="navbar-brand" href="#"
+								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
+							/></a>
+							<button
+								class="navbar-toggler collapsed"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav" id="navbar-nav-mobile">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Beranda</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">Tentang Kami</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="pilih-kemasan.html"
+											>Pilihan Kemasan</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="blog.html">Blog</a>
+									</li>
+								</ul>
+								<div
+									class="
+										menu-act
+										ml-auto
+										mr-5
+										my-2 my-lg-0
+										d-flex
+										align-items-center
+									"
+								>
+									<div class="info-user">
+										<div class="notif-user">
+											<a href="#" class="notification">
+												<img
+													src="./images/Notification.svg"
+													id="notif__user"
+													alt=""
+												/>
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+										<div class="bag-user">
+											<a href="#" class="notification">
+												<img src="./images/Bag.svg" id="bag__user" alt="" />
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+										<div
+											class="user-active d-flex align-items-center"
+											id="user__panel"
+										>
+											<div class="dropdown d-flex">
+												<img
+													src="./images/Profile.svg"
+													style="cursor: pointer"
+													alt=""
+												/>
+												<button class="btn dropdown-toggle">
+													<span class="user">Atika Widjaya</span>
+													<img src="./images/down.svg" class="ml-4" alt="" />
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="user-interaction">
+						<div class="container">
+							<!-- user-action -->
+							<div class="position-relative">
+								<div class="user-action" id="user_notif">
+									<div class="user-action-title">Notifikasi</div>
+									<hr />
+									<div class="user-action-notif">
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+									</div>
+									<div class="user-action-all text-center">
+										<a href="#">Lihat Semua</a>
+									</div>
+								</div>
+							</div>
+							<!-- end user action -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="bag-notif" id="user-bag">
+									<div class="bag-img d-flex justify-content-center">
+										<!-- <img
+								src="./images/standing-pouch.png"
+								width="100px
+                        "
+								alt=""
+							/> -->
+									</div>
+									<div class="posititon-relative">
+										<div
+											class="position-absolute"
+											style="
+												position: absolute;
+												bottom: 30px;
+												padding: 0px 50px;
+											"
+										>
+											<div class="bag-info text-center mt-5">
+												Ops <br />
+												Keranjang Belanja Masih Kosong Nih
+											</div>
+											<div class="d-flex justify-content-center mt-3 mb-3">
+												<div class="btn btn-blue">Yuk Mulai Belanja</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="user-action-panel" id="user-action-panel">
+									<div class="user-info">
+										<img src="./images/Profile.svg" class="mr-3" alt="" />
+										<span>Atika Widjaya</span>
+									</div>
+									<hr />
+									<div class="action-menu">
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/edit-profile-icon.svg"
+													class="mr-3"
+													alt=""
+												/>
+												Edit Profile
+											</a>
+										</div>
+
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/ubah-katasandi.svg"
+													class="mr-3"
+													alt=""
+												/>
+												Ubah Kata Sandi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/transaksi.svg" class="mr-3" alt="" />
+												Transaksi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/alamat.svg" class="mr-3" alt="" />
+												Alamat
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/permainan.svg" class="mr-3" alt="" />
+												Permainan
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/logout.svg" class="mr-3" alt="" />
+												Logout
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- masukan konten disini -->
+		<div class="content-wrapper pt-5 mt-5">
+			<div class="checkout-flow">
+				<div class="container">
+					<div class="d-flex align-items-center justify-content-center">
+						<div class="checkout d-flex flex-column align-items-center mr-5">
+							<img src="./images/checkout-icon.svg" class="icon" alt="" />
+							<div class="checkout-flow-title heading-18-600">Checkout</div>
+						</div>
+						<div class="checkout-flow-line">
+							<img src="./images/line-icon-fill.svg" alt="" />
+						</div>
+						<div class="payment d-flex flex-column align-items-center mx-5">
+							<img src="./images/payment-fill.svg" class="icon" alt="" />
+							<div class="checkout-flow-title heading-18-600">Payment</div>
+						</div>
+						<div class="checkout-flow-line">
+							<img src="./images/line.svg" alt="" />
+						</div>
+						<div
+							class="confirmation d-flex flex-column align-items-center ml-5"
+						>
+							<img src="./images/confirm-icon.svg" class="icon" alt="" />
+							<div class="checkout-flow-title heading-18-600 grey">
+								Confirmation
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-md-7 col-sm-12">
+						<div class="produk-pesanan">
+							<div class="produk-pesanan-title heading-24-600">
+								Produk Pesanan
+							</div>
+							<!-- items -->
+							<div class="produk-pesanan-items d-flex justify-content-between">
+								<div
+									class="
+										produk-img
+										d-flex
+										align-items-center
+										justify-content-center
+									"
+								>
+									<img src="./images/standing-pouch.png" alt="" />
+								</div>
+								<div class="produk-pesanan-info">
+									<div class="produk-name heading-18-600">keripik milenial</div>
+									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
+										Standing Pouch + Zipper
+									</div>
+									<div class="produk-pesanan-kode heading-16-400 grey">
+										OPP Matte20/VMPET12/LLDPE60
+									</div>
+								</div>
+								<div class="produk-pesanan-total">
+									<div class="produk-pesanan-prices heading-18-400">
+										Rp 2.738
+									</div>
+									<div class="produk-pesanan-value my-3 heading-18-400">
+										x 500
+									</div>
+									<div class="produk-pesanan-total-price heading-18-600">
+										Rp 1.369.000
+									</div>
+								</div>
+							</div>
+							<div class="border-bottom"></div>
+							<!-- end items -->
+							<!-- items -->
+							<div class="produk-pesanan-items d-flex justify-content-between">
+								<div
+									class="
+										produk-img
+										d-flex
+										align-items-center
+										justify-content-center
+									"
+								>
+									<img src="./images/standing-pouch.png" alt="" />
+								</div>
+								<div class="produk-pesanan-info">
+									<div class="produk-name heading-18-600">keripik milenial</div>
+									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
+										Standing Pouch + Zipper
+									</div>
+									<div class="produk-pesanan-kode heading-16-400 grey">
+										OPP Matte20/VMPET12/LLDPE60
+									</div>
+								</div>
+								<div class="produk-pesanan-total">
+									<div class="produk-pesanan-prices heading-18-400">
+										Rp 2.738
+									</div>
+									<div class="produk-pesanan-value my-3 heading-18-400">
+										x 500
+									</div>
+									<div class="produk-pesanan-total-price heading-18-600">
+										Rp 1.369.000
+									</div>
+								</div>
+							</div>
+							<div class="border-bottom"></div>
+							<!-- end items -->
+						</div>
+
+						<div class="kode-promo mt-3">
+							<div class="kode-promo-title heading-24-600">Kode Promo</div>
+							<div class="use-kode d-flex mt-3">
+								<div class="input-group-lg">
+									<input
+										type="text"
+										name=""
+										class="form-control"
+										placeholder="Masukan kode promo"
+										id=""
+									/>
+								</div>
+								<div
+									class="btn btn-orange py-2 ml-3 heading-16-500"
+									style="width: 60%"
+								>
+									Gunakan
+								</div>
+							</div>
+						</div>
+
+						<div class="metode-pembayaran mt-3">
+							<div class="metode-pembayaran-title heading-24-600">
+								Metode Pembayaran
+							</div>
+							<div class="metode-pembayaran-menu mt-3">
+								<div class="accordion" id="accordionExample">
+									<div class="virtual-account">
+										<a
+											data-toggle="collapse"
+											href="#virtualAccount"
+											role="button"
+											aria-expanded="false"
+											aria-controls="virtualAccount"
+										>
+											<div
+												class="dropdown-wrapper d-flex justify-content-between"
+											>
+												<div
+													class="
+														metode-pembayaran-list
+														heading-16-600
+														primary-color
+													"
+												>
+													Virtual Account
+												</div>
+												<div class="down d-flex align-items-center">
+													<img
+														src="./images/down-chevron.svg"
+														width="20px"
+														alt=""
+													/>
+												</div>
+											</div>
+										</a>
+										<div
+											class="collapse show"
+											id="virtualAccount"
+											data-parent="#accordionExample"
+										>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault1"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault1"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault2"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault2"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault3"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault3"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault4"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault4"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault5"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault5"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bank-transfer mt-3">
+										<a
+											data-toggle="collapse"
+											href="#bankTransfer"
+											role="button"
+											aria-expanded="false"
+											aria-controls="bankTransfer"
+										>
+											<div
+												class="dropdown-wrapper d-flex justify-content-between"
+											>
+												<div
+													class="
+														metode-pembayaran-list
+														heading-16-600
+														primary-color
+													"
+												>
+													Bank Transfer
+												</div>
+												<div
+													class="ekpedisi-info-price d-flex align-items-center"
+												>
+													<img
+														src="./images/down-chevron.svg"
+														width="20px"
+														alt=""
+													/>
+												</div>
+											</div>
+										</a>
+										<div
+											id="bankTransfer"
+											class="collapse"
+											aria-labelledby="headingTwo"
+											data-parent="#accordionExample"
+										>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault6"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault6"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault6"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault6"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault7"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault7"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault8"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault8"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault9"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault9"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="Kartu-kredit mt-3">
+										<a
+											data-toggle="collapse"
+											href="#kartuKredit"
+											role="button"
+											aria-expanded="false"
+											aria-controls="kartuKredit"
+										>
+											<div
+												class="dropdown-wrapper d-flex justify-content-between"
+											>
+												<div
+													class="
+														metode-pembayaran-list
+														heading-16-600
+														primary-color
+													"
+												>
+													Kartu Kredit
+												</div>
+												<div
+													class="ekpedisi-info-price d-flex align-items-center"
+												>
+													<img
+														src="./images/down-chevron.svg"
+														width="20px"
+														alt=""
+													/>
+												</div>
+											</div>
+										</a>
+										<div
+											id="kartuKredit"
+											class="collapse"
+											aria-labelledby="headingThree"
+											data-parent="#accordionExample"
+										>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault10"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault10"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault11"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault11"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault12"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault12"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault13"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault13"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+											<div class="card card-body">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="radio"
+														name="flexRadioDefault"
+														id="flexRadioDefault14"
+													/>
+													<label
+														class="
+															form-check-label
+															d-flex
+															align-items-center
+															justify-content-between
+															ml-2
+														"
+														for="flexRadioDefault14"
+													>
+														<div class="bank-name heading-18-400">
+															ATM Bersama
+														</div>
+														<img
+															src="./images/ATM Bersama.svg"
+															class="mr-3"
+															alt=""
+														/>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-12">
+						<div class="detail-pembayaran">
+							<div class="detail-pembayaran-title heading-24-600">
+								Detail pembayaran
+							</div>
+							<div class="d-flex justify-content-between pembayaran-content">
+								<div class="detail-pembayaran-menu heading-18-400 grey">
+									<div class="total-harga-produk">Total Harga Produk</div>
+									<div class="potongan-harga my-3">Potongan Harga</div>
+									<div class="ongkos-kirim">
+										Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
+									</div>
+								</div>
+								<div class="detail-pembayaran-harga heading-18-400">
+									<div class="total-harga">Rp 2.738.000</div>
+									<div class="diskon my-3">Rp 0</div>
+									<div class="ongkir">Rp 69.300</div>
+								</div>
+							</div>
+							<hr />
+							<div
+								class="
+									produk-total
+									d-flex
+									justify-content-between
+									heading-18-600
+								"
+							>
+								<div class="total-pembayaran">Total Pembayaran</div>
+								<div class="total-harga-produk-all">Rp 2.807.300</div>
+							</div>
+							<div class="d-flex justify-content-center">
+								<a href="payment-02.html" style="width: 100%">
+									<div class="btn btn-primaryku heading-20-500">
+										Pilih Metode Pembayaran
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function (b, o, i, l, e, r) {
+				b.GoogleAnalyticsObject = l;
+				b[l] ||
+					(b[l] = function () {
+						(b[l].q = b[l].q || []).push(arguments);
+					});
+				b[l].l = +new Date();
+				e = o.createElement(i);
+				r = o.getElementsByTagName(i)[0];
+				e.src = 'https://www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e, r);
+			})(window, document, 'script', 'ga');
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+
+			// user menu
+			let user_panel = document.getElementById('user__panel');
+			let bag_user = document.getElementById('bag__user');
+			let notif_user = document.getElementById('notif__user');
+			// user bag dropdown
+			let user_panel_action = document.getElementById('user-action-panel');
+			let user_bag = document.getElementById('user-bag');
+			let user_notif = document.getElementById('user_notif');
+			let overlay = document.getElementById('overlay');
+
+			user_panel.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			bag_user.addEventListener('click', function () {
+				user_bag.classList.toggle('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_bag.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			notif_user.addEventListener('click', function () {
+				user_notif.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_notif.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			overlay.addEventListener('click', function () {
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+			});
+		</script>
+		<script src="scripts/vendor.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>

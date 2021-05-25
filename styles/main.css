@@ -9,14 +9,89 @@ body {
 	font-size: 24px !important;
 	font-weight: 700 !important;
 }
+.heading-24-600 {
+	font-size: 24px !important;
+	font-weight: 600 !important;
+}
+
+.heading-20-500 {
+	font-size: 20px !important;
+	font-weight: 500 !important;
+}
+.heading-20-600 {
+	font-size: 20px !important;
+	font-weight: 600 !important;
+}
 
 .heading-24-400 {
 	font-size: 24px !important;
 	font-weight: 400 !important;
 }
 
+.heading-18-600 {
+	font-size: 18px !important;
+	font-weight: 600 !important;
+}
+
+.heading-16-400 {
+	font-size: 16px !important;
+	font-weight: 400 !important;
+}
+
+.heading-16-500 {
+	font-size: 16px !important;
+	font-weight: 500 !important;
+}
+.heading-16-600 {
+	font-size: 16px !important;
+	font-weight: 600 !important;
+}
+.heading-14-600 {
+	font-size: 14px !important;
+	font-weight: 600 !important;
+}
+
+.heading-18-400 {
+	font-size: 18px !important;
+	font-weight: 400 !important;
+}
+.heading-18-500 {
+	font-size: 18px !important;
+	font-weight: 400 !important;
+}
+
+.heading-20-500 {
+	font-size: 20px !important;
+	font-weight: 500 !important;
+}
+
 .grey {
 	color: #898f9e !important;
+}
+
+.yellow {
+	color: #fbab20 !important;
+}
+
+.black {
+	color: #22262a !important;
+}
+
+@media (max-width: 576px) {
+	.heading-12-400 {
+		font-size: 12px !important;
+		font-weight: 400 !important;
+	}
+
+	.heading-14-600 {
+		font-size: 14px !important;
+		font-weight: 600 !important;
+	}
+
+	.column-mobile {
+		display: flex !important;
+		flex-direction: column !important;
+	}
 }
 
 .mt-30px-mobile {
@@ -619,7 +694,7 @@ section.pabrik .right .info a:hover {
 
 .btn-blue:hover {
 	border: 1px solid #fbab20;
-	background: none;
+	background: #fbab20;
 	color: #312d75;
 }
 

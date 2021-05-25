@@ -361,7 +361,7 @@ p {
 }
 
 .btn-primaryku:hover {
-	background: none;
+	background: #ffc90a;
 	border: 1px solid #ffc90a;
 	padding: 18px 0px !important;
 	color: #312d75;
