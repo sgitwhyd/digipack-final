@@ -18,6 +18,10 @@ body {
 	font-size: 20px !important;
 	font-weight: 500 !important;
 }
+.heading-20-400 {
+	font-size: 20px !important;
+	font-weight: 400 !important;
+}
 .heading-20-600 {
 	font-size: 20px !important;
 	font-weight: 600 !important;
@@ -45,6 +49,10 @@ body {
 .heading-16-600 {
 	font-size: 16px !important;
 	font-weight: 600 !important;
+}
+.heading-14-400 {
+	font-size: 16px !important;
+	font-weight: 400 !important;
 }
 .heading-14-600 {
 	font-size: 14px !important;
@@ -694,7 +702,7 @@ section.pabrik .right .info a:hover {
 
 .btn-blue:hover {
 	border: 1px solid #fbab20;
-	background: #fbab20;
+	background: #fee21b;
 	color: #312d75;
 }
 
