@@ -361,7 +361,7 @@ p {
 }
 
 .btn-primaryku:hover {
-	background: #fee21b;
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
 	border: 1px solid #ffc90a;
 	padding: 18px 0px !important;
 	color: #312d75;

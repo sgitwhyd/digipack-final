@@ -352,6 +352,7 @@
 											role="button"
 											aria-expanded="false"
 											aria-controls="virtualAccount"
+											id="open-trigger"
 										>
 											<div
 												class="dropdown-wrapper d-flex justify-content-between"
@@ -370,6 +371,8 @@
 														src="./images/down-chevron.svg"
 														width="20px"
 														alt=""
+														class="default open"
+														id="arrow-icon"
 													/>
 												</div>
 											</div>
@@ -423,6 +426,7 @@
 											role="button"
 											aria-expanded="false"
 											aria-controls="bankTransfer"
+											id="open-trigger2"
 										>
 											<div
 												class="dropdown-wrapper d-flex justify-content-between"
@@ -441,6 +445,8 @@
 														src="./images/down-chevron.svg"
 														width="20px"
 														alt=""
+														class="default"
+														id="arrow-icon2"
 													/>
 												</div>
 											</div>
@@ -496,6 +502,7 @@
 											role="button"
 											aria-expanded="false"
 											aria-controls="kartuKredit"
+											id="open-trigger3"
 										>
 											<div
 												class="dropdown-wrapper d-flex justify-content-between"
@@ -514,6 +521,8 @@
 														src="./images/down-chevron.svg"
 														width="20px"
 														alt=""
+														class="default"
+														id="arrow-icon3"
 													/>
 												</div>
 											</div>
@@ -757,6 +766,48 @@
 				user_panel_action.classList.remove('show-overlay');
 				user_notif.classList.remove('show-overlay');
 				overlay.classList.remove('show-overlay');
+			});
+
+			const open_trigger = document.getElementById('open-trigger');
+			const open_param = document.getElementById('virtualAccount');
+			const arrow_icon = document.getElementById('arrow-icon');
+			const arrow_icon2 = document.getElementById('arrow-icon2');
+			const arrow_icon3 = document.getElementById('arrow-icon3');
+
+			open_trigger.addEventListener('click', function () {
+				if (!open_param.classList.contains('show')) {
+					console.log(1);
+					arrow_icon.classList.add('open');
+					arrow_icon2.classList.remove('open');
+					arrow_icon3.classList.remove('open');
+				} else {
+					arrow_icon.classList.remove('open');
+				}
+			});
+
+			const open_trigger2 = document.getElementById('open-trigger2');
+			const open_param2 = document.getElementById('bankTransfer');
+			open_trigger2.addEventListener('click', function () {
+				if (open_param2.classList.contains('show')) {
+					console.log(1);
+					arrow_icon2.classList.remove('open');
+				} else {
+					arrow_icon2.classList.add('open');
+					arrow_icon.classList.remove('open');
+					arrow_icon3.classList.remove('open');
+				}
+			});
+			const open_trigger3 = document.getElementById('open-trigger3');
+			const open_param3 = document.getElementById('kartuKredit');
+			open_trigger3.addEventListener('click', function () {
+				if (open_param3.classList.contains('show')) {
+					console.log(1);
+					arrow_icon3.classList.remove('open');
+				} else {
+					arrow_icon3.classList.add('open');
+					arrow_icon.classList.remove('open');
+					arrow_icon2.classList.remove('open');
+				}
 			});
 		</script>
 		<script src="scripts/vendor.js"></script>

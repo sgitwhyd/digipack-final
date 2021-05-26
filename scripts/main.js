@@ -174,6 +174,62 @@ function inputPassword() {
 	return input;
 }
 
+// page checkout ganti warna ketika input diisi
+function fillInput() {
+	const inputAlamat = document.querySelectorAll('.inputAlamat');
+	for (let ia = 0; ia < inputAlamat.length; ia++) {
+		if (inputAlamat[ia].value.length > 0) {
+			inputAlamat[ia].classList.add('bg-grey');
+			inputAlamat[ia].classList.add('border-blue');
+		} else if (inputAlamat[ia].value.length <= 0) {
+			inputAlamat[ia].classList.remove('bg-grey');
+			inputAlamat[ia].classList.remove('border-blue');
+		}
+	}
+}
+
+// page checkout modal tambah alamat
+function getAlamat() {
+	var alamat__sebagai = document.getElementById('alamatSebagai').value;
+	var nama__penerima = document.getElementById('namaPenerima').value;
+	var no__handphone = document.getElementById('noHP').value;
+	var kecamatan = document.getElementById('kecamatan').value;
+	var kode_pos = document.getElementById('kodepos').value;
+	var alamat_lengkap = document.getElementById('alamatLengkap').value;
+
+	const newAlamat = document.getElementById('newAlamat');
+	const noAlamat = document.getElementById('no-alamat');
+	noAlamat.classList.add('ds-none');
+
+	newAlamat.innerHTML += `<div class="alamat-user-wrapper mt-3">
+								<div class="alamat-tipe heading-14-600">${alamat__sebagai}</div>
+								<hr />
+								<div class="d-flex justify-content-between">
+									<div class="user-info-modal heading-16-500">
+										<div class="user-name">${nama__penerima}</div>
+										<div class="no-user grey">${no__handphone}</div>
+									</div>
+									<div class="user-alamat heading-16-400 grey">
+										${alamat_lengkap}
+									</div>
+								</div>
+							</div>`;
+
+	document.getElementById('alamatSebagai').value = '';
+	document.getElementById('namaPenerima').value = '';
+	document.getElementById('noHP').value = '';
+	document.getElementById('kecamatan').value = '';
+	document.getElementById('kodepos').value = '';
+	document.getElementById('alamatLengkap').value = '';
+
+	const inputAlamat = document.querySelectorAll('.inputAlamat');
+	for (let ia = 0; ia < inputAlamat.length; ia++) {
+		inputAlamat[ia].classList.remove('bg-grey');
+		inputAlamat[ia].classList.remove('border-blue');
+	}
+}
+// end page checkout modal tambah alamat
+
 for (const dropdown of document.querySelectorAll('.custom-select-wrapper')) {
 	dropdown.addEventListener('click', function () {
 		this.querySelector('.custom-select').classList.toggle('open');
@@ -251,17 +307,6 @@ password__eye.addEventListener('click', function () {
 	}
 	return password__eye;
 });
-
-const artikel__desc = document.querySelectorAll('.article-desc');
-for (let i = 0; i < artikel__desc.length; i++) {
-	// console.log(artikel__desc[i].innerText.length);
-	var desc = artikel__desc[i].innerText.substring(
-		artikel__desc[i].innerText.length - 30,
-		artikel__desc[i].innerText.length
-	);
-	var titik = desc.replace(desc, '...');
-	console.log(artikel__desc[i].innerText + titik);
-}
 
 // swiper banner index
 var swiper = new Swiper('.swiper-container', {

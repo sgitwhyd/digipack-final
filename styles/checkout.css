@@ -105,7 +105,7 @@
 }
 
 .btn-primaryku:hover {
-	background: none;
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
 	border: 1px solid #ffc90a;
 	padding: 18px 0px !important;
 	color: #312d75;
@@ -214,4 +214,201 @@
 	width: 100%;
 	color: #fff;
 	padding: 15px;
+}
+
+.open {
+	transform: rotate(180deg);
+	transition: all ease-in-out 0.5s;
+}
+
+.default {
+	transition: all ease-in-out 0.5s;
+}
+
+/* modal alamat baru */
+
+.modal-content {
+	padding: 30px;
+}
+
+.modal-title {
+	padding: 0 !important;
+}
+
+.modal-footer {
+	border-top: none;
+}
+
+.alamat-user-wrapper {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 20px 30px;
+	cursor: pointer;
+}
+
+.alamat-user-wrapper:hover {
+	background-color: #f0f1f1;
+	border: 1px solid transparent;
+}
+
+.user-alamat {
+	width: 60%;
+}
+
+.alamat-choose {
+	background: #f0f1f1;
+}
+
+.modal-btn {
+	padding: 15px;
+	margin: 0px 200px;
+}
+.close img {
+	width: 20px;
+	color: #312d75 !important;
+}
+
+.no-alamat-wrapper {
+	margin-top: 250px;
+	margin-bottom: 10px;
+}
+
+.ds-none {
+	display: none;
+}
+
+.modal-body form {
+	padding: 0 !important;
+}
+
+.modal-tambah-alamat label {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.modal-body form .form-group input::placeholder,
+.modal-body form .form-group textarea::placeholder {
+	font-size: 16px !important;
+	font-weight: 300;
+	color: #c0c4cd;
+}
+
+.modal-body form .form-group textarea {
+	color: #898f9e;
+}
+
+.modal-body form .form-group input {
+	font-size: 16px;
+	color: #898f9e;
+}
+
+.modal-body a:hover {
+	text-decoration: none;
+}
+
+.modal-body .ongkir {
+	color: #312d75;
+}
+/* end modal alamat baru */
+
+/* dropdown option select */
+.custom-select {
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	max-width: 100%;
+	padding: 1.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	/* background: #fff
+		url(
+			data:image/svg + xml,
+			%3csvgxmlns='http://www.w3.org/2000/svg'width='4'height='5'viewBox='0 0 4 5'%3e%3cpathfill='%23343a40'd='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e
+		)
+		right 0.75rem center/8px 10px no-repeat; */
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+.select-items div {
+	padding: 15px 18px !important;
+}
+
+.select-selected {
+	color: #898f9e !important;
+	margin-top: -12px !important;
+	padding: 0px !important;
+}
+
+/* .select-selected {
+	background-color: #ffff;
+} */
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+	position: absolute;
+	content: '';
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	/* top: 7px; */
+}
+
+.border-blue {
+	border: 1px solid #1891f6;
+	background: #e8f0fe;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+	color: #312d75;
+	padding: 2px 16px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.bg-grey {
+	background: #e8f0fe;
+}
+
+/*style items (options):*/
+.select-items {
+	position: absolute;
+	background: #ffffff;
+	box-shadow: 0px 2px 8px rgba(103, 122, 132, 0.12);
+	border-radius: 6px;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+	background-color: #eaf5ff;
 }
