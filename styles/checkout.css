@@ -476,4 +476,26 @@
 	.btn-action {
 		margin-top: 0px !important;
 	}
+
+	.confirmation-info img {
+		width: 200px;
+	}
+	.modal-btn {
+		margin: 0;
+	}
+
+	.ekpedisi-name,
+	.estimasi,
+	.ekpedisi-harga {
+		padding-top: 4px;
+		font-size: 10px !important;
+		font-weight: 400 !important;
+	}
+
+	.dropdown-wrapper .title,
+	.ongkir {
+		font-size: 10px !important;
+		font-weight: 400 !important;
+		padding-top: 5px !important;
+	}
 }

@@ -100,6 +100,10 @@ body {
 		font-size: 12px !important;
 		font-weight: 500 !important;
 	}
+	.heading-14-500 {
+		font-size: 14px !important;
+		font-weight: 500 !important;
+	}
 	.heading-12-600 {
 		font-size: 12px !important;
 		font-weight: 600 !important;
@@ -138,6 +142,10 @@ body {
 	.heading-10-500 {
 		font-size: 10px !important;
 		font-weight: 500 !important;
+	}
+
+	.grey-mobile {
+		color: #c0c4cd !important;
 	}
 }
 
