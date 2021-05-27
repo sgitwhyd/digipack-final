@@ -54,9 +54,14 @@ body {
 	font-size: 16px !important;
 	font-weight: 400 !important;
 }
-.heading-14-600 {
+/* .heading-14-600 {
 	font-size: 14px !important;
 	font-weight: 600 !important;
+} */
+
+.heading-10-400-web {
+	font-size: 10px !important;
+	font-weight: 400 !important;
 }
 
 .heading-18-400 {
@@ -91,6 +96,15 @@ body {
 		font-weight: 400 !important;
 	}
 
+	.heading-12-500 {
+		font-size: 12px !important;
+		font-weight: 500 !important;
+	}
+	.heading-12-600 {
+		font-size: 12px !important;
+		font-weight: 600 !important;
+	}
+
 	.heading-14-600 {
 		font-size: 14px !important;
 		font-weight: 600 !important;
@@ -101,14 +115,29 @@ body {
 		font-weight: 400 !important;
 	}
 
-	.heading-20-600 {
+	/* .heading-20-600 {
 		font-size: 20px !important;
 		font-weight: 600 !important;
-	}
+	} */
 
 	.column-mobile {
 		display: flex !important;
 		flex-direction: column !important;
+	}
+
+	.heading-10-600 {
+		font-size: 10px !important;
+		font-weight: 600 !important;
+	}
+
+	.heading-10-400 {
+		font-size: 10px !important;
+		font-weight: 400 !important;
+	}
+
+	.heading-10-500 {
+		font-size: 10px !important;
+		font-weight: 500 !important;
 	}
 }
 
@@ -121,7 +150,7 @@ body {
 }
 
 .no-display-web {
-	display: none;
+	display: none !important;
 }
 
 #wrapper {
@@ -2186,7 +2215,7 @@ section.pabrik .right .info a:hover {
 	}
 
 	.no-display-mobile {
-		display: none;
+		display: none !important;
 	}
 }
 

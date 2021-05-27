@@ -412,3 +412,68 @@
 .same-as-selected {
 	background-color: #eaf5ff;
 }
+
+.salin-kode-wrapper {
+	background: #f0f1f1;
+	border-radius: 4px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+@media (max-width: 578px) {
+	.show-mobile {
+		display: block !important;
+	}
+
+	.column-mobile {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	.produk-img {
+		width: 150px;
+		height: 180px;
+	}
+
+	.mt-3-mobile {
+		margin-top: 1rem;
+	}
+
+	.mt-min {
+		margin-top: -10px;
+	}
+	.pembayaran-content {
+		padding: 30px 0px 34px 0px;
+	}
+
+	.input-kode-wrapper-mobile {
+		position: relative;
+	}
+
+	.input-kode-wrapper-mobile input::placeholder {
+		font-size: 14px;
+		font: weight 400px;
+		color: #c0c4cd;
+	}
+
+	.input-kode-wrapper-mobile .btn-input-kode {
+		position: absolute !important;
+		right: 15px;
+		top: 18px;
+	}
+
+	.position-relative {
+		position: relative;
+	}
+
+	.detail-pembayaran {
+		margin-top: 1rem;
+	}
+	.no-pesanan {
+		background: none !important;
+	}
+
+	.btn-action {
+		margin-top: 0px !important;
+	}
+}

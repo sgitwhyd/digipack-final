@@ -271,23 +271,35 @@
 					<div class="d-flex align-items-center justify-content-center">
 						<div class="checkout d-flex flex-column align-items-center mr-5">
 							<img src="./images/checkout-icon.svg" class="icon" alt="" />
-							<div class="checkout-flow-title heading-18-600">Checkout</div>
+							<div class="checkout-flow-title heading-18-600 heading-10-600">
+								Checkout
+							</div>
 						</div>
-						<div class="checkout-flow-line">
-							<img src="./images/line-icon-fill.svg" alt="" />
+						<div class="checkout-flow-line no-display-mobile">
+							<img src="./images/line.svg" alt="" />
+						</div>
+						<div class="checkout-flow-line-mobile no-display-web show-mobile">
+							<img src="./images/line-icon-fill-mobile.svg" alt="" />
 						</div>
 						<div class="payment d-flex flex-column align-items-center mx-5">
 							<img src="./images/payment-fill.svg" class="icon" alt="" />
-							<div class="checkout-flow-title heading-18-600">Payment</div>
+							<div class="checkout-flow-title heading-18-600 heading-10-600">
+								Payment
+							</div>
 						</div>
-						<div class="checkout-flow-line">
+						<div class="checkout-flow-line no-display-mobile">
 							<img src="./images/line.svg" alt="" />
+						</div>
+						<div class="checkout-flow-line-mobile no-display-web show-mobile">
+							<img src="./images/line-icon-mobile.svg" alt="" />
 						</div>
 						<div
 							class="confirmation d-flex flex-column align-items-center ml-5"
 						>
 							<img src="./images/confirm-icon.svg" class="icon" alt="" />
-							<div class="checkout-flow-title heading-18-600 grey">
+							<div
+								class="checkout-flow-title heading-18-600 heading-10-600 grey"
+							>
 								Confirmation
 							</div>
 						</div>
@@ -301,12 +313,19 @@
 							<div class="informasi-pembayaran-title heading-24-600">
 								Informasi Pembayaran
 							</div>
-							<div class="d-flex justify-content-between mt-3">
-								<div class="status-pembayaran heading-18-500">
+							<div class="d-flex justify-content-between mt-3 column-mobile">
+								<div class="status-pembayaran heading-18-500 column-mobile">
 									<div class="status">Status</div>
 									<div class="info-status yellow mt-2">Menunggu Pembayaran</div>
 								</div>
-								<div class="nomor-transaksi-pembayaran heading-18-500">
+								<div
+									class="
+										nomor-transaksi-pembayaran
+										heading-18-500
+										column-mobile
+										mt-3-mobile
+									"
+								>
 									<div class="nomor-transaksi">Nomor Transaksi</div>
 									<div class="kode-transaksi mt-2">210100000000012</div>
 								</div>
@@ -324,23 +343,40 @@
 							</div>
 							<div class="info-pembayaran-metode heading-18-500 mt-3">
 								<div class="metode-title">Metode Pembayaran</div>
-								<div class="metode-pembayaran-nama grey mt-2">
-									Virtual Account (BCA)
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="metode-pembayaran-nama grey mt-2">
+										Virtual Account (BCA)
+									</div>
+									<div class="metode-pembayaran-logo">
+										<img src="./images/bca.svg" alt="" />
+									</div>
 								</div>
 							</div>
 							<div class="info-kode-pembayaran heading-18-500 mt-3">
 								<div class="kode-title">Kode Pembayaran</div>
-								<div class="kode-pembayaran grey mt-2">210100000000012</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="kode-pembayaran grey mt-2">210100000000012</div>
+									<div class="salin-kode-wrapper">
+										<div class="d-flex align-items-center">
+											<img src="./images/salin.svg" class="mr-2" alt="" />
+											<div class="heading-10-400-web primary-color">
+												Salin Kode Pembayaran
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="btn-action mt-2">
-								<div class="btn btn-primaryku heading-20-500">
+								<div class="btn btn-primaryku heading-20-500 heading-12-500">
 									Lihat Detail Pesanan
 								</div>
 							</div>
 						</div>
 
 						<div class="metode-pembayaran mt-3">
-							<div class="metode-pembayaran-title heading-24-600">
+							<div
+								class="metode-pembayaran-title heading-24-600 heading-14-600"
+							>
 								Metode Pembayaran
 							</div>
 							<div class="metode-pembayaran-menu mt-3">
@@ -360,7 +396,7 @@
 												<div
 													class="
 														metode-pembayaran-list
-														heading-16-600
+														heading-16-600 heading-14-600
 														primary-color
 													"
 												>
@@ -434,7 +470,7 @@
 												<div
 													class="
 														metode-pembayaran-list
-														heading-16-600
+														heading-16-600 heading-14-600
 														primary-color
 													"
 												>
@@ -510,7 +546,7 @@
 												<div
 													class="
 														metode-pembayaran-list
-														heading-16-600
+														heading-16-600 heading-14-600
 														primary-color
 													"
 												>
@@ -576,7 +612,7 @@
 						</div>
 
 						<div class="produk-pesanan mt-3">
-							<div class="produk-pesanan-title heading-24-600">
+							<div class="produk-pesanan-title heading-24-600 heading-14-600">
 								Produk Pesanan
 							</div>
 							<!-- items -->
@@ -591,7 +627,7 @@
 								>
 									<img src="./images/standing-pouch.png" alt="" />
 								</div>
-								<div class="produk-pesanan-info">
+								<div class="produk-pesanan-info no-display-mobile">
 									<div class="produk-name heading-18-600">keripik milenial</div>
 									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
 										Standing Pouch + Zipper
@@ -600,7 +636,7 @@
 										OPP Matte20/VMPET12/LLDPE60
 									</div>
 								</div>
-								<div class="produk-pesanan-total">
+								<div class="produk-pesanan-total no-display-mobile">
 									<div class="produk-pesanan-prices heading-18-400">
 										Rp 2.738
 									</div>
@@ -609,6 +645,63 @@
 									</div>
 									<div class="produk-pesanan-total-price heading-18-600">
 										Rp 1.369.000
+									</div>
+								</div>
+								<!-- mobile -->
+								<div class="column-mobile no-display-web show-mobile pt-3">
+									<div class="produk-pesanan-info">
+										<div class="produk-name heading-14-600">
+											keripik milenial
+										</div>
+										<div
+											class="
+												produk-pesanan-tipe
+												my-3
+												heading-10-400 heading-16-400
+												grey
+											"
+										>
+											Standing Pouch + Zipper
+										</div>
+										<div
+											class="
+												produk-pesanan-kode
+												heading-10-400 heading-16-400
+												grey
+											"
+										>
+											OPP Matte20/VMPET12/LLDPE60
+										</div>
+									</div>
+									<div
+										class="
+											produk-pesanan-total
+											d-flex
+											align-items-center
+											justify-content-between
+											mt-3
+										"
+									>
+										<div class="info-unit-price">
+											<div class="title heading-14-400 text-right grey">
+												Unit Price*
+											</div>
+											<div class="produk-pesanan-prices heading-18-400">
+												Rp 2.738
+											</div>
+										</div>
+										<div class="info-quantity">
+											<div class="title heading-14-400 grey">Quantity</div>
+											<div class="produk-pesanan-value heading-18-400">
+												x 500
+											</div>
+										</div>
+									</div>
+									<div class="d-flex flex-column mt-3">
+										<div class="title heading-14-400 grey">Total Price</div>
+										<div class="produk-pesanan-total-price heading-18-600">
+											Rp 1.369.000
+										</div>
 									</div>
 								</div>
 							</div>
@@ -626,7 +719,7 @@
 								>
 									<img src="./images/standing-pouch.png" alt="" />
 								</div>
-								<div class="produk-pesanan-info">
+								<div class="produk-pesanan-info no-display-mobile">
 									<div class="produk-name heading-18-600">keripik milenial</div>
 									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
 										Standing Pouch + Zipper
@@ -635,7 +728,7 @@
 										OPP Matte20/VMPET12/LLDPE60
 									</div>
 								</div>
-								<div class="produk-pesanan-total">
+								<div class="produk-pesanan-total no-display-mobile">
 									<div class="produk-pesanan-prices heading-18-400">
 										Rp 2.738
 									</div>
@@ -646,6 +739,63 @@
 										Rp 1.369.000
 									</div>
 								</div>
+								<!-- mobile -->
+								<div class="column-mobile no-display-web show-mobile pt-3">
+									<div class="produk-pesanan-info">
+										<div class="produk-name heading-14-600">
+											keripik milenial
+										</div>
+										<div
+											class="
+												produk-pesanan-tipe
+												my-3
+												heading-10-400 heading-16-400
+												grey
+											"
+										>
+											Standing Pouch + Zipper
+										</div>
+										<div
+											class="
+												produk-pesanan-kode
+												heading-10-400 heading-16-400
+												grey
+											"
+										>
+											OPP Matte20/VMPET12/LLDPE60
+										</div>
+									</div>
+									<div
+										class="
+											produk-pesanan-total
+											d-flex
+											align-items-center
+											justify-content-between
+											mt-3
+										"
+									>
+										<div class="info-unit-price">
+											<div class="title heading-14-400 text-right grey">
+												Unit Price*
+											</div>
+											<div class="produk-pesanan-prices heading-18-400">
+												Rp 2.738
+											</div>
+										</div>
+										<div class="info-quantity">
+											<div class="title heading-14-400 grey">Quantity</div>
+											<div class="produk-pesanan-value heading-18-400">
+												x 500
+											</div>
+										</div>
+									</div>
+									<div class="d-flex flex-column mt-3">
+										<div class="title heading-14-400 grey">Total Price</div>
+										<div class="produk-pesanan-total-price heading-18-600">
+											Rp 1.369.000
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="border-bottom"></div>
 							<!-- end items -->
@@ -653,35 +803,39 @@
 					</div>
 					<div class="col-md-5 col-sm-12">
 						<div class="detail-pembayaran">
-							<div class="detail-pembayaran-title heading-24-600">
+							<div
+								class="detail-pembayaran-title heading-24-600 heading-14-600"
+							>
 								Detail pembayaran
 							</div>
 							<div class="d-flex justify-content-between pembayaran-content">
-								<div class="detail-pembayaran-menu heading-18-400 grey">
-									<div class="total-harga-produk">Total Harga Produk</div>
-									<div class="potongan-harga my-3">Potongan Harga</div>
-									<div class="ongkos-kirim">
-										Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
-									</div>
-								</div>
-								<div class="detail-pembayaran-harga heading-18-400">
-									<div class="total-harga">Rp 2.738.000</div>
-									<div class="diskon my-3">Rp 0</div>
-									<div class="ongkir">Rp 69.300</div>
+								<div class="detail-pembayaran-menu heading-18-400
+								heading-12-400" grey">
+								<div class="total-harga-produk">Total Harga Produk</div>
+								<div class="potongan-harga my-3">Potongan Harga</div>
+								<div class="ongkos-kirim">
+									Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
 								</div>
 							</div>
-							<hr />
 							<div
-								class="
-									produk-total
-									d-flex
-									justify-content-between
-									heading-18-600
-								"
+								class="detail-pembayaran-harga heading-18-400 heading-12-400"
 							>
-								<div class="total-pembayaran">Total Pembayaran</div>
-								<div class="total-harga-produk-all">Rp 2.807.300</div>
+								<div class="total-harga">Rp 2.738.000</div>
+								<div class="diskon my-3">Rp 0</div>
+								<div class="ongkir">Rp 69.300</div>
 							</div>
+						</div>
+						<hr />
+						<div
+							class="
+								produk-total
+								d-flex
+								justify-content-between
+								heading-18-600 heading-12-600
+							"
+						>
+							<div class="total-pembayaran">Total Pembayaran</div>
+							<div class="total-harga-produk-all">Rp 2.807.300</div>
 						</div>
 					</div>
 				</div>
