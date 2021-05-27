@@ -157,6 +157,9 @@ body {
 	color: #312d75 !important;
 }
 
+.bg-primary {
+	background-color: #312d75 !important;
+}
 .no-display-web {
 	display: none !important;
 }

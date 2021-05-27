@@ -420,6 +420,18 @@
 	cursor: pointer;
 }
 
+.line-checkout {
+	width: 300px;
+	height: 1px;
+	background-color: #c0c4cd;
+}
+
+@media (max-width: 578px) {
+	.line-checkout {
+		width: 50px;
+	}
+}
+
 @media (max-width: 578px) {
 	.show-mobile {
 		display: block !important;

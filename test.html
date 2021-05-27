@@ -23,44 +23,71 @@
 		<link rel="stylesheet" href="styles/checkout.css" />
 		<script src="scripts/modernizr.js"></script>
 		<style>
-			.input-kode-wrapper-mobile {
-				position: relative;
+			.line-checkout {
+				width: 300px;
+				height: 1px;
+				background-color: #c0c4cd;
 			}
 
-			.input-kode-wrapper-mobile .btn-input-kode {
-				position: absolute !important;
-				right: 15px;
-				top: 14px;
-			}
+			@media (max-width: 578px) {
+				.line-checkout {
+					width: 50px;
 
-			.position-relative {
-				position: relative;
-			}
-
-			.input {
-				width: 100%;
+					background-color: #312d75 !important;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div
-				class="
-					input-kode-wrapper-mobile
-					position-relative
-					d-flex
-					align-items-center
-				"
-			>
-				<div class="input-group-lg position-relative">
-					<input
-						type="text"
-						name=""
-						class="form-control"
-						placeholder="Masukan kode promo"
-						id=""
-					/>
-					<a href="#" class="btn-input-kode">Gunakan</a>
+			<div class="checkout-flow">
+				<div class="container">
+					<div class="d-flex align-items-center justify-content-center">
+						<div class="checkout d-flex flex-column align-items-center mr-3">
+							<img src="./images/checkout-icon.svg" class="icon" alt="" />
+							<div
+								class="checkout-flow-title heading-18-600 heading-10-600 pt-3"
+							>
+								Checkout
+							</div>
+						</div>
+						<div class="checkout-flow-line">
+							<div class="line-checkout"></div>
+						</div>
+
+						<div class="payment d-flex flex-column align-items-center mx-3">
+							<img src="./images/payment-icon.svg" class="icon" alt="" />
+							<div
+								class="
+									checkout-flow-title
+									heading-18-600 heading-10-600
+									pt-3
+									grey
+								"
+							>
+								Payment
+							</div>
+						</div>
+						<div class="checkout-flow-line">
+							<div class="line-checkout"></div>
+						</div>
+
+						<div
+							class="confirmation d-flex flex-column align-items-center ml-3"
+						>
+							<img src="./images/confirm-icon.svg" class="icon" alt="" />
+							<div
+								class="
+									checkout-flow-title
+									heading-18-600 heading-10-600
+									pt-3
+									grey
+								"
+							>
+								Confirmation
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
