@@ -205,11 +205,11 @@ function getAlamat() {
 								<div class="alamat-tipe heading-14-600">${alamat__sebagai}</div>
 								<hr />
 								<div class="d-flex justify-content-between">
-									<div class="user-info-modal heading-16-500">
+									<div class="user-info-modal heading-16-500 heading-10-400">
 										<div class="user-name">${nama__penerima}</div>
 										<div class="no-user grey">${no__handphone}</div>
 									</div>
-									<div class="user-alamat heading-16-400 grey">
+									<div class="user-alamat heading-16-400 grey heading-10-400">
 										${alamat_lengkap}
 									</div>
 								</div>
