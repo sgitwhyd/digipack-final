@@ -119,11 +119,23 @@
 	padding: 30px;
 }
 
+.mb-300 {
+	margin-bottom: 100px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
 .catatan-pemesanan {
 	border: 1px solid #c0c4cd;
 	box-sizing: border-box;
 	border-radius: 10px;
 	padding: 30px;
+}
+
+#before-footer {
+	margin-top: 100px;
 }
 
 .jasa-pengiriman a:hover {
@@ -509,5 +521,10 @@
 		font-size: 10px !important;
 		font-weight: 400 !important;
 		padding-top: 5px !important;
+	}
+
+	.mb-100,
+	.mb-300 {
+		margin-bottom: 0;
 	}
 }
