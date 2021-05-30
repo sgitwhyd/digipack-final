@@ -169,6 +169,10 @@
 	border-bottom: 1px solid #c0c4cd;
 }
 
+.card-body {
+	padding: 20px 0px !important;
+}
+
 .no-border {
 	border: none !important;
 }
