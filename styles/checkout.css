@@ -548,4 +548,8 @@
 	.alamat {
 		padding: 30px 20px !important;
 	}
+
+	.bank-name {
+		font-size: 14px !important;
+	}
 }
