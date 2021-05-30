@@ -154,7 +154,7 @@
 
 .dropdown-wrapper {
 	width: 100%;
-	padding: 15px 30px;
+	padding: 15px;
 	border: 1px solid #c0c4cd;
 	box-sizing: border-box;
 	border-radius: 6px;
@@ -508,9 +508,7 @@
 		margin: 0;
 	}
 
-	.ekpedisi-name,
-	.estimasi,
-	.ekpedisi-harga {
+	.fs-10 {
 		padding-top: 4px;
 		font-size: 10px !important;
 		font-weight: 400 !important;
@@ -518,7 +516,7 @@
 
 	.dropdown-wrapper .title,
 	.ongkir {
-		font-size: 10px !important;
+		font-size: 14px !important;
 		font-weight: 400 !important;
 		padding-top: 5px !important;
 	}
@@ -526,5 +524,16 @@
 	.mb-100,
 	.mb-300 {
 		margin-bottom: 0;
+	}
+
+	.jasa-pengiriman,
+	.metode-pembayaran,
+	.produk-pesanan,
+	.informasi-pembayaran,
+	.detail-pembayaran,
+	.kode-promo,
+	.alamat-pengiriman,
+	.catatan-pemesanan {
+		padding: 30px 20px;
 	}
 }
