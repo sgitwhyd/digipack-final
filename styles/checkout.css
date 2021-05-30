@@ -111,6 +111,14 @@
 	color: #312d75;
 }
 
+.alamat-action a {
+	margin-top: -10px !important;
+}
+
+.alamat-action a:hover {
+	color: #ffc90a;
+}
+
 .jasa-pengiriman,
 .metode-pembayaran {
 	border: 1px solid #c0c4cd;
@@ -536,7 +544,8 @@
 	.detail-pembayaran,
 	.kode-promo,
 	.alamat-pengiriman,
-	.catatan-pemesanan {
+	.catatan-pemesanan,
+	.alamat {
 		padding: 30px 20px !important;
 	}
 }
