@@ -2290,7 +2290,9 @@ section.pabrik .right .info a:hover {
 		margin-bottom: -40px !important;
 	}
 
-	.user-action-panel {
+	.user-action-panel,
+	.bag-notif,
+	.user-action {
 		width: 100%;
 	}
 
