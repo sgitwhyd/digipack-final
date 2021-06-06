@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>digipack</title>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<!-- Place favicon.ico in the root directory -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css"
+			integrity="sha512-Nqct4Jg8iYwFRs/C34hjAF5og5HONE2mrrUV1JZUswB+YU7vYSPyIjGMq+EAQYDmOsMuO9VIhKpRUa7GjRKVlg=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/vendor.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/modal.css" />
+		<link rel="stylesheet" href="styles/user-panel.css" />
+		<link rel="stylesheet" href="styles/checkout.css" />
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<!--[if IE]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve
+				your experience.
+			</p>
+		<![endif]-->
+		<div id="wrapper" class="position-relative">
+			<div class="overlay d-none"></div>
+			<div class="position-fixed" style="z-index: 999; width: 100%">
+				<div id="header">
+					<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light p-0">
+							<a class="navbar-brand" href="#"
+								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
+							/></a>
+							<button
+								class="navbar-toggler collapsed"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav" id="navbar-nav-mobile">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Beranda</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">Tentang Kami</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="pilih-kemasan.html"
+											>Pilihan Kemasan</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="blog.html">Blog</a>
+									</li>
+								</ul>
+								<div
+									class="
+										menu-act
+										ml-auto
+										mr-5
+										my-2 my-lg-0
+										d-flex
+										align-items-center
+									"
+								>
+									<div class="info-user">
+										<div class="notif-user">
+											<a href="#" class="notification">
+												<img
+													src="./images/Notification.svg"
+													id="notif__user"
+													alt=""
+												/>
+												<span class="badge">1</span>
+											</a>
+										</div>
+										<div class="bag-user">
+											<a href="#" class="notification">
+												<img src="./images/Bag.svg" id="bag__user" alt="" />
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+										<div
+											class="user-active d-flex align-items-center"
+											id="user__panel"
+										>
+											<div class="dropdown d-flex">
+												<img
+													src="./images/Profile.svg"
+													style="cursor: pointer"
+													alt=""
+												/>
+												<button class="btn dropdown-toggle">
+													<span class="user">Atika Widjaya</span>
+													<img src="./images/down.svg" class="ml-4" alt="" />
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="user-interaction">
+						<div class="container">
+							<!-- user-action -->
+							<div class="position-relative">
+								<div class="user-action" id="user_notif">
+									<div class="user-action-title">Notifikasi</div>
+									<hr />
+									<div class="user-action-notif">
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+									</div>
+									<div class="user-action-all text-center">
+										<a href="#">Lihat Semua</a>
+									</div>
+								</div>
+							</div>
+							<!-- end user action -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="bag-notif" id="user-bag">
+									<div class="bag-img d-flex justify-content-center">
+										<!-- <img
+								src="./images/standing-pouch.png"
+								width="100px
+                        "
+								alt=""
+							/> -->
+									</div>
+									<div class="posititon-relative">
+										<div
+											class="position-absolute"
+											style="
+												position: absolute;
+												bottom: 30px;
+												padding: 0px 50px;
+											"
+										>
+											<div class="bag-info text-center mt-5">
+												Ops <br />
+												Keranjang Belanja Masih Kosong Nih
+											</div>
+											<div class="d-flex justify-content-center mt-3 mb-3">
+												<div class="btn btn-blue">Yuk Mulai Belanja</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="user-action-panel" id="user-action-panel">
+									<div class="user-info">
+										<img src="./images/Profile.svg" class="mr-3" alt="" />
+										<span>Atika Widjaya</span>
+									</div>
+									<hr />
+									<div class="action-menu">
+										<div
+											class="
+												user-action-menu user-panel
+												d-flex
+												align-items-center
+											"
+										>
+											<a href="#">
+												<svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													class="mr-3"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M14.4198 5.41562C14.4198 7.8543 12.4428 9.83124 10.0041 9.83124C7.56546 9.83124 5.58852 7.8543 5.58852 5.41562C5.58852 2.97694 7.56546 1 10.0041 1C12.4428 1 14.4198 2.97694 14.4198 5.41562Z"
+														stroke="#312D75"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													/>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M3.00001 15.9725C2.99883 15.6621 3.06825 15.3555 3.20303 15.0758C3.62598 14.2299 4.81871 13.7816 5.80842 13.5786C6.52219 13.4263 7.24583 13.3245 7.97393 13.2741C9.32196 13.1557 10.6778 13.1557 12.0258 13.2741C12.7539 13.3251 13.4774 13.4268 14.1913 13.5786C15.181 13.7816 16.3738 14.1876 16.7967 15.0758C17.0678 15.6459 17.0678 16.3076 16.7967 16.8776C16.3738 17.7658 15.181 18.1719 14.1913 18.3664C13.4784 18.525 12.7545 18.6297 12.0258 18.6794C10.9286 18.7724 9.82632 18.7894 8.72679 18.7301C8.47302 18.7301 8.2277 18.7301 7.97393 18.6794C7.24798 18.6303 6.52685 18.5256 5.81688 18.3664C4.81871 18.1719 3.63444 17.7658 3.20303 16.8776C3.06894 16.5947 2.99959 16.2855 3.00001 15.9725Z"
+														stroke="#312D75"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													/>
+												</svg>
+												Edit Profile
+											</a>
+										</div>
+
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/ubah-katasandi.svg"
+													class="mr-3"
+													alt=""
+												/>
+												Ubah Kata Sandi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="checkout.html">
+												<img src="./images/transaksi.svg" class="mr-3" alt="" />
+												Transaksi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/alamat.svg" class="mr-3" alt="" />
+												Alamat
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/permainan.svg" class="mr-3" alt="" />
+												Permainan
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/logout.svg" class="mr-3" alt="" />
+												Logout
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- masukan konten disini -->
+		<div class="content-wrapper pt-5 mt-5">
+			<div class="container content-user-panel">
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="user-menu">
+							<div class="d-flex justify-content-center">
+								<div class="d-flex flex-column">
+									<div class="user-foto d-flex justify-content-center">
+										<img src="./images/user-profile.svg" alt="" />
+									</div>
+									<div
+										class="d-flex flex-column text-center heading-18-500 mt-3"
+									>
+										<div class="user-name">Atika Widjaya</div>
+										<div class="user-email">hi.atikawidjaya@gmail.com</div>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="action-menu">
+								<div class="user-action-menu d-flex align-items-center">
+									<a href="#">
+										<img
+											src="./images/edit-profile-icon.svg"
+											class="mr-3"
+											alt=""
+										/>
+										Edit Profile
+									</a>
+								</div>
+
+								<div class="user-action-menu d-flex align-items-center">
+									<a href="#">
+										<img
+											src="./images/ubah-katasandi.svg"
+											class="mr-3"
+											alt=""
+										/>
+										Ubah Kata Sandi
+									</a>
+								</div>
+								<div class="user-action-menu d-flex align-items-center">
+									<a href="checkout.html">
+										<img src="./images/transaksi.svg" class="mr-3" alt="" />
+										Transaksi
+									</a>
+								</div>
+								<div class="user-action-menu d-flex align-items-center">
+									<a href="#">
+										<img src="./images/alamat.svg" class="mr-3" alt="" />
+										Alamat
+									</a>
+								</div>
+								<div class="user-action-menu d-flex align-items-center">
+									<a href="#">
+										<img src="./images/permainan.svg" class="mr-3" alt="" />
+										Permainan
+									</a>
+								</div>
+								<div class="user-action-menu d-flex align-items-center">
+									<a href="#">
+										<img src="./images/logout.svg" class="mr-3" alt="" />
+										Logout
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-12">
+						<div class="ubah_kata_sandi">
+							<div class="ubahKataSandi_title heading-24-600">
+								Ubah Kata Sandi
+							</div>
+							<hr />
+							<div class="passAllWrapper">
+								<div class="password mb-3">
+									<label for="password" class="heading-16-500"
+										>Kata Sandi Saat Ini</label
+									>
+									<div class="input-pass" id="input-pass">
+										<div class="input-group">
+											<input
+												type="password"
+												name="password"
+												oninput="inputPassword()"
+												id="password"
+												placeholder="Password"
+											/>
+											<div class="input-group-append">
+												<span class="input-group-text" id="password-trigger">
+													<i
+														class="fa fa-eye-slash"
+														onclick="hidePass()"
+														id="togglePassword"
+													></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="password mb-3">
+									<label for="password" class="heading-16-500"
+										>Kata Sandi Baru</label
+									>
+									<div class="input-pass" id="input-pass2">
+										<div class="input-group">
+											<input
+												type="password"
+												name="password"
+												oninput="inputPassword2()"
+												id="password2"
+												placeholder="Password"
+											/>
+											<div class="input-group-append">
+												<span class="input-group-text" id="password-trigger2">
+													<i
+														class="fa fa-eye-slash"
+														onclick="hidePass2()"
+														id="togglePassword"
+													></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="password">
+									<label for="password" class="heading-16-500"
+										>Konfirmasi Kata Sandi Baru</label
+									>
+									<div class="input-pass" id="input-pass3">
+										<div class="input-group">
+											<input
+												type="password"
+												name="password"
+												oninput="inputPassword3()"
+												id="password3"
+												placeholder="Password"
+											/>
+											<div class="input-group-append">
+												<span class="input-group-text" id="password-trigger3">
+													<i
+														class="fa fa-eye-slash"
+														onclick="hidePass3()"
+														id="togglePassword"
+													></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-ubahKataSandi d-flex justify-content-center">
+								<a href="#">
+									<button class="btn btn-primaryku heading-20-500">
+										Ubah Kata Sandi
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function (b, o, i, l, e, r) {
+				b.GoogleAnalyticsObject = l;
+				b[l] ||
+					(b[l] = function () {
+						(b[l].q = b[l].q || []).push(arguments);
+					});
+				b[l].l = +new Date();
+				e = o.createElement(i);
+				r = o.getElementsByTagName(i)[0];
+				e.src = 'https://www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e, r);
+			})(window, document, 'script', 'ga');
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+
+			// user menu
+			let user_panel = document.getElementById('user__panel');
+			let bag_user = document.getElementById('bag__user');
+			let notif_user = document.getElementById('notif__user');
+			// user bag dropdown
+			let user_panel_action = document.getElementById('user-action-panel');
+			let user_bag = document.getElementById('user-bag');
+			let user_notif = document.getElementById('user_notif');
+			let overlay = document.getElementById('overlay');
+
+			user_panel.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			bag_user.addEventListener('click', function () {
+				user_bag.classList.toggle('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_bag.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			notif_user.addEventListener('click', function () {
+				user_notif.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_notif.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			overlay.addEventListener('click', function () {
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+			});
+		</script>
+		<script src="scripts/vendor.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>

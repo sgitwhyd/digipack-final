@@ -177,6 +177,10 @@
 	border-bottom: 1px solid #c0c4cd;
 }
 
+.no-border {
+	border: none !important;
+}
+
 .card-body {
 	padding: 20px 0px !important;
 }
@@ -186,11 +190,15 @@
 }
 
 .no-padding-bottom {
-	padding: 1.25rem;
-	padding-top: 1.25rem;
-	padding-right: 1.25rem;
-	padding-bottom: 0rem;
-	padding-left: 1.25rem;
+	/* padding: 1.25rem !important; */
+	padding-top: 1.25rem !important;
+	/* padding-right: 1.25rem !important; */
+	padding-bottom: 0rem !important;
+	/* padding-left: 1.25rem !important; */
+}
+
+.form-check {
+	padding-left: 15px !important;
 }
 
 .accordion a:hover {
@@ -454,6 +462,21 @@
 	.line-checkout {
 		width: 50px;
 	}
+}
+
+form .form-group input::placeholder {
+	font-size: 16px !important;
+	font-weight: 300;
+	color: #c0c4cd;
+}
+
+form .form-group input {
+	font-size: 16px;
+	color: #898f9e;
+}
+form .form-group label {
+	font-size: 16px;
+	font-weight: 500;
 }
 
 @media (max-width: 578px) {

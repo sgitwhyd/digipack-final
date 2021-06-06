@@ -90,7 +90,46 @@ body {
 	color: #22262a !important;
 }
 
+.red {
+	color: #d91d1e !important;
+}
+
+.mt-13 {
+	margin-top: 13px;
+}
+
 @media (max-width: 576px) {
+	.open {
+		transform: rotate(180deg) !important;
+		transition: all ease-in-out 0.5s !important;
+	}
+
+	.default {
+		transition: all ease-in-out 0.5s;
+	}
+
+	.mt-13 {
+		margin-top: 0px;
+	}
+
+	.info-user {
+		margin-left: -135px !important;
+	}
+
+	.notification {
+		margin-bottom: 15px !important;
+	}
+
+	.column-mobile-reverse {
+		display: flex !important;
+		flex-direction: column-reverse !important;
+	}
+
+	.d-items-center-mobile {
+		display: flex !important;
+		align-items: center !important;
+	}
+
 	.heading-12-400 {
 		font-size: 12px !important;
 		font-weight: 400 !important;
@@ -621,7 +660,7 @@ section.pabrik .right .info a:hover {
 
 .notification .badge {
 	position: absolute;
-	top: -5px;
+	top: 3px;
 	right: -10px;
 	padding: 5px 8px;
 	border-radius: 50%;
@@ -2227,6 +2266,37 @@ section.pabrik .right .info a:hover {
 
 	.no-display-mobile {
 		display: none !important;
+	}
+
+	.toggleMenu {
+		background: url(../images/burgermenu.svg) no-repeat center !important;
+	}
+
+	.mobile-menuUser {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+
+	.user-action-menu a img {
+		width: 20px !important;
+	}
+
+	.no-mt-bt {
+		margin-top: 0px !important;
+		border: none !important;
+	}
+
+	.mb-40 {
+		margin-bottom: -40px !important;
+	}
+
+	.user-action-panel {
+		width: 100%;
+	}
+
+	.notification .badge {
+		top: -8px;
+		right: 143px;
 	}
 }
 

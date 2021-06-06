@@ -583,15 +583,6 @@
 								<div class="pengiriman-title heading-24-600 heading-14-600">
 									Jasa Pengiriman
 								</div>
-								<div class="cek-ongkir pt-2 mt-min">
-									<a
-										href="#"
-										class="heading-16-500 primary-color heading-10-500"
-										data-toggle="modal"
-										data-target="#cekOngkir"
-										>Cek Detail Ongkir</a
-									>
-								</div>
 							</div>
 							<div class="pengirman-dropdown mt-3">
 								<a
@@ -627,80 +618,570 @@
 								</a>
 
 								<div class="collapse show" id="pilihJasaPengiriman">
+									<form class="mt-3">
+										<div class="form-group">
+											<label for="exampleFormControlInput1"
+												>Kecamatan Alamat Tujuan</label
+											>
+											<input
+												type="email"
+												class="form-control form-control-lg"
+												id="Alamat tujuan"
+												value="Bekasi Barat"
+												readonly
+											/>
+										</div>
+										<div class="form-group mt-3">
+											<label for="exampleFormControlInput1"
+												>Kota Alamat Tujuan</label
+											>
+											<input
+												type="email"
+												class="form-control form-control-lg"
+												id="Alamat tujuan"
+												value="Bekasi Barat"
+												readonly
+											/>
+										</div>
+										<div class="form-group mt-3">
+											<label for="exampleFormControlInput1">Berat (Kg)</label>
+											<input
+												type="email"
+												class="form-control form-control-lg"
+												id="Berat"
+												value="7"
+												readonly
+											/>
+										</div>
+									</form>
 									<div
-										class="card no-padding-bottom card-body heading-16-400"
+										class="
+											card
+											no-padding-bottom no-border
+											card-body
+											heading-16-400
+										"
 										id="jne"
 									>
+										<label
+											class="
+												form-check-label
+												d-flex
+												align-items-center
+												justify-content-between
+												ml-2
+											"
+											for="flexRadioDefault1"
+										>
+											<div class="ekpedisi-info d-flex align-center-center">
+												<div class="ekpedisi-logo mr-3">
+													<img src="./images/JNE.png" alt="" />
+												</div>
+												<div class="ekpedisi-name heading-20-600">JNE</div>
+											</div>
+										</label>
 										<div class="form-check">
-											<input
-												class="form-check-input"
-												type="radio"
-												name="flexRadioDefault"
-												id="flexRadioDefault1"
-												value="JNE"
-											/>
-											<label
-												class="
-													form-check-label
-													d-flex
-													align-items-center
-													justify-content-between
-													ml-2
-												"
-												for="flexRadioDefault1"
-											>
-												<div class="ekpedisi-info d-flex align-center-center">
-													<div class="ekpedisi-logo mr-3">
-														<img src="./images/JNE.png" alt="" />
+											<div class="pengirman-dropdown">
+												<div class="collapse show" id="kurir">
+													<div class="card card-body heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault12"
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault12"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div
+																		class="ekpedisi-name heading-18-400 fs-10"
+																	>
+																		JTR
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 27.500
+																	</div>
+																</div>
+															</label>
+														</div>
 													</div>
-													<div class="ekpedisi-name pt-1 heading-16-400">
-														JNE
+													<div class="card card-body heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault13"
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault13"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div
+																		class="ekpedisi-name heading-18-400 fs-10"
+																	>
+																		JTR250
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 385.000
+																	</div>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="card card-body heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault14"
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault14"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div
+																		class="ekpedisi-name heading-18-400 fs-10"
+																	>
+																		JTR<150
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 220.000
+																	</div>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="card card-body heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault15"
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault15"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div
+																		class="ekpedisi-name heading-18-400 fs-10"
+																	>
+																		JTR>250
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 550.000
+																	</div>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="card card-body heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault16"
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault16"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div
+																		class="ekpedisi-name heading-18-400 fs-10"
+																	>
+																		OKE
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 61.600
+																	</div>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="card card-body heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault17"
+																checked
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault17"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div class="ekpedisi-name heading-18- fs-10">
+																		REG
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 69.300
+																	</div>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="card card-body heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault18"
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault18"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div
+																		class="ekpedisi-name heading-18-400 fs-10"
+																	>
+																		SPS
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 151.800
+																	</div>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="card card-body no-border heading-16-400">
+														<div class="form-check">
+															<input
+																class="
+																	form-check-input
+																	d-flex
+																	align-items-center
+																"
+																type="radio"
+																name="flexRadioDefault"
+																id="flexRadioDefault19"
+															/>
+															<label
+																class="
+																	form-check-label
+																	d-flex
+																	align-items-center
+																	justify-content-between
+																	ml-2
+																"
+																for="flexRadioDefault19"
+															>
+																<div
+																	class="
+																		ekpedisi-info
+																		d-flex
+																		align-center-center
+																	"
+																>
+																	<div
+																		class="ekpedisi-name heading-18-400 fs-10"
+																	>
+																		YES
+																	</div>
+																</div>
+																<div class="estimasi heading-18-400 grey fs-10">
+																	Estimasi pengiriman 3 - 4 hari
+																</div>
+																<div class="down d-flex align-items-center">
+																	<div
+																		class="
+																			ekpedisi-harga
+																			mr-3
+																			heading-16-400
+																			fs-10
+																		"
+																	>
+																		Rp 138.600
+																	</div>
+																</div>
+															</label>
+														</div>
 													</div>
 												</div>
-												<div class="down d-flex align-items-center">
-													<div class="ekpedisi-harga mr-3 heading-16-400">
-														Rp 69.300
-													</div>
-												</div>
-											</label>
+											</div>
 										</div>
 									</div>
 									<div
-										class="card no-padding-bottom card-body heading-16-400"
+										class="
+											card
+											no-padding-bottom no-border
+											card-body
+											heading-16-400
+										"
 										id="jnt"
 									>
+										<label
+											class="
+												form-check-label
+												d-flex
+												align-items-center
+												justify-content-between
+												ml-2
+											"
+											for="flexRadioDefault2"
+										>
+											<div class="ekpedisi-info d-flex align-center-center">
+												<div class="ekpedisi-logo mr-3">
+													<img src="./images/JNT.png" alt="" />
+												</div>
+												<div class="ekpedisi-name heading-20-600">JNT</div>
+											</div>
+										</label>
 										<div class="form-check">
-											<input
-												class="form-check-input"
-												type="radio"
-												name="flexRadioDefault"
-												id="flexRadioDefault2"
-												value="JNT"
-											/>
-											<label
-												class="
-													form-check-label
-													d-flex
-													align-items-center
-													justify-content-between
-													ml-2
-												"
-												for="flexRadioDefault2"
-											>
-												<div class="ekpedisi-info d-flex align-center-center">
-													<div class="ekpedisi-logo mr-3">
-														<img src="./images/JNT.png" alt="" />
-													</div>
-													<div class="ekpedisi-name pt-1 heading-16-400">
-														JNT
+											<div class="collapse show" id="kurirJNT">
+												<div class="card card-body heading-16-400 no-border">
+													<div class="form-check">
+														<input
+															class="form-check-input d-flex align-items-center"
+															type="radio"
+															name="flexRadioDefault"
+															id="flexRadioDefault20"
+														/>
+														<label
+															class="
+																form-check-label
+																d-flex
+																align-items-center
+																justify-content-between
+																ml-2
+															"
+															for="flexRadioDefault20"
+														>
+															<div
+																class="ekpedisi-info d-flex align-center-center"
+															>
+																<div class="ekpedisi-name heading-18-400 fs-10">
+																	EZ
+																</div>
+															</div>
+															<div class="estimasi heading-18-400 grey fs-10">
+																Estimasi pengiriman 1 - 2 hari
+															</div>
+															<div class="down d-flex align-items-center">
+																<div
+																	class="
+																		ekpedisi-harga
+																		mr-3
+																		heading-16-400
+																		fs-10
+																	"
+																>
+																	Rp 69.300
+																</div>
+															</div>
+														</label>
 													</div>
 												</div>
-												<div class="down d-flex align-items-center">
-													<div class="ekpedisi-harga mr-3 heading-16-400">
-														Rp 69.300
-													</div>
-												</div>
-											</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -740,486 +1221,418 @@
 								Detail pembayaran
 							</div>
 							<div class="d-flex justify-content-between pembayaran-content">
-								<div class="detail-pembayaran-menu heading-18-400
-								heading-12-400" grey">
-								<div class="total-harga-produk">Total Harga Produk</div>
-								<div class="potongan-harga my-3">Potongan Harga</div>
-								<div class="ongkos-kirim">
-									Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
+								<div
+									class="
+										detail-pembayaran-menu
+										heading-18-400 heading-12-400
+										grey
+									"
+								>
+									<div class="total-harga-produk">Total Harga Produk</div>
+									<div class="potongan-harga my-3">Potongan Harga</div>
+									<div class="ongkos-kirim">
+										Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
+									</div>
+								</div>
+								<div
+									class="detail-pembayaran-harga heading-18-400 heading-12-400"
+								>
+									<div class="total-harga">Rp 2.738.000</div>
+									<div class="diskon my-3">Rp 0</div>
+									<div class="ongkir">Rp 69.300</div>
 								</div>
 							</div>
+							<hr />
 							<div
-								class="detail-pembayaran-harga heading-18-400 heading-12-400"
+								class="
+									produk-total
+									d-flex
+									justify-content-between
+									heading-18-600 heading-12-600
+								"
 							>
-								<div class="total-harga">Rp 2.738.000</div>
-								<div class="diskon my-3">Rp 0</div>
-								<div class="ongkir">Rp 69.300</div>
+								<div class="total-pembayaran">Total Pembayaran</div>
+								<div class="total-harga-produk-all">Rp 2.807.300</div>
 							</div>
-						</div>
-						<hr />
-						<div
-							class="
-								produk-total
-								d-flex
-								justify-content-between
-								heading-18-600 heading-12-600
-							"
-						>
-							<div class="total-pembayaran">Total Pembayaran</div>
-							<div class="total-harga-produk-all">Rp 2.807.300</div>
-						</div>
-						<div class="d-flex justify-content-center">
-							<a href="payment.html" style="width: 100%">
-								<div class="btn btn-primaryku heading-20-500 heading-12-500">
-									Pilih Metode Pembayaran
-								</div>
-							</a>
+							<div class="d-flex justify-content-center">
+								<a href="payment.html" style="width: 100%">
+									<div class="btn btn-primaryku heading-20-500 heading-12-500">
+										Pilih Metode Pembayaran
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Modal Alamat Baru -->
-		<div
-			class="modal fade"
-			id="pilihAlamatBaru"
-			tabindex="-1"
-			aria-labelledby="exampleModalLabel"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-lg modal-dialog-scrollable">
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="d-flex flex-column">
-							<h5
-								class="modal-title heading-24-600 heading-14-600"
-								id="exampleModalLabel"
-							>
-								Pilih Alamat Pengiriman
-							</h5>
-							<div
-								class="summary-modal-title heading-18-400 heading-10-400 grey"
-							>
-								Silahkan pilih alamat pengiriman yang dituju
-							</div>
-						</div>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true">
-								<img src="./images/close-icon.svg" alt="" />
-							</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div class="newalamat" id="newAlamat">
-							<!-- jika belum ada alamat -->
-							<div
-								class="no-alamat-wrapper heading-12-600 text-center"
-								id="no-alamat"
-							>
-								Oops... Kamu belum memiliki Alamat Pengiriman
-							</div>
-							<!-- end -->
-						</div>
-					</div>
-					<div class="modal-footer d-flex justify-content-center">
-						<button
-							type="button"
-							class="btn btn-orange modal-btn"
-							data-toggle="modal"
-							data-target="#tambahAlamatBaru"
-							data-dismiss="modal"
-						>
-							Tambah Alamat Baru
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal tambah Alamat Baru -->
-		<div
-			class="modal fade"
-			id="tambahAlamatBaru"
-			tabindex="-1"
-			aria-labelledby="exampleModalLabel"
-			aria-hidden="true"
-		>
+			<!-- Modal Alamat Baru -->
 			<div
-				class="modal-dialog moda-tambah-alamat modal-lg modal-dialog-scrollable"
+				class="modal fade"
+				id="pilihAlamatBaru"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
 			>
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="d-flex flex-column">
-							<h5
-								class="modal-title heading-24-600 heading-14-600"
-								id="exampleModalLabel"
-							>
-								Tambah Alamat Pengiriman
-							</h5>
-							<div
-								class="summary-modal-title heading-18-400 heading-10-400 grey"
-							>
-								Silahkan tambah alamat pengiriman yang dituju
-							</div>
-						</div>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true">
-								<img src="./images/close-icon.svg" alt="" />
-							</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="exampleFormControlInput1"
-									>Alamat Sebagai<span style="color: red">*</span></label
-								>
-								<input
-									type="text"
-									class="form-control form-control-lg inputAlamat"
-									id="alamatSebagai"
-									placeholder="Contoh: Rumah, Kantor, Gudang, dll."
-									oninput="fillInput()"
-								/>
-							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlInput2"
-									>Nama Penerima<span style="color: red">*</span></label
-								>
-								<input
-									type="text"
-									class="form-control form-control-lg inputAlamat"
-									id="namaPenerima"
-									placeholder="Nama Penerima"
-									oninput="fillInput()"
-								/>
-							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlInput2"
-									>No Handphone<span style="color: red">*</span></label
-								>
-								<input
-									type="number"
-									class="form-control form-control-lg inputAlamat"
-									id="noHP"
-									placeholder="No Handphone"
-									oninput="fillInput()"
-								/>
-							</div>
+				<div class="modal-dialog modal-lg modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
 							<div class="d-flex flex-column">
-								<div class="label">
-									<label for="selectgrade"
-										>Provinsi<span style="color: red">*</span></label
-									>
-								</div>
-								<div class="custom-select">
-									<select class="form-control form-control-lg inputAlamat">
-										<option value="0">Pilih Provinsi</option>
-										<option value="0" class="select-option">
-											Pilih Provinsi
-										</option>
-										<option value="1">Provinsi 1</option>
-										<option value="2">Provinsi 2</option>
-										<option value="3">Provinsi 3</option>
-									</select>
-								</div>
-							</div>
-							<div class="d-flex flex-column mt-3">
-								<div class="label">
-									<label for="selectgrade"
-										>Kabupaten / Kota<span style="color: red">*</span></label
-									>
-								</div>
-								<div class="custom-select">
-									<select class="form-control form-control-lg inputAlamat">
-										<option value="0">Pilih Kabupaten / kota</option>
-										<option value="0" class="select-option">
-											Pilih Kabupaten / kota
-										</option>
-										<option value="1">Kabupaten / kota 1</option>
-										<option value="2">Kabupaten / kota 2</option>
-										<option value="3">Kabupaten / kota 3</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlInput2"
-									>Kecamatan<span style="color: red">*</span></label
+								<h5
+									class="modal-title heading-24-600 heading-14-600"
+									id="exampleModalLabel"
 								>
-								<input
-									type="text"
-									class="form-control form-control-lg inputAlamat"
-									id="kecamatan"
-									placeholder="Pilih Kecamatan"
-									oninput="fillInput()"
-								/>
-							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlInput2"
-									>Kode Pos<span style="color: red">*</span></label
+									Pilih Alamat Pengiriman
+								</h5>
+								<div
+									class="summary-modal-title heading-18-400 heading-10-400 grey"
 								>
-								<input
-									type="text"
-									class="form-control form-control-lg inputAlamat"
-									id="kodepos"
-									placeholder="Tulis Kode pos"
-									oninput="fillInput()"
-								/>
+									Silahkan pilih alamat pengiriman yang dituju
+								</div>
 							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlTextarea1"
-									>Alamat Lengkap<span style="color: red">*</span></label
-								>
-								<textarea
-									class="form-control inputAlamat"
-									placeholder="Tulis Alamat Lengkap"
-									id="alamatLengkap"
-									rows="3"
-									oninput="fillInput()"
-								></textarea>
-							</div>
-							<div class="form-check mt-3">
-								<input
-									class="form-check-input"
-									type="checkbox"
-									value=""
-									id="flexCheckDefault"
-								/>
-								<label class="form-check-label" for="flexCheckDefault">
-									Atur sebagai alamat utama
-								</label>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer d-flex justify-content-center pt-3">
-						<button
-							type="button"
-							class="btn btn-orange modal-btn heading-16-500"
-							onclick="getAlamat()"
-							data-dismiss="modal"
-						>
-							Tambah Alamat
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Modal cek ongkir -->
-		<div
-			class="modal fade"
-			id="cekOngkir"
-			tabindex="-1"
-			aria-labelledby="exampleModalLabel"
-			aria-hidden="true"
-		>
-			<div
-				class="modal-dialog moda-tambah-alamat modal-lg modal-dialog-scrollable"
-			>
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="d-flex flex-column">
-							<h5
-								class="modal-title heading-24-600 heading-14-600"
-								id="exampleModalLabel"
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal"
+								aria-label="Close"
 							>
-								Cek Ongkir
-							</h5>
+								<span aria-hidden="true">
+									<img src="./images/close-icon.svg" alt="" />
+								</span>
+							</button>
 						</div>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true">
-								<img src="./images/close-icon.svg" alt="" />
-							</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="exampleFormControlInput1"
-									>Kecamatan Alamat Tujuan</label
+						<div class="modal-body">
+							<div class="newalamat" id="newAlamat">
+								<!-- jika belum ada alamat -->
+								<div
+									class="no-alamat-wrapper heading-12-600 text-center"
+									id="no-alamat"
 								>
-								<input
-									type="email"
-									class="form-control form-control-lg"
-									id="Alamat tujuan"
-									value="Bekasi Barat"
-									readonly
-								/>
+									Oops... Kamu belum memiliki Alamat Pengiriman
+								</div>
+								<!-- end -->
 							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlInput1">Kota Alamat Tujuan</label>
-								<input
-									type="email"
-									class="form-control form-control-lg"
-									id="Alamat tujuan"
-									value="Bekasi Barat"
-									readonly
-								/>
-							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlInput1">Berat (Kg)</label>
-								<input
-									type="email"
-									class="form-control form-control-lg"
-									id="Berat"
-									value="7"
-									readonly
-								/>
-							</div>
-							<div class="form-group mt-3">
-								<label for="exampleFormControlInput1">Kurir</label>
-								<div class="kurir-info" id="kurir-info"></div>
-							</div>
-						</form>
+						</div>
+						<div class="modal-footer d-flex justify-content-center">
+							<button
+								type="button"
+								class="btn btn-orange modal-btn"
+								data-toggle="modal"
+								data-target="#tambahAlamatBaru"
+								data-dismiss="modal"
+							>
+								Tambah Alamat Baru
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="before-footer">
-			<div class="container">
-				<a href="#" class="d-none d-sm-block"
-					><img
-						src="images/before-footer.jpg"
-						alt=""
-						class="img-fluid wow slideInRight"
-				/></a>
-				<a href="#" class="d-sm-none d-block"
-					><img
-						src="images/cta-mobile.png"
-						alt=""
-						class="img-fluid wow slideInRight"
-				/></a>
+
+			<!-- Modal tambah Alamat Baru -->
+			<div
+				class="modal fade"
+				id="tambahAlamatBaru"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
+			>
+				<div
+					class="
+						modal-dialog
+						moda-tambah-alamat
+						modal-lg modal-dialog-scrollable
+					"
+				>
+					<div class="modal-content">
+						<div class="modal-header">
+							<div class="d-flex flex-column">
+								<h5
+									class="modal-title heading-24-600 heading-14-600"
+									id="exampleModalLabel"
+								>
+									Tambah Alamat Pengiriman
+								</h5>
+								<div
+									class="summary-modal-title heading-18-400 heading-10-400 grey"
+								>
+									Silahkan tambah alamat pengiriman yang dituju
+								</div>
+							</div>
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal"
+								aria-label="Close"
+							>
+								<span aria-hidden="true">
+									<img src="./images/close-icon.svg" alt="" />
+								</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="exampleFormControlInput1"
+										>Alamat Sebagai<span style="color: red">*</span></label
+									>
+									<input
+										type="text"
+										class="form-control form-control-lg inputAlamat"
+										id="alamatSebagai"
+										placeholder="Contoh: Rumah, Kantor, Gudang, dll."
+										oninput="fillInput()"
+									/>
+								</div>
+								<div class="form-group mt-3">
+									<label for="exampleFormControlInput2"
+										>Nama Penerima<span style="color: red">*</span></label
+									>
+									<input
+										type="text"
+										class="form-control form-control-lg inputAlamat"
+										id="namaPenerima"
+										placeholder="Nama Penerima"
+										oninput="fillInput()"
+									/>
+								</div>
+								<div class="form-group mt-3">
+									<label for="exampleFormControlInput2"
+										>No Handphone<span style="color: red">*</span></label
+									>
+									<input
+										type="number"
+										class="form-control form-control-lg inputAlamat"
+										id="noHP"
+										placeholder="No Handphone"
+										oninput="fillInput()"
+									/>
+								</div>
+								<div class="d-flex flex-column">
+									<div class="label">
+										<label for="selectgrade"
+											>Provinsi<span style="color: red">*</span></label
+										>
+									</div>
+									<div class="custom-select">
+										<select class="form-control form-control-lg inputAlamat">
+											<option value="0">Pilih Provinsi</option>
+											<option value="0" class="select-option">
+												Pilih Provinsi
+											</option>
+											<option value="1">Provinsi 1</option>
+											<option value="2">Provinsi 2</option>
+											<option value="3">Provinsi 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="d-flex flex-column mt-3">
+									<div class="label">
+										<label for="selectgrade"
+											>Kabupaten / Kota<span style="color: red">*</span></label
+										>
+									</div>
+									<div class="custom-select">
+										<select class="form-control form-control-lg inputAlamat">
+											<option value="0">Pilih Kabupaten / kota</option>
+											<option value="0" class="select-option">
+												Pilih Kabupaten / kota
+											</option>
+											<option value="1">Kabupaten / kota 1</option>
+											<option value="2">Kabupaten / kota 2</option>
+											<option value="3">Kabupaten / kota 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group mt-3">
+									<label for="exampleFormControlInput2"
+										>Kecamatan<span style="color: red">*</span></label
+									>
+									<input
+										type="text"
+										class="form-control form-control-lg inputAlamat"
+										id="kecamatan"
+										placeholder="Pilih Kecamatan"
+										oninput="fillInput()"
+									/>
+								</div>
+								<div class="form-group mt-3">
+									<label for="exampleFormControlInput2"
+										>Kode Pos<span style="color: red">*</span></label
+									>
+									<input
+										type="text"
+										class="form-control form-control-lg inputAlamat"
+										id="kodepos"
+										placeholder="Tulis Kode pos"
+										oninput="fillInput()"
+									/>
+								</div>
+								<div class="form-group mt-3">
+									<label for="exampleFormControlTextarea1"
+										>Alamat Lengkap<span style="color: red">*</span></label
+									>
+									<textarea
+										class="form-control inputAlamat"
+										placeholder="Tulis Alamat Lengkap"
+										id="alamatLengkap"
+										rows="3"
+										oninput="fillInput()"
+									></textarea>
+								</div>
+								<div class="form-check mt-3">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="flexCheckDefault"
+									/>
+									<label class="form-check-label" for="flexCheckDefault">
+										Atur sebagai alamat utama
+									</label>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer d-flex justify-content-center pt-3">
+							<button
+								type="button"
+								class="btn btn-orange modal-btn heading-16-500"
+								onclick="getAlamat()"
+								data-dismiss="modal"
+							>
+								Tambah Alamat
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div id="footer" class="">
-			<div class="container">
-				<div class="row">
-					<div class="logo col-12 mb-5">
-						<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
-					</div>
+
+			<div id="before-footer">
+				<div class="container">
+					<a href="#" class="d-none d-sm-block"
+						><img
+							src="images/before-footer.jpg"
+							alt=""
+							class="img-fluid wow slideInRight"
+					/></a>
+					<a href="#" class="d-sm-none d-block"
+						><img
+							src="images/cta-mobile.png"
+							alt=""
+							class="img-fluid wow slideInRight"
+					/></a>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="block" id="min-m-mobile">
-							<div class="title-section">Alamat</div>
-							<div class="column-address">
-								<div class="desc">
-									<p class="mb-0">
-										Kawasan Industri Jababeka II Jalan Industri Selatan Blok LL
-										No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 - Indonesia
-									</p>
-									<strong>Jam Operasional</strong>
-									<p>
-										Senin - Jumat
-										<span class="d-block">08:00 - 17:00 WIB</span>
-									</p>
+			</div>
+			<div id="footer" class="">
+				<div class="container">
+					<div class="row">
+						<div class="logo col-12 mb-5">
+							<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="block" id="min-m-mobile">
+								<div class="title-section">Alamat</div>
+								<div class="column-address">
+									<div class="desc">
+										<p class="mb-0">
+											Kawasan Industri Jababeka II Jalan Industri Selatan Blok
+											LL No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 -
+											Indonesia
+										</p>
+										<strong>Jam Operasional</strong>
+										<p>
+											Senin - Jumat
+											<span class="d-block">08:00 - 17:00 WIB</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="block">
+								<div class="title-section">Hubungi Kami</div>
+								<div class="column">
+									<div class="list-contact">
+										<ul class="pl-0 ml-0">
+											<li class="mb-2">
+												<span class="font-weight-bold">Email :</span
+												><a href="mailto:marketing@supernova-id.com"
+													>marketing@supernova-id.com</a
+												>
+											</li>
+											<li class="mb-2">
+												<span class="font-weight-bold">No.Telpon :</span>+62 21
+												8983 1969
+											</li>
+											<li class="mb-2">
+												<span class="font-weight-bold">Fax :</span>+62 21 8983
+												1967
+											</li>
+											<li class="mb-2">
+												<span class="font-weight-bold">Whatsapp :</span>+62 8231
+												7714 488
+											</li>
+										</ul>
+									</div>
+									<div class="list-sosmed my-sm-5 my-4">
+										<ul class="pl-0 ml-0">
+											<li>
+												<a href="https://www.facebook.com/" target="_blank"
+													><i class="fab fa-facebook-f"></i
+												></a>
+											</li>
+											<li>
+												<a href="https://www.instagram.com/" target="_blank"
+													><i class="fab fa-instagram"></i
+												></a>
+											</li>
+											<li>
+												<a href="https://www.linkedin.com/" target="_blank"
+													><i class="fab fa-linkedin-in"></i
+												></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="block pl-sm-5">
+								<div class="title-section">Informasi</div>
+								<div class="column">
+									<div class="menus">
+										<ul class="ml-0 pl-0">
+											<li class="mb-2">
+												<a href="about-us.html">Tentang Supernova Digipack</a>
+											</li>
+											<li class="mb-2">
+												<a href="pilih-kemasan.html">Pilihan Kemasan</a>
+											</li>
+											<li class="mb-2"><a href="blog.html">Blog</a></li>
+											<li class="mb-2">
+												<a href="panduan_belanja.html">Panduan Belanja</a>
+											</li>
+											<li class="mb-2">
+												<a href="syarat_ketentuan.html">Syarat & Ketentuan</a>
+											</li>
+											<li class="mb-2">
+												<a href="kebijakan.html">Kebijakan Privasi</a>
+											</li>
+											<li class="mb-2"><a href="faq.html">FAQs</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="block">
-							<div class="title-section">Hubungi Kami</div>
-							<div class="column">
-								<div class="list-contact">
-									<ul class="pl-0 ml-0">
-										<li class="mb-2">
-											<span class="font-weight-bold">Email :</span
-											><a href="mailto:marketing@supernova-id.com"
-												>marketing@supernova-id.com</a
-											>
-										</li>
-										<li class="mb-2">
-											<span class="font-weight-bold">No.Telpon :</span>+62 21
-											8983 1969
-										</li>
-										<li class="mb-2">
-											<span class="font-weight-bold">Fax :</span>+62 21 8983
-											1967
-										</li>
-										<li class="mb-2">
-											<span class="font-weight-bold">Whatsapp :</span>+62 8231
-											7714 488
-										</li>
-									</ul>
-								</div>
-								<div class="list-sosmed my-sm-5 my-4">
-									<ul class="pl-0 ml-0">
-										<li>
-											<a href="https://www.facebook.com/" target="_blank"
-												><i class="fab fa-facebook-f"></i
-											></a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/" target="_blank"
-												><i class="fab fa-instagram"></i
-											></a>
-										</li>
-										<li>
-											<a href="https://www.linkedin.com/" target="_blank"
-												><i class="fab fa-linkedin-in"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="block pl-sm-5">
-							<div class="title-section">Informasi</div>
-							<div class="column">
-								<div class="menus">
-									<ul class="ml-0 pl-0">
-										<li class="mb-2">
-											<a href="about-us.html">Tentang Supernova Digipack</a>
-										</li>
-										<li class="mb-2">
-											<a href="pilih-kemasan.html">Pilihan Kemasan</a>
-										</li>
-										<li class="mb-2"><a href="blog.html">Blog</a></li>
-										<li class="mb-2">
-											<a href="panduan_belanja.html">Panduan Belanja</a>
-										</li>
-										<li class="mb-2">
-											<a href="syarat_ketentuan.html">Syarat & Ketentuan</a>
-										</li>
-										<li class="mb-2">
-											<a href="kebijakan.html">Kebijakan Privasi</a>
-										</li>
-										<li class="mb-2"><a href="faq.html">FAQs</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="copyright">
+						<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
+							Copyright &copy; 2021 Supernova Digipack
+							<span id="hide-on-mobile">-</span> PT Supernova Flexible Packaging
+						</p>
 					</div>
 				</div>
-				<div class="copyright">
-					<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
-						Copyright &copy; 2021 Supernova Digipack
-						<span id="hide-on-mobile">-</span> PT Supernova Flexible Packaging
-					</p>
-				</div>
-				<!-- <div class="floating position-fixed">
-							<a href="#"
-								><img src="images/wa.svg" alt="" class="img-fluid"
-							/></a>
-						</div> -->
 			</div>
 		</div>
 		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
@@ -1405,397 +1818,11 @@ then close all select boxes:*/
 				arrow_icon4.classList.toggle('open');
 			});
 
-			// const arrow_icon5 = document.getElementById('arrow-icon5');
-			// const kurir__trigger = document.getElementById('kurir-trigger');
-			// kurir__trigger.addEventListener('click', function () {
-			// 	arrow_icon5.classList.toggle('open');
-			// });
-
-			// page checkout modal kurir
-			const jnt = document.getElementById('jnt');
-			const jne = document.getElementById('jne');
-			const kurirInner = document.getElementById('kurir-info');
-
-			jnt.addEventListener('click', function () {
-				kurirInner.innerHTML = `<a
-	data-toggle="collapse"
-	href="#kurirJNT"
-	role="button"
-	aria-expanded="false"
-	aria-controls="kurirJNT"
->
-	<div
-		class="dropdown-wrapper d-flex justify-content-between"
-		onclick="openKurir()"
-	>
-		<div class="d-flex">
-			<div class="ekpedisi-logo">
-				<img src="./images/JNT.png" class="mr-3" alt="" />
-			</div>
-			<div
-				class="
-					title
-					d-flex
-					align-center-center
-					heading-16-600
-					primary-color
-					pt-1
-				"
-			>
-				JNT
-			</div>
-		</div>
-		<div class="d-flex">
-			<div class="ongkir pt-1 mr-3">Rp 69.300</div>
-			<div class="down d-flex align-items-center">
-				<img
-					src="./images/down-chevron.svg"
-					width="20px"
-					alt=""
-					class="default open"
-					id="arrow-icon6"
-				/>
-			</div>
-		</div>
-	</div>
-</a>
-<div class="collapse show" id="kurirJNT">
-	<div class="card card-body heading-16-400">
-		<div class="form-check">
-			<input
-				class="form-check-input d-flex align-items-center"
-				type="radio"
-				name="flexRadioDefault"
-				id="flexRadioDefault17"
-				checked
-			/>
-			<label
-				class="
-					form-check-label
-					d-flex
-					align-items-center
-					justify-content-between
-					ml-2
-				"
-				for="flexRadioDefault17"
-			>
-				<div class="ekpedisi-info d-flex align-center-center">
-					<div class="ekpedisi-name heading-18-400 fs-10">EZ</div>
-				</div>
-				<div class="estimasi heading-18-400 grey fs-10">
-					Estimasi pengiriman 1 - 2 hari
-				</div>
-				<div class="down d-flex align-items-center">
-					<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 69.300</div>
-				</div>
-			</label>
-		</div>
-	</div>
-</div>`;
-			});
-
-			jne.addEventListener('click', function () {
-				console.log(1);
-				kurirInner.innerHTML = `<div class="pengirman-dropdown">
-	<a
-		data-toggle="collapse"
-		href="#kurir"
-		role="button"
-		aria-expanded="false"
-		aria-controls="kurir"
-		id="kurir-trigger"
-	>
-		<div
-			class="dropdown-wrapper d-flex justify-content-between"
-			onclick="openKurir()"
-		>
-			<div class="d-flex">
-				<div class="ekpedisi-logo">
-					<img src="./images/JNE.png" class="mr-2" alt="" />
-				</div>
-				<div
-					class="
-						title
-						d-flex
-						align-center-center
-						heading-16-600
-						primary-color
-						pt-1
-					"
-				>
-					JNE Reguler
-				</div>
-			</div>
-			<div class="d-flex">
-				<div class="ongkir pt-1 mr-3">Rp 69.300</div>
-				<div class="down d-flex align-items-center">
-					<img
-						src="./images/down-chevron.svg"
-						width="20px"
-						alt=""
-						class="default open"
-						id="arrow-icon6"
-					/>
-				</div>
-			</div>
-		</div>
-	</a>
-
-	<div class="collapse show" id="kurir">
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault12"
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-					"
-					for="flexRadioDefault12"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18-400 fs-10">JTR</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 27.500</div>
-					</div>
-				</label>
-			</div>
-		</div>
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault13"
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-					"
-					for="flexRadioDefault13"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18-400 fs-10">JTR250</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 385.000</div>
-					</div>
-				</label>
-			</div>
-		</div>
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault14"
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-					"
-					for="flexRadioDefault14"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18-400 fs-10">JTR<150</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 220.000</div>
-					</div>
-				</label>
-			</div>
-		</div>
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault15"
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-					"
-					for="flexRadioDefault15"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18-400 fs-10">JTR>250</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 550.000</div>
-					</div>
-				</label>
-			</div>
-		</div>
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault16"
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-					"
-					for="flexRadioDefault16"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18-400 fs-10">OKE</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 61.600</div>
-					</div>
-				</label>
-			</div>
-		</div>
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault17"
-					checked
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-					"
-					for="flexRadioDefault17"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18- fs-10">REG</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 69.300</div>
-					</div>
-				</label>
-			</div>
-		</div>
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault18"
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-					"
-					for="flexRadioDefault18"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18-400 fs-10">SPS</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 151.800</div>
-					</div>
-				</label>
-			</div>
-		</div>
-		<div class="card card-body heading-16-400">
-			<div class="form-check">
-				<input
-					class="form-check-input d-flex align-items-center"
-					type="radio"
-					name="flexRadioDefault"
-					id="flexRadioDefault19"
-				/>
-				<label
-					class="
-						form-check-label
-						d-flex
-						align-items-center
-						justify-content-between
-						ml-2
-						
-					"
-					for="flexRadioDefault19"
-				>
-					<div class="ekpedisi-info d-flex align-center-center">
-						<div class="ekpedisi-name heading-18-400 fs-10">YES</div>
-					</div>
-					<div class="estimasi heading-18-400 grey fs-10">
-						Estimasi pengiriman 3 - 4 hari
-					</div>
-					<div class="down d-flex align-items-center">
-						<div class="ekpedisi-harga mr-3 heading-16-400 fs-10">Rp 138.600</div>
-					</div>
-				</label>
-			</div>
-		</div>
-	</div>
-</div>
-`;
-			});
-
-			// end page checkout modal kurir
-
-			function openKurir() {
-				console.log('2');
-				const arrow_icon6 = document.getElementById('arrow-icon6');
-				arrow_icon6.classList.toggle('open');
-			}
+			// function openKurir() {
+			// 	console.log('2');
+			// 	const arrow_icon6 = document.getElementById('arrow-icon6');
+			// 	arrow_icon6.classList.toggle('open');
+			// }
 
 			const open_trigger = document.getElementById('open-trigger');
 			const open_param = document.getElementById('virtualAccount');

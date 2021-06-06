@@ -9,6 +9,7 @@ $(document).ready(function () {
 	$('.navbar-toggler').click(function () {
 		$('.overlay').toggleClass('d-none');
 		$('.show-overlay').removeClass('show-overlay');
+		$('.open').removeClass('open');
 	});
 	$('.single-item').slick({
 		responsive: [
@@ -173,6 +174,34 @@ function inputPassword() {
 	}
 	return input;
 }
+function inputPassword2() {
+	var input2 = document.getElementById('password2').value;
+	var password_wrapper2 = document.getElementById('input-pass2');
+	console.log(1);
+	if (input2.length > 0) {
+		password_wrapper2.classList.add('border-blue');
+		document.getElementById('password2').classList.add('bg-grey');
+	} else if (input2.length <= 0) {
+		password_wrapper2.classList.remove('border-blue');
+		document.getElementById('password2').classList.remove('bg-grey');
+	}
+	return input2;
+}
+function inputPassword3() {
+	var input3 = document.getElementById('password3').value;
+	var password_wrapper3 = document.getElementById('input-pass3');
+	console.log(1);
+	if (input3.length > 0) {
+		password_wrapper3.classList.add('border-blue');
+		document.getElementById('password3').classList.add('bg-grey');
+	} else if (input3.length <= 0) {
+		password_wrapper3.classList.remove('border-blue');
+		document.getElementById('password3').classList.remove('bg-grey');
+	}
+	return input3;
+}
+
+// }
 
 // page checkout ganti warna ketika input diisi
 function fillInput() {
@@ -289,6 +318,37 @@ function hidePass() {
 			password_trigger.innerHTML = `<i class="fa fa-eye-slash" id="icon-eye"></i>`;
 		}
 		return password_trigger;
+	});
+}
+function hidePass2() {
+	var password2 = document.getElementById('password2');
+	var password_trigger2 = document.getElementById('password-trigger2');
+
+	password_trigger2.addEventListener('click', function (e) {
+		if (password2.type === 'password') {
+			password2.type = 'text';
+			password_trigger2.innerHTML = `<i class="fa fa-eye" id="icon-eye"></i>`;
+		} else {
+			password2.type = 'password';
+			password_trigger2.innerHTML = `<i class="fa fa-eye-slash" id="icon-eye"></i>`;
+		}
+		return password_trigger2;
+	});
+}
+
+function hidePass3() {
+	var password3 = document.getElementById('password3');
+	var password_trigger3 = document.getElementById('password-trigger3');
+
+	password_trigger3.addEventListener('click', function (e) {
+		if (password3.type === 'password') {
+			password3.type = 'text';
+			password_trigger3.innerHTML = `<i class="fa fa-eye" id="icon-eye"></i>`;
+		} else {
+			password3.type = 'password';
+			password_trigger3.innerHTML = `<i class="fa fa-eye-slash" id="icon-eye"></i>`;
+		}
+		return password_trigger3;
 	});
 }
 

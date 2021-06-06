@@ -1,0 +1,274 @@
+.content-user-panel {
+	margin-top: 50px;
+}
+
+.user-menu {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 30px 0px;
+}
+
+.transaksi,
+.edit-profile,
+.nomor-transaksi,
+.ubah_kata_sandi,
+.alamatWrapper,
+.tambahAlamat {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 30px 0px 30px 0px;
+}
+
+.notifikasiWrapper {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 30px 0px 0px 0px;
+}
+
+.nomor-transaksi {
+	margin: 0px 30px;
+}
+
+.transaksi-info {
+	padding: 0px 30px;
+}
+
+.edit-profile-title {
+	padding-left: 30px;
+}
+
+.profile {
+	padding-top: 30px;
+}
+
+.urutkan {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+}
+
+.btn-orange {
+	border: 1px solid #fbab20;
+	border-radius: 6px;
+}
+
+.btn-orange:hover {
+	background: linear-gradient(172.04deg, #1891f6 10.75%, #1a38e3 139.85%);
+	border: 1px solid transparent;
+	color: #fff;
+}
+
+.btn-primaryku {
+	width: 100%;
+	background: linear-gradient(160.02deg, #3496f7 -1.9%, #2a6ff5 79.64%);
+	border-radius: 6px;
+	padding: 18px 0px !important;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 20px;
+	border: 1px solid transparent;
+}
+
+.btn-primaryku:hover {
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
+	border: 1px solid #ffc90a;
+	padding: 18px 0px !important;
+	color: #312d75;
+}
+
+form {
+	padding: 0px 30px;
+}
+
+form .btn-simpan a {
+	width: 80%;
+}
+
+form label {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+form input::placeholder {
+	color: #c0c4cd;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+form input {
+	font-size: 14px;
+}
+
+.green {
+	color: #26d044;
+}
+
+.orange {
+	color: #fbab20 !important;
+}
+
+.detail-pesanan a:hover {
+	color: #fbab20 !important;
+	text-decoration: none;
+}
+
+.detail-pesanan {
+	padding: 20px 0px 0px 20px;
+}
+
+.w-30 {
+	width: 30% !important;
+}
+
+.waktu-pembayaran-limit {
+	color: #898f9e !important;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.info-detail {
+	padding: 0px 30px;
+}
+
+.transaksi-title,
+.ubahKataSandi_title,
+.alamatTitle,
+.notifikasi-title,
+.tambahAlamat-title {
+	padding-left: 30px;
+}
+
+.user-panel a svg:hover {
+	fill: #fbab20;
+}
+
+.ubah_kata_sandi .password input {
+	border: none;
+}
+
+.ubah_kata_sandi .password .input-group .input-group-append .input-group-text {
+	background: none !important;
+	border: none;
+	color: #c0c4cd;
+	cursor: pointer;
+}
+
+.input-pass {
+	padding: 8px !important;
+}
+
+.btn-ubahKataSandi,
+.btn-tambahAlamat {
+	width: 100%;
+}
+
+.btn-ubahKataSandi a,
+.btn-tambahAlamat a {
+	width: 80%;
+}
+
+.passAllWrapper,
+.alamatUserAllWrapper,
+.notifAllWrapper {
+	padding: 30px;
+}
+
+.alamatChoose {
+	background: #f8f8f8 !important;
+	border: 1px solid transparent;
+}
+
+.notifRead {
+	background: #f9fafa !important;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.notifUserWrapper {
+	padding-left: 30px;
+}
+
+.notif-item {
+	padding: 20px 0px 0px 0px;
+	margin-top: -15px;
+}
+
+.notifAllWrapper a {
+	color: #312d75;
+}
+
+.notifAllWrapper a:hover {
+	text-decoration: none;
+	color: #fbab20;
+}
+
+.page-link {
+	border: none;
+	color: #312d75;
+}
+
+.page-active {
+	border: 1px solid #3496f7;
+	color: #3496f7 !important;
+	box-sizing: border-box;
+	border-radius: 6px;
+}
+
+.page-item {
+	margin: 0px 5px;
+}
+
+.page-info {
+	margin-top: 35px;
+	width: 9%;
+}
+
+.pagination-page {
+	margin-bottom: 60px;
+}
+
+.tambahAlamatWrapper form {
+	padding: 0 !important;
+}
+
+.tambahAlamatWrapper label {
+	font-size: 16px !important;
+	font-weight: 500 !important;
+}
+
+.tambahAlamatWrapper form .form-group input::placeholder,
+.tambahAlamatWrapper form .form-group textarea::placeholder {
+	font-size: 16px !important;
+	font-weight: 300;
+	color: #c0c4cd;
+}
+
+.tambahAlamatWrapper form .form-group textarea {
+	color: #898f9e;
+}
+
+.tambahAlamatWrapper form .form-group input {
+	font-size: 16px;
+	color: #312d75;
+}
+
+.tambahAlamatWrapper {
+	padding: 15px 30px 0px 30px;
+}
+
+.button-action-tambahAlamat a {
+	width: 100%;
+	margin: 0px 10px;
+	margin-top: 50px;
+	padding: 0px 10px;
+}
+
+.btn-orange {
+	padding: 18px 0px !important;
+}
+
+.mt-0 {
+	margin-top: 0px !important;
+}

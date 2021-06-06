@@ -1,0 +1,82 @@
+.arrow-back {
+	margin-top: 50px;
+}
+
+.nomor-transaksi,
+.alamat,
+.jasa-pengiriman,
+.detail-pembayaran {
+	border: 1px solid #c0c4cd;
+	padding: 30px;
+	background: #ffffff;
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.produk-pesanan {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 30px 0px 0px 0px;
+}
+
+.alamat-user {
+	background: #f0f1f1;
+	border-radius: 6px;
+	padding: 20px;
+}
+
+.produk-img {
+	border: 1px solid #c0c4cd;
+	padding: 20px;
+	width: 120px;
+}
+
+.produk-img img {
+	max-width: 100%;
+}
+
+.produk-name {
+	text-transform: uppercase;
+}
+.produk-pesanan-title {
+	padding: 0px 30px;
+}
+
+.produk-pesanan-items {
+	padding: 30px;
+}
+
+.btn-batal {
+	background: #f0f1f1;
+	border-radius: 6px;
+	width: 100%;
+	padding: 15px;
+}
+
+.pengiriman-ilustration img {
+	width: 100%;
+}
+
+.content {
+	margin-top: 50px;
+}
+
+.arrow-back {
+	color: #ed1c24;
+}
+
+@media (max-width: 578px) {
+	.show-mobile {
+		display: block !important;
+	}
+
+	.mt-3-mobile {
+		margin-top: 1.5rem;
+	}
+
+	.arrow-back img {
+		transform: rotate(180deg);
+	}
+}
