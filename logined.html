@@ -1019,14 +1019,14 @@
 
 				return;
 			});
-			const arrow_icon = document.getElementById('arrow-icon');
+			const arrow_icon_nav_mobile = document.getElementById('arrow-icon');
 
 			overlay.addEventListener('click', function () {
 				user_bag.classList.remove('show-overlay');
 				user_panel_action.classList.remove('show-overlay');
 				user_notif.classList.remove('show-overlay');
 				overlay.classList.remove('show-overlay');
-				arrow_icon.classList.remove('open');
+				arrow_icon_nav_mobile.classList.remove('open');
 				overlayNav.classList.add('d-none');
 			});
 
@@ -1039,9 +1039,9 @@
 			open_trigger_navbar_mobile.addEventListener('click', function () {
 				if (open_param_navbar_mobile.classList.contains('show-overlay')) {
 					console.log(1);
-					arrow_icon.classList.add('open');
+					arrow_icon_nav_mobile.classList.add('open');
 				} else {
-					arrow_icon.classList.remove('open');
+					arrow_icon_nav_mobile.classList.remove('open');
 					overlayNav.classList.add('d-none');
 				}
 			});

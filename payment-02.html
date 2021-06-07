@@ -262,722 +262,753 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- masukan konten disini -->
-		<div class="content-wrapper pt-5 mt-5">
-			<div class="checkout-flow">
-				<div class="container">
-					<div class="d-flex align-items-center justify-content-center">
-						<div class="checkout d-flex flex-column align-items-center mr-3">
-							<img src="./images/checkout-icon.svg" class="icon" alt="" />
+			<!-- masukan konten disini -->
+			<div class="content-wrapper pt-5 mt-5">
+				<div class="checkout-flow">
+					<div class="container">
+						<div class="d-flex align-items-center justify-content-center">
+							<div class="checkout d-flex flex-column align-items-center mr-3">
+								<img src="./images/checkout-icon.svg" class="icon" alt="" />
+								<div
+									class="checkout-flow-title heading-18-600 heading-10-600 pt-3"
+								>
+									Checkout
+								</div>
+							</div>
+							<div class="checkout-flow-line">
+								<div class="line-checkout bg-primary"></div>
+							</div>
+
+							<div class="payment d-flex flex-column align-items-center mx-3">
+								<img src="./images/payment-fill.svg" class="icon" alt="" />
+								<div
+									class="checkout-flow-title heading-18-600 heading-10-600 pt-3"
+								>
+									Payment
+								</div>
+							</div>
+							<div class="checkout-flow-line">
+								<div class="line-checkout"></div>
+							</div>
+
 							<div
-								class="checkout-flow-title heading-18-600 heading-10-600 pt-3"
+								class="confirmation d-flex flex-column align-items-center ml-3"
 							>
-								Checkout
+								<img src="./images/confirm-icon.svg" class="icon" alt="" />
+								<div
+									class="
+										checkout-flow-title
+										heading-18-600 heading-10-600
+										pt-3
+										grey
+									"
+								>
+									Confirmation
+								</div>
 							</div>
 						</div>
-						<div class="checkout-flow-line">
-							<div class="line-checkout bg-primary"></div>
-						</div>
+					</div>
+				</div>
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-md-7 col-sm-12">
+							<div class="informasi-pembayaran">
+								<div class="informasi-pembayaran-title heading-24-600">
+									Informasi Pembayaran
+								</div>
+								<div class="d-flex justify-content-between mt-3 column-mobile">
+									<div class="status-pembayaran heading-18-500 column-mobile">
+										<div class="status">Status</div>
+										<div class="info-status yellow mt-2">
+											Menunggu Pembayaran
+										</div>
+									</div>
+									<div
+										class="
+											nomor-transaksi-pembayaran
+											heading-18-500
+											column-mobile
+											mt-3-mobile
+										"
+									>
+										<div class="nomor-transaksi">Nomor Transaksi</div>
+										<div class="kode-transaksi mt-2">210100000000012</div>
+									</div>
+								</div>
+								<div class="waktu-pembayaran mt-3">
+									<div
+										class="waktu heading-18-500 d-flex justify-content-center"
+									>
+										<div class="jam"><span class="jam-info">47</span> Jam</div>
+										<div class="menit mx-2">
+											<span class="menit-info">50</span> Menit
+										</div>
+										<div class="detik">
+											<span class="detik-info">11</span> Detik
+										</div>
+									</div>
+								</div>
+								<div class="info-pembayaran-metode heading-18-500 mt-3">
+									<div class="metode-title">Metode Pembayaran</div>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<div class="metode-pembayaran-nama grey mt-2">
+											Virtual Account (BCA)
+										</div>
+										<div class="metode-pembayaran-logo">
+											<img src="./images/bca.svg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="info-kode-pembayaran heading-18-500 mt-3">
+									<div class="kode-title">Kode Pembayaran</div>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<div class="kode-pembayaran grey mt-2">210100000000012</div>
+										<div class="salin-kode-wrapper">
+											<div class="d-flex align-items-center">
+												<img src="./images/salin.svg" class="mr-2" alt="" />
+												<div class="heading-10-400-web primary-color">
+													Salin Kode Pembayaran
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="btn-action mt-2">
+									<a href="transaksi-detail.html" style="width: 100%">
+										<div
+											class="btn btn-primaryku heading-20-500 heading-12-500"
+										>
+											Lihat Detail Pesanan
+										</div>
+									</a>
+								</div>
+							</div>
 
-						<div class="payment d-flex flex-column align-items-center mx-3">
-							<img src="./images/payment-fill.svg" class="icon" alt="" />
-							<div
-								class="checkout-flow-title heading-18-600 heading-10-600 pt-3"
-							>
-								Payment
+							<div class="metode-pembayaran mt-3">
+								<div
+									class="metode-pembayaran-title heading-24-600 heading-14-600"
+								>
+									Metode Pembayaran
+								</div>
+								<div class="metode-pembayaran-menu mt-3">
+									<div class="accordion" id="accordionExample">
+										<div class="virtual-account">
+											<a
+												data-toggle="collapse"
+												href="#virtualAccount"
+												role="button"
+												aria-expanded="false"
+												aria-controls="virtualAccount"
+												id="open-trigger"
+											>
+												<div
+													class="
+														dropdown-wrapper
+														d-flex
+														justify-content-between
+													"
+												>
+													<div
+														class="
+															metode-pembayaran-list
+															heading-16-600 heading-14-600
+															primary-color
+														"
+													>
+														Virtual Account
+													</div>
+													<div class="down d-flex align-items-center">
+														<img
+															src="./images/down-chevron.svg"
+															width="20px"
+															alt=""
+															class="default open"
+															id="arrow-icon"
+														/>
+													</div>
+												</div>
+											</a>
+											<div
+												class="collapse show"
+												id="virtualAccount"
+												data-parent="#accordionExample"
+											>
+												<div
+													class="
+														card
+														no-border no-padding-bottom
+														card-body
+														heading-16-400
+														grey
+													"
+												>
+													<ol>
+														<li>Masukkan kartu ATM & PIN</li>
+														<li>Pilih menu “Transaksi Lainnya”</li>
+														<li>Pilih “Transfer”</li>
+														<li>Masukkan nomor rekening Supernova Digipack</li>
+														<li>
+															Masukkan 5 angka kode perusahaan untuk Supernova
+															Digipack (39594) dan nomor HP yang terdaftar di
+															akun Supernova Digipack (Contoh:
+															39594081283238328) kemudian pilih “BENAR”
+														</li>
+														<li>
+															Pastikan detail tagihan Anda sudah benar, kemudian
+															pilih “BENAR”
+														</li>
+														<li>
+															Perhatikan konfirmasi pembayaran Anda, jika sudah
+															benar pilih “YA” atau pilih “TIDAK” jika data di
+															layar masih salah
+														</li>
+														<li>
+															Transaksi Anda sudah selesai, simpan struk
+															transaksi sebagai bukti pembayaran
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+										<div class="bank-transfer mt-3">
+											<a
+												data-toggle="collapse"
+												href="#bankTransfer"
+												role="button"
+												aria-expanded="false"
+												aria-controls="bankTransfer"
+												id="open-trigger2"
+											>
+												<div
+													class="
+														dropdown-wrapper
+														d-flex
+														justify-content-between
+													"
+												>
+													<div
+														class="
+															metode-pembayaran-list
+															heading-16-600 heading-14-600
+															primary-color
+														"
+													>
+														Bank Transfer
+													</div>
+													<div class="down d-flex align-items-center">
+														<img
+															src="./images/down-chevron.svg"
+															width="20px"
+															alt=""
+															class="default"
+															id="arrow-icon2"
+														/>
+													</div>
+												</div>
+											</a>
+											<div
+												id="bankTransfer"
+												class="collapse"
+												aria-labelledby="headingTwo"
+												data-parent="#accordionExample"
+											>
+												<div
+													class="
+														card
+														no-border
+														nno-padding-bottom
+														card-body
+														heading-16-400
+														grey
+													"
+												>
+													<ol>
+														<li>Masukkan kartu ATM & PIN</li>
+														<li>Pilih menu “Transaksi Lainnya”</li>
+														<li>Pilih “Transfer”</li>
+														<li>Masukkan nomor rekening Supernova Digipack</li>
+														<li>
+															Masukkan 5 angka kode perusahaan untuk Supernova
+															Digipack (39594) dan nomor HP yang terdaftar di
+															akun Supernova Digipack (Contoh:
+															39594081283238328) kemudian pilih “BENAR”
+														</li>
+														<li>
+															Pastikan detail tagihan Anda sudah benar, kemudian
+															pilih “BENAR”
+														</li>
+														<li>
+															Perhatikan konfirmasi pembayaran Anda, jika sudah
+															benar pilih “YA” atau pilih “TIDAK” jika data di
+															layar masih salah
+														</li>
+														<li>
+															Transaksi Anda sudah selesai, simpan struk
+															transaksi sebagai bukti pembayaran
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+										<div class="Kartu-kredit mt-3">
+											<a
+												data-toggle="collapse"
+												href="#kartuKredit"
+												role="button"
+												aria-expanded="false"
+												aria-controls="kartuKredit"
+												id="open-trigger3"
+											>
+												<div
+													class="
+														dropdown-wrapper
+														d-flex
+														justify-content-between
+													"
+												>
+													<div
+														class="
+															metode-pembayaran-list
+															heading-16-600 heading-14-600
+															primary-color
+														"
+													>
+														Kartu Kredit
+													</div>
+													<div class="down d-flex align-items-center">
+														<img
+															src="./images/down-chevron.svg"
+															width="20px"
+															alt=""
+															class="default"
+															id="arrow-icon3"
+														/>
+													</div>
+												</div>
+											</a>
+											<div
+												id="kartuKredit"
+												class="collapse"
+												aria-labelledby="headingThree"
+												data-parent="#accordionExample"
+											>
+												<div
+													class="
+														card
+														no-border
+														nno-padding-bottom
+														card-body
+														heading-16-400
+														grey
+													"
+												>
+													<ol>
+														<li>Masukkan kartu ATM & PIN</li>
+														<li>Pilih menu “Transaksi Lainnya”</li>
+														<li>Pilih “Transfer”</li>
+														<li>Masukkan nomor rekening Supernova Digipack</li>
+														<li>
+															Masukkan 5 angka kode perusahaan untuk Supernova
+															Digipack (39594) dan nomor HP yang terdaftar di
+															akun Supernova Digipack (Contoh:
+															39594081283238328) kemudian pilih “BENAR”
+														</li>
+														<li>
+															Pastikan detail tagihan Anda sudah benar, kemudian
+															pilih “BENAR”
+														</li>
+														<li>
+															Perhatikan konfirmasi pembayaran Anda, jika sudah
+															benar pilih “YA” atau pilih “TIDAK” jika data di
+															layar masih salah
+														</li>
+														<li>
+															Transaksi Anda sudah selesai, simpan struk
+															transaksi sebagai bukti pembayaran
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="produk-pesanan mt-3 mb-100">
+								<div class="produk-pesanan-title heading-24-600 heading-14-600">
+									Produk Pesanan
+								</div>
+								<!-- items -->
+								<div
+									class="produk-pesanan-items d-flex justify-content-between"
+								>
+									<div
+										class="
+											produk-img
+											d-flex
+											align-items-center
+											justify-content-center
+										"
+									>
+										<img src="./images/standing-pouch.png" alt="" />
+									</div>
+									<div class="produk-pesanan-info no-display-mobile">
+										<div class="produk-name heading-18-600">
+											keripik milenial
+										</div>
+										<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
+											Standing Pouch + Zipper
+										</div>
+										<div class="produk-pesanan-kode heading-16-400 grey">
+											OPP Matte20/VMPET12/LLDPE60
+										</div>
+									</div>
+									<div class="produk-pesanan-total no-display-mobile">
+										<div class="produk-pesanan-prices heading-18-400">
+											Rp 2.738
+										</div>
+										<div class="produk-pesanan-value my-3 heading-18-400">
+											x 500
+										</div>
+										<div class="produk-pesanan-total-price heading-18-600">
+											Rp 1.369.000
+										</div>
+									</div>
+									<!-- mobile -->
+									<div class="column-mobile no-display-web show-mobile pt-3">
+										<div class="produk-pesanan-info">
+											<div class="produk-name heading-14-600">
+												keripik milenial
+											</div>
+											<div
+												class="
+													produk-pesanan-tipe
+													mt-3
+													heading-10-400 heading-16-400
+													grey
+												"
+											>
+												Standing Pouch + Zipper
+											</div>
+											<div
+												class="
+													produk-pesanan-kode
+													heading-10-400 heading-16-400
+													grey
+												"
+											>
+												OPP Matte20/VMPET12/LLDPE60
+											</div>
+										</div>
+										<div
+											class="
+												produk-pesanan-total
+												d-flex
+												align-items-center
+												justify-content-between
+												mt-3
+											"
+										>
+											<div class="info-unit-price">
+												<div class="title heading-14-400 text-right grey">
+													Unit Price*
+												</div>
+												<div class="produk-pesanan-prices heading-18-400">
+													Rp 2.738
+												</div>
+											</div>
+											<div class="info-quantity">
+												<div class="title heading-14-400 grey">Quantity</div>
+												<div class="produk-pesanan-value heading-18-400">
+													x 500
+												</div>
+											</div>
+										</div>
+										<div class="d-flex flex-column mt-3">
+											<div class="title heading-14-400 grey">Total Price</div>
+											<div class="produk-pesanan-total-price heading-18-600">
+												Rp 1.369.000
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="border-bottom"></div>
+								<!-- end items -->
+								<!-- items -->
+								<div
+									class="produk-pesanan-items d-flex justify-content-between"
+								>
+									<div
+										class="
+											produk-img
+											d-flex
+											align-items-center
+											justify-content-center
+										"
+									>
+										<img src="./images/standing-pouch.png" alt="" />
+									</div>
+									<div class="produk-pesanan-info no-display-mobile">
+										<div class="produk-name heading-18-600">
+											keripik milenial
+										</div>
+										<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
+											Standing Pouch + Zipper
+										</div>
+										<div class="produk-pesanan-kode heading-16-400 grey">
+											OPP Matte20/VMPET12/LLDPE60
+										</div>
+									</div>
+									<div class="produk-pesanan-total no-display-mobile">
+										<div class="produk-pesanan-prices heading-18-400">
+											Rp 2.738
+										</div>
+										<div class="produk-pesanan-value my-3 heading-18-400">
+											x 500
+										</div>
+										<div class="produk-pesanan-total-price heading-18-600">
+											Rp 1.369.000
+										</div>
+									</div>
+									<!-- mobile -->
+									<div class="column-mobile no-display-web show-mobile pt-3">
+										<div class="produk-pesanan-info">
+											<div class="produk-name heading-14-600">
+												keripik milenial
+											</div>
+											<div
+												class="
+													produk-pesanan-tipe
+													mt-3
+													heading-10-400 heading-16-400
+													grey
+												"
+											>
+												Standing Pouch + Zipper
+											</div>
+											<div
+												class="
+													produk-pesanan-kode
+													heading-10-400 heading-16-400
+													grey
+												"
+											>
+												OPP Matte20/VMPET12/LLDPE60
+											</div>
+										</div>
+										<div
+											class="
+												produk-pesanan-total
+												d-flex
+												align-items-center
+												justify-content-between
+												mt-3
+											"
+										>
+											<div class="info-unit-price">
+												<div class="title heading-14-400 text-right grey">
+													Unit Price*
+												</div>
+												<div class="produk-pesanan-prices heading-18-400">
+													Rp 2.738
+												</div>
+											</div>
+											<div class="info-quantity">
+												<div class="title heading-14-400 grey">Quantity</div>
+												<div class="produk-pesanan-value heading-18-400">
+													x 500
+												</div>
+											</div>
+										</div>
+										<div class="d-flex flex-column mt-3">
+											<div class="title heading-14-400 grey">Total Price</div>
+											<div class="produk-pesanan-total-price heading-18-600">
+												Rp 1.369.000
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="border-bottom"></div>
+								<!-- end items -->
 							</div>
 						</div>
-						<div class="checkout-flow-line">
-							<div class="line-checkout"></div>
-						</div>
-
-						<div
-							class="confirmation d-flex flex-column align-items-center ml-3"
-						>
-							<img src="./images/confirm-icon.svg" class="icon" alt="" />
+						<div class="col-md-5 col-sm-12">
+							<div class="detail-pembayaran">
+								<div
+									class="detail-pembayaran-title heading-24-600 heading-14-600"
+								>
+									Detail pembayaran
+								</div>
+								<div class="d-flex justify-content-between pembayaran-content">
+									<div class="detail-pembayaran-menu heading-18-400
+									heading-12-400" grey">
+									<div class="total-harga-produk">Total Harga Produk</div>
+									<div class="potongan-harga my-3">Potongan Harga</div>
+									<div class="ongkos-kirim">
+										Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
+									</div>
+								</div>
+								<div
+									class="detail-pembayaran-harga heading-18-400 heading-12-400"
+								>
+									<div class="total-harga">Rp 2.738.000</div>
+									<div class="diskon my-3">Rp 0</div>
+									<div class="ongkir">Rp 69.300</div>
+								</div>
+							</div>
+							<hr />
 							<div
 								class="
-									checkout-flow-title
-									heading-18-600 heading-10-600
-									pt-3
-									grey
+									produk-total
+									d-flex
+									justify-content-between
+									heading-18-600 heading-12-600
 								"
 							>
-								Confirmation
+								<div class="total-pembayaran">Total Pembayaran</div>
+								<div class="total-harga-produk-all">Rp 2.807.300</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container mt-5">
-				<div class="row">
-					<div class="col-md-7 col-sm-12">
-						<div class="informasi-pembayaran">
-							<div class="informasi-pembayaran-title heading-24-600">
-								Informasi Pembayaran
-							</div>
-							<div class="d-flex justify-content-between mt-3 column-mobile">
-								<div class="status-pembayaran heading-18-500 column-mobile">
-									<div class="status">Status</div>
-									<div class="info-status yellow mt-2">Menunggu Pembayaran</div>
-								</div>
-								<div
-									class="
-										nomor-transaksi-pembayaran
-										heading-18-500
-										column-mobile
-										mt-3-mobile
-									"
-								>
-									<div class="nomor-transaksi">Nomor Transaksi</div>
-									<div class="kode-transaksi mt-2">210100000000012</div>
-								</div>
-							</div>
-							<div class="waktu-pembayaran mt-3">
-								<div class="waktu heading-18-500 d-flex justify-content-center">
-									<div class="jam"><span class="jam-info">47</span> Jam</div>
-									<div class="menit mx-2">
-										<span class="menit-info">50</span> Menit
-									</div>
-									<div class="detik">
-										<span class="detik-info">11</span> Detik
-									</div>
-								</div>
-							</div>
-							<div class="info-pembayaran-metode heading-18-500 mt-3">
-								<div class="metode-title">Metode Pembayaran</div>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="metode-pembayaran-nama grey mt-2">
-										Virtual Account (BCA)
-									</div>
-									<div class="metode-pembayaran-logo">
-										<img src="./images/bca.svg" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="info-kode-pembayaran heading-18-500 mt-3">
-								<div class="kode-title">Kode Pembayaran</div>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="kode-pembayaran grey mt-2">210100000000012</div>
-									<div class="salin-kode-wrapper">
-										<div class="d-flex align-items-center">
-											<img src="./images/salin.svg" class="mr-2" alt="" />
-											<div class="heading-10-400-web primary-color">
-												Salin Kode Pembayaran
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="btn-action mt-2">
-								<a href="confirmation.html" style="width: 100%">
-									<div class="btn btn-primaryku heading-20-500 heading-12-500">
-										Lihat Detail Pesanan
-									</div>
-								</a>
-							</div>
-						</div>
-
-						<div class="metode-pembayaran mt-3">
-							<div
-								class="metode-pembayaran-title heading-24-600 heading-14-600"
-							>
-								Metode Pembayaran
-							</div>
-							<div class="metode-pembayaran-menu mt-3">
-								<div class="accordion" id="accordionExample">
-									<div class="virtual-account">
-										<a
-											data-toggle="collapse"
-											href="#virtualAccount"
-											role="button"
-											aria-expanded="false"
-											aria-controls="virtualAccount"
-											id="open-trigger"
-										>
-											<div
-												class="dropdown-wrapper d-flex justify-content-between"
-											>
-												<div
-													class="
-														metode-pembayaran-list
-														heading-16-600 heading-14-600
-														primary-color
-													"
-												>
-													Virtual Account
-												</div>
-												<div class="down d-flex align-items-center">
-													<img
-														src="./images/down-chevron.svg"
-														width="20px"
-														alt=""
-														class="default open"
-														id="arrow-icon"
-													/>
-												</div>
-											</div>
-										</a>
-										<div
-											class="collapse show"
-											id="virtualAccount"
-											data-parent="#accordionExample"
-										>
-											<div
-												class="
-													card
-													no-border no-padding-bottom
-													card-body
-													heading-16-400
-													grey
-												"
-											>
-												<ol>
-													<li>Masukkan kartu ATM & PIN</li>
-													<li>Pilih menu “Transaksi Lainnya”</li>
-													<li>Pilih “Transfer”</li>
-													<li>Masukkan nomor rekening Supernova Digipack</li>
-													<li>
-														Masukkan 5 angka kode perusahaan untuk Supernova
-														Digipack (39594) dan nomor HP yang terdaftar di akun
-														Supernova Digipack (Contoh: 39594081283238328)
-														kemudian pilih “BENAR”
-													</li>
-													<li>
-														Pastikan detail tagihan Anda sudah benar, kemudian
-														pilih “BENAR”
-													</li>
-													<li>
-														Perhatikan konfirmasi pembayaran Anda, jika sudah
-														benar pilih “YA” atau pilih “TIDAK” jika data di
-														layar masih salah
-													</li>
-													<li>
-														Transaksi Anda sudah selesai, simpan struk transaksi
-														sebagai bukti pembayaran
-													</li>
-												</ol>
-											</div>
-										</div>
-									</div>
-									<div class="bank-transfer mt-3">
-										<a
-											data-toggle="collapse"
-											href="#bankTransfer"
-											role="button"
-											aria-expanded="false"
-											aria-controls="bankTransfer"
-											id="open-trigger2"
-										>
-											<div
-												class="dropdown-wrapper d-flex justify-content-between"
-											>
-												<div
-													class="
-														metode-pembayaran-list
-														heading-16-600 heading-14-600
-														primary-color
-													"
-												>
-													Bank Transfer
-												</div>
-												<div class="down d-flex align-items-center">
-													<img
-														src="./images/down-chevron.svg"
-														width="20px"
-														alt=""
-														class="default"
-														id="arrow-icon2"
-													/>
-												</div>
-											</div>
-										</a>
-										<div
-											id="bankTransfer"
-											class="collapse"
-											aria-labelledby="headingTwo"
-											data-parent="#accordionExample"
-										>
-											<div
-												class="
-													card
-													no-border
-													nno-padding-bottom
-													card-body
-													heading-16-400
-													grey
-												"
-											>
-												<ol>
-													<li>Masukkan kartu ATM & PIN</li>
-													<li>Pilih menu “Transaksi Lainnya”</li>
-													<li>Pilih “Transfer”</li>
-													<li>Masukkan nomor rekening Supernova Digipack</li>
-													<li>
-														Masukkan 5 angka kode perusahaan untuk Supernova
-														Digipack (39594) dan nomor HP yang terdaftar di akun
-														Supernova Digipack (Contoh: 39594081283238328)
-														kemudian pilih “BENAR”
-													</li>
-													<li>
-														Pastikan detail tagihan Anda sudah benar, kemudian
-														pilih “BENAR”
-													</li>
-													<li>
-														Perhatikan konfirmasi pembayaran Anda, jika sudah
-														benar pilih “YA” atau pilih “TIDAK” jika data di
-														layar masih salah
-													</li>
-													<li>
-														Transaksi Anda sudah selesai, simpan struk transaksi
-														sebagai bukti pembayaran
-													</li>
-												</ol>
-											</div>
-										</div>
-									</div>
-									<div class="Kartu-kredit mt-3">
-										<a
-											data-toggle="collapse"
-											href="#kartuKredit"
-											role="button"
-											aria-expanded="false"
-											aria-controls="kartuKredit"
-											id="open-trigger3"
-										>
-											<div
-												class="dropdown-wrapper d-flex justify-content-between"
-											>
-												<div
-													class="
-														metode-pembayaran-list
-														heading-16-600 heading-14-600
-														primary-color
-													"
-												>
-													Kartu Kredit
-												</div>
-												<div class="down d-flex align-items-center">
-													<img
-														src="./images/down-chevron.svg"
-														width="20px"
-														alt=""
-														class="default"
-														id="arrow-icon3"
-													/>
-												</div>
-											</div>
-										</a>
-										<div
-											id="kartuKredit"
-											class="collapse"
-											aria-labelledby="headingThree"
-											data-parent="#accordionExample"
-										>
-											<div
-												class="
-													card
-													no-border
-													nno-padding-bottom
-													card-body
-													heading-16-400
-													grey
-												"
-											>
-												<ol>
-													<li>Masukkan kartu ATM & PIN</li>
-													<li>Pilih menu “Transaksi Lainnya”</li>
-													<li>Pilih “Transfer”</li>
-													<li>Masukkan nomor rekening Supernova Digipack</li>
-													<li>
-														Masukkan 5 angka kode perusahaan untuk Supernova
-														Digipack (39594) dan nomor HP yang terdaftar di akun
-														Supernova Digipack (Contoh: 39594081283238328)
-														kemudian pilih “BENAR”
-													</li>
-													<li>
-														Pastikan detail tagihan Anda sudah benar, kemudian
-														pilih “BENAR”
-													</li>
-													<li>
-														Perhatikan konfirmasi pembayaran Anda, jika sudah
-														benar pilih “YA” atau pilih “TIDAK” jika data di
-														layar masih salah
-													</li>
-													<li>
-														Transaksi Anda sudah selesai, simpan struk transaksi
-														sebagai bukti pembayaran
-													</li>
-												</ol>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="produk-pesanan mt-3 mb-100">
-							<div class="produk-pesanan-title heading-24-600 heading-14-600">
-								Produk Pesanan
-							</div>
-							<!-- items -->
-							<div class="produk-pesanan-items d-flex justify-content-between">
-								<div
-									class="
-										produk-img
-										d-flex
-										align-items-center
-										justify-content-center
-									"
-								>
-									<img src="./images/standing-pouch.png" alt="" />
-								</div>
-								<div class="produk-pesanan-info no-display-mobile">
-									<div class="produk-name heading-18-600">keripik milenial</div>
-									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
-										Standing Pouch + Zipper
-									</div>
-									<div class="produk-pesanan-kode heading-16-400 grey">
-										OPP Matte20/VMPET12/LLDPE60
-									</div>
-								</div>
-								<div class="produk-pesanan-total no-display-mobile">
-									<div class="produk-pesanan-prices heading-18-400">
-										Rp 2.738
-									</div>
-									<div class="produk-pesanan-value my-3 heading-18-400">
-										x 500
-									</div>
-									<div class="produk-pesanan-total-price heading-18-600">
-										Rp 1.369.000
-									</div>
-								</div>
-								<!-- mobile -->
-								<div class="column-mobile no-display-web show-mobile pt-3">
-									<div class="produk-pesanan-info">
-										<div class="produk-name heading-14-600">
-											keripik milenial
-										</div>
-										<div
-											class="
-												produk-pesanan-tipe
-												mt-3
-												heading-10-400 heading-16-400
-												grey
-											"
-										>
-											Standing Pouch + Zipper
-										</div>
-										<div
-											class="
-												produk-pesanan-kode
-												heading-10-400 heading-16-400
-												grey
-											"
-										>
-											OPP Matte20/VMPET12/LLDPE60
-										</div>
-									</div>
-									<div
-										class="
-											produk-pesanan-total
-											d-flex
-											align-items-center
-											justify-content-between
-											mt-3
-										"
-									>
-										<div class="info-unit-price">
-											<div class="title heading-14-400 text-right grey">
-												Unit Price*
-											</div>
-											<div class="produk-pesanan-prices heading-18-400">
-												Rp 2.738
-											</div>
-										</div>
-										<div class="info-quantity">
-											<div class="title heading-14-400 grey">Quantity</div>
-											<div class="produk-pesanan-value heading-18-400">
-												x 500
-											</div>
-										</div>
-									</div>
-									<div class="d-flex flex-column mt-3">
-										<div class="title heading-14-400 grey">Total Price</div>
-										<div class="produk-pesanan-total-price heading-18-600">
-											Rp 1.369.000
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="border-bottom"></div>
-							<!-- end items -->
-							<!-- items -->
-							<div class="produk-pesanan-items d-flex justify-content-between">
-								<div
-									class="
-										produk-img
-										d-flex
-										align-items-center
-										justify-content-center
-									"
-								>
-									<img src="./images/standing-pouch.png" alt="" />
-								</div>
-								<div class="produk-pesanan-info no-display-mobile">
-									<div class="produk-name heading-18-600">keripik milenial</div>
-									<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
-										Standing Pouch + Zipper
-									</div>
-									<div class="produk-pesanan-kode heading-16-400 grey">
-										OPP Matte20/VMPET12/LLDPE60
-									</div>
-								</div>
-								<div class="produk-pesanan-total no-display-mobile">
-									<div class="produk-pesanan-prices heading-18-400">
-										Rp 2.738
-									</div>
-									<div class="produk-pesanan-value my-3 heading-18-400">
-										x 500
-									</div>
-									<div class="produk-pesanan-total-price heading-18-600">
-										Rp 1.369.000
-									</div>
-								</div>
-								<!-- mobile -->
-								<div class="column-mobile no-display-web show-mobile pt-3">
-									<div class="produk-pesanan-info">
-										<div class="produk-name heading-14-600">
-											keripik milenial
-										</div>
-										<div
-											class="
-												produk-pesanan-tipe
-												mt-3
-												heading-10-400 heading-16-400
-												grey
-											"
-										>
-											Standing Pouch + Zipper
-										</div>
-										<div
-											class="
-												produk-pesanan-kode
-												heading-10-400 heading-16-400
-												grey
-											"
-										>
-											OPP Matte20/VMPET12/LLDPE60
-										</div>
-									</div>
-									<div
-										class="
-											produk-pesanan-total
-											d-flex
-											align-items-center
-											justify-content-between
-											mt-3
-										"
-									>
-										<div class="info-unit-price">
-											<div class="title heading-14-400 text-right grey">
-												Unit Price*
-											</div>
-											<div class="produk-pesanan-prices heading-18-400">
-												Rp 2.738
-											</div>
-										</div>
-										<div class="info-quantity">
-											<div class="title heading-14-400 grey">Quantity</div>
-											<div class="produk-pesanan-value heading-18-400">
-												x 500
-											</div>
-										</div>
-									</div>
-									<div class="d-flex flex-column mt-3">
-										<div class="title heading-14-400 grey">Total Price</div>
-										<div class="produk-pesanan-total-price heading-18-600">
-											Rp 1.369.000
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="border-bottom"></div>
-							<!-- end items -->
-						</div>
-					</div>
-					<div class="col-md-5 col-sm-12">
-						<div class="detail-pembayaran">
-							<div
-								class="detail-pembayaran-title heading-24-600 heading-14-600"
-							>
-								Detail pembayaran
-							</div>
-							<div class="d-flex justify-content-between pembayaran-content">
-								<div class="detail-pembayaran-menu heading-18-400
-								heading-12-400" grey">
-								<div class="total-harga-produk">Total Harga Produk</div>
-								<div class="potongan-harga my-3">Potongan Harga</div>
-								<div class="ongkos-kirim">
-									Ongkos Kirim (<span class="ekspedisi">JNE Reguler</span>)
-								</div>
-							</div>
-							<div
-								class="detail-pembayaran-harga heading-18-400 heading-12-400"
-							>
-								<div class="total-harga">Rp 2.738.000</div>
-								<div class="diskon my-3">Rp 0</div>
-								<div class="ongkir">Rp 69.300</div>
-							</div>
-						</div>
-						<hr />
-						<div
-							class="
-								produk-total
-								d-flex
-								justify-content-between
-								heading-18-600 heading-12-600
-							"
-						>
-							<div class="total-pembayaran">Total Pembayaran</div>
-							<div class="total-harga-produk-all">Rp 2.807.300</div>
-						</div>
-					</div>
+			<div id="before-footer">
+				<div class="container">
+					<a href="#" class="d-none d-sm-block"
+						><img
+							src="images/before-footer.jpg"
+							alt=""
+							class="img-fluid wow slideInRight"
+					/></a>
+					<a href="#" class="d-sm-none d-block"
+						><img
+							src="images/cta-mobile.png"
+							alt=""
+							class="img-fluid wow slideInRight"
+					/></a>
 				</div>
 			</div>
-		</div>
-		<div id="before-footer">
-			<div class="container">
-				<a href="#" class="d-none d-sm-block"
-					><img
-						src="images/before-footer.jpg"
-						alt=""
-						class="img-fluid wow slideInRight"
-				/></a>
-				<a href="#" class="d-sm-none d-block"
-					><img
-						src="images/cta-mobile.png"
-						alt=""
-						class="img-fluid wow slideInRight"
-				/></a>
-			</div>
-		</div>
-		<div id="footer" class="">
-			<div class="container">
-				<div class="row">
-					<div class="logo col-12 mb-5">
-						<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
+			<div id="footer" class="">
+				<div class="container">
+					<div class="row">
+						<div class="logo col-12 mb-5">
+							<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="block" id="min-m-mobile">
-							<div class="title-section">Alamat</div>
-							<div class="column-address">
-								<div class="desc">
-									<p class="mb-0">
-										Kawasan Industri Jababeka II Jalan Industri Selatan Blok LL
-										No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 - Indonesia
-									</p>
-									<strong>Jam Operasional</strong>
-									<p>
-										Senin - Jumat
-										<span class="d-block">08:00 - 17:00 WIB</span>
-									</p>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="block" id="min-m-mobile">
+								<div class="title-section">Alamat</div>
+								<div class="column-address">
+									<div class="desc">
+										<p class="mb-0">
+											Kawasan Industri Jababeka II Jalan Industri Selatan Blok
+											LL No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 -
+											Indonesia
+										</p>
+										<strong>Jam Operasional</strong>
+										<p>
+											Senin - Jumat
+											<span class="d-block">08:00 - 17:00 WIB</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="block">
+								<div class="title-section">Hubungi Kami</div>
+								<div class="column">
+									<div class="list-contact">
+										<ul class="pl-0 ml-0">
+											<li class="mb-2">
+												<span class="font-weight-bold">Email :</span
+												><a href="mailto:marketing@supernova-id.com"
+													>marketing@supernova-id.com</a
+												>
+											</li>
+											<li class="mb-2">
+												<span class="font-weight-bold">No.Telpon :</span>+62 21
+												8983 1969
+											</li>
+											<li class="mb-2">
+												<span class="font-weight-bold">Fax :</span>+62 21 8983
+												1967
+											</li>
+											<li class="mb-2">
+												<span class="font-weight-bold">Whatsapp :</span>+62 8231
+												7714 488
+											</li>
+										</ul>
+									</div>
+									<div class="list-sosmed my-sm-5 my-4">
+										<ul class="pl-0 ml-0">
+											<li>
+												<a href="https://www.facebook.com/" target="_blank"
+													><i class="fab fa-facebook-f"></i
+												></a>
+											</li>
+											<li>
+												<a href="https://www.instagram.com/" target="_blank"
+													><i class="fab fa-instagram"></i
+												></a>
+											</li>
+											<li>
+												<a href="https://www.linkedin.com/" target="_blank"
+													><i class="fab fa-linkedin-in"></i
+												></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="block pl-sm-5">
+								<div class="title-section">Informasi</div>
+								<div class="column">
+									<div class="menus">
+										<ul class="ml-0 pl-0">
+											<li class="mb-2">
+												<a href="about-us.html">Tentang Supernova Digipack</a>
+											</li>
+											<li class="mb-2">
+												<a href="pilih-kemasan.html">Pilihan Kemasan</a>
+											</li>
+											<li class="mb-2"><a href="blog.html">Blog</a></li>
+											<li class="mb-2">
+												<a href="panduan_belanja.html">Panduan Belanja</a>
+											</li>
+											<li class="mb-2">
+												<a href="syarat_ketentuan.html">Syarat & Ketentuan</a>
+											</li>
+											<li class="mb-2">
+												<a href="kebijakan.html">Kebijakan Privasi</a>
+											</li>
+											<li class="mb-2"><a href="faq.html">FAQs</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="block">
-							<div class="title-section">Hubungi Kami</div>
-							<div class="column">
-								<div class="list-contact">
-									<ul class="pl-0 ml-0">
-										<li class="mb-2">
-											<span class="font-weight-bold">Email :</span
-											><a href="mailto:marketing@supernova-id.com"
-												>marketing@supernova-id.com</a
-											>
-										</li>
-										<li class="mb-2">
-											<span class="font-weight-bold">No.Telpon :</span>+62 21
-											8983 1969
-										</li>
-										<li class="mb-2">
-											<span class="font-weight-bold">Fax :</span>+62 21 8983
-											1967
-										</li>
-										<li class="mb-2">
-											<span class="font-weight-bold">Whatsapp :</span>+62 8231
-											7714 488
-										</li>
-									</ul>
-								</div>
-								<div class="list-sosmed my-sm-5 my-4">
-									<ul class="pl-0 ml-0">
-										<li>
-											<a href="https://www.facebook.com/" target="_blank"
-												><i class="fab fa-facebook-f"></i
-											></a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/" target="_blank"
-												><i class="fab fa-instagram"></i
-											></a>
-										</li>
-										<li>
-											<a href="https://www.linkedin.com/" target="_blank"
-												><i class="fab fa-linkedin-in"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="copyright">
+						<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
+							Copyright &copy; 2021 Supernova Digipack
+							<span id="hide-on-mobile">-</span> PT Supernova Flexible Packaging
+						</p>
 					</div>
-					<div class="col-md-4">
-						<div class="block pl-sm-5">
-							<div class="title-section">Informasi</div>
-							<div class="column">
-								<div class="menus">
-									<ul class="ml-0 pl-0">
-										<li class="mb-2">
-											<a href="about-us.html">Tentang Supernova Digipack</a>
-										</li>
-										<li class="mb-2">
-											<a href="pilih-kemasan.html">Pilihan Kemasan</a>
-										</li>
-										<li class="mb-2"><a href="blog.html">Blog</a></li>
-										<li class="mb-2">
-											<a href="panduan_belanja.html">Panduan Belanja</a>
-										</li>
-										<li class="mb-2">
-											<a href="syarat_ketentuan.html">Syarat & Ketentuan</a>
-										</li>
-										<li class="mb-2">
-											<a href="kebijakan.html">Kebijakan Privasi</a>
-										</li>
-										<li class="mb-2"><a href="faq.html">FAQs</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="copyright">
-					<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
-						Copyright &copy; 2021 Supernova Digipack
-						<span id="hide-on-mobile">-</span> PT Supernova Flexible Packaging
-					</p>
-				</div>
-				<!-- <div class="floating position-fixed">
+					<!-- <div class="floating position-fixed">
 							<a href="#"
 								><img src="images/wa.svg" alt="" class="img-fluid"
 							/></a>
 						</div> -->
+				</div>
 			</div>
 		</div>
 		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>

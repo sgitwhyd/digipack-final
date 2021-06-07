@@ -23,6 +23,7 @@
 		<link rel="stylesheet" href="styles/user-panel.css" />
 		<link rel="stylesheet" href="styles/checkout.css" />
 		<script src="scripts/modernizr.js"></script>
+		<script src="scripts/popper.min.js"></script>
 	</head>
 	<body>
 		<!--[if IE]>
@@ -41,17 +42,45 @@
 							<a class="navbar-brand" href="#"
 								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
 							/></a>
-							<button
-								class="navbar-toggler collapsed"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
+							<div class="d-flex">
+								<button
+									class="navbar-toggler collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="navbar-toggler-icon" id="toggleIcon"></span>
+								</button>
+								<div
+									class="no-display-web show-mobile ml-3"
+									id="open-menu-user-mobile"
+								>
+									<div
+										class="user-active d-flex align-items-center"
+										id="user__panel"
+									>
+										<div class="dropdown d-flex align-items-center">
+											<img
+												src="./images/Profile.svg"
+												class="w-15"
+												style="cursor: pointer"
+												alt=""
+											/>
+											<div class="dropdown-toggle">
+												<img
+													src="./images/down.svg"
+													id="arrow-icon"
+													class="default w-15"
+													alt=""
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav" id="navbar-nav-mobile">
@@ -80,26 +109,46 @@
 										align-items-center
 									"
 								>
-									<div class="info-user">
+									<div class="info-user column-mobile-reverse">
 										<div class="notif-user">
-											<a href="#" class="notification">
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="notif__user"
+											>
 												<img
 													src="./images/Notification.svg"
-													id="notif__user"
+													class="mt-13"
 													alt=""
 												/>
-												<span class="badge">1</span>
+												<div class="show-mobile no-display-web ml-4">
+													Notifikasi
+												</div>
+												<!-- <span class="badge">1</span> -->
 											</a>
 										</div>
 										<div class="bag-user">
-											<a href="#" class="notification">
-												<img src="./images/Bag.svg" id="bag__user" alt="" />
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="bag__user"
+											>
+												<img src="./images/Bag.svg" alt="" />
+												<div class="show-mobile no-display-web ml-3">
+													Keranjang Belanja
+												</div>
 												<!-- <span class="badge">3</span> -->
 											</a>
 										</div>
+
 										<div
-											class="user-active d-flex align-items-center"
-											id="user__panel"
+											class="
+												user-active
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+											id="user__panel-web"
 										>
 											<div class="dropdown d-flex">
 												<img
@@ -114,6 +163,14 @@
 											</div>
 										</div>
 									</div>
+									<div
+										class="menu-act show-mobile no-display-web no-mt-bt mb-40"
+									>
+										<ul class="lang mb-0 pl-0">
+											<li class="active"><a href="#">ID</a></li>
+											<li class="mr-0"><a href="#">EN</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</nav>
@@ -121,7 +178,7 @@
 				</div>
 
 				<div class="container">
-					<div class="user-interaction">
+					<div class="user-interaction" style="z-index: 998 !important">
 						<div class="container">
 							<!-- user-action -->
 							<div class="position-relative">
@@ -203,45 +260,25 @@
 							<!-- end user notif -->
 							<!-- user-notif -->
 							<div class="position-relative">
-								<div class="user-action-panel" id="user-action-panel">
-									<div class="user-info">
-										<img src="./images/Profile.svg" class="mr-3" alt="" />
-										<span>Atika Widjaya</span>
+								<div
+									class="user-action-panel mobile-menuUser"
+									id="user-action-panel"
+								>
+									<div class="no-display-mobile">
+										<div class="user-info">
+											<img src="./images/Profile.svg" class="mr-3" alt="" />
+											<span>Atika Widjaya</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
 									<div class="action-menu">
-										<div
-											class="
-												user-action-menu user-panel
-												d-flex
-												align-items-center
-											"
-										>
+										<div class="user-action-menu d-flex align-items-center">
 											<a href="#">
-												<svg
-													width="20"
-													height="20"
-													viewBox="0 0 20 20"
+												<img
+													src="./images/edit-profile-icon.svg"
 													class="mr-3"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M14.4198 5.41562C14.4198 7.8543 12.4428 9.83124 10.0041 9.83124C7.56546 9.83124 5.58852 7.8543 5.58852 5.41562C5.58852 2.97694 7.56546 1 10.0041 1C12.4428 1 14.4198 2.97694 14.4198 5.41562Z"
-														stroke="#312D75"
-														stroke-width="1.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-													<path
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M3.00001 15.9725C2.99883 15.6621 3.06825 15.3555 3.20303 15.0758C3.62598 14.2299 4.81871 13.7816 5.80842 13.5786C6.52219 13.4263 7.24583 13.3245 7.97393 13.2741C9.32196 13.1557 10.6778 13.1557 12.0258 13.2741C12.7539 13.3251 13.4774 13.4268 14.1913 13.5786C15.181 13.7816 16.3738 14.1876 16.7967 15.0758C17.0678 15.6459 17.0678 16.3076 16.7967 16.8776C16.3738 17.7658 15.181 18.1719 14.1913 18.3664C13.4784 18.525 12.7545 18.6297 12.0258 18.6794C10.9286 18.7724 9.82632 18.7894 8.72679 18.7301C8.47302 18.7301 8.2277 18.7301 7.97393 18.6794C7.24798 18.6303 6.52685 18.5256 5.81688 18.3664C4.81871 18.1719 3.63444 17.7658 3.20303 16.8776C3.06894 16.5947 2.99959 16.2855 3.00001 15.9725Z"
-														stroke="#312D75"
-														stroke-width="1.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-												</svg>
+													alt=""
+												/>
 												Edit Profile
 											</a>
 										</div>
@@ -274,11 +311,43 @@
 												Permainan
 											</a>
 										</div>
-										<div class="user-action-menu d-flex align-items-center">
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+										>
 											<a href="#">
 												<img src="./images/logout.svg" class="mr-3" alt="" />
 												Logout
 											</a>
+										</div>
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-web
+												show-mobile
+											"
+										>
+											<a href="#" class="red">
+												<img
+													src="./images/logout-red.svg"
+													class="mr-3"
+													width="20px"
+													alt=""
+												/>
+												Logout
+											</a>
+										</div>
+										<div class="menu-act show-mobile no-display-web no-mt-bt">
+											<ul class="lang mb-0 pl-0">
+												<li class="active"><a href="#">ID</a></li>
+												<li class="mr-0"><a href="#">EN</a></li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -288,487 +357,632 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- masukan konten disini -->
-		<div class="content-wrapper pt-5 mt-5">
-			<div class="container content-user-panel">
-				<div class="row">
-					<div class="col-md-4 col-sm-12">
-						<div class="user-menu">
-							<div class="d-flex justify-content-center">
-								<div class="d-flex flex-column">
-									<div class="user-foto d-flex justify-content-center">
-										<img src="./images/user-profile.svg" alt="" />
-									</div>
-									<div
-										class="d-flex flex-column text-center heading-18-500 mt-3"
-									>
-										<div class="user-name">Atika Widjaya</div>
-										<div class="user-email">hi.atikawidjaya@gmail.com</div>
+			<!-- masukan konten disini -->
+			<div class="content-wrapper pt-5 mt-5">
+				<div class="container content-user-panel">
+					<div class="row">
+						<div class="col-md-4 col-sm-12">
+							<div class="user-menu">
+								<div class="d-flex justify-content-center">
+									<div class="d-flex flex-column">
+										<div class="user-foto d-flex justify-content-center">
+											<img src="./images/user-profile.svg" alt="" />
+										</div>
+										<div
+											class="d-flex flex-column text-center heading-18-500 mt-3"
+										>
+											<div class="user-name">Atika Widjaya</div>
+											<div class="user-email mt-3">
+												hi.atikawidjaya@gmail.com
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-							<hr />
-							<div class="action-menu">
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img
-											src="./images/edit-profile-icon.svg"
-											class="mr-3"
-											alt=""
-										/>
-										Edit Profile
-									</a>
-								</div>
+								<hr />
+								<div class="action-menu">
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#" class="d-flex align-items-center">
+											<svg
+												style="width: 24px; height: 24px"
+												viewBox="0 0 24 24"
+												class="mr-3"
+											>
+												<path
+													fill="currentColor"
+													d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z"
+												/>
+											</svg>
+											Edit Profile
+										</a>
+									</div>
 
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img
-											src="./images/ubah-katasandi.svg"
-											class="mr-3"
-											alt=""
-										/>
-										Ubah Kata Sandi
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="checkout.html">
-										<img src="./images/transaksi.svg" class="mr-3" alt="" />
-										Transaksi
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img src="./images/alamat.svg" class="mr-3" alt="" />
-										Alamat
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img src="./images/permainan.svg" class="mr-3" alt="" />
-										Permainan
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img src="./images/logout.svg" class="mr-3" alt="" />
-										Logout
-									</a>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#" class="d-flex align-items-center">
+											<svg
+												style="width: 24px; height: 24px"
+												viewBox="0 0 24 24"
+												class="mr-3"
+											>
+												<path
+													fill="currentColor"
+													d="M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"
+												/>
+											</svg>
+											Ubah Kata Sandi
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="checkout.html">
+											<svg
+												style="width: 24px; height: 24px"
+												viewBox="0 0 24 24"
+												class="mr-3"
+											>
+												<path
+													fill="currentColor"
+													d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"
+												/>
+											</svg>
+											Transaksi
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#" class="d-flex align-items-center">
+											<svg
+												style="width: 24px; height: 24px"
+												viewBox="0 0 24 24"
+												class="mr-3"
+											>
+												<path
+													fill="currentColor"
+													d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z"
+												/>
+											</svg>
+											Alamat
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#" class="d-flex align-items-center">
+											<img src="./images/permainan.svg" class="mr-3" alt="" />
+											Permainan
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#" class="d-flex align-items-center">
+											<svg
+												style="width: 24px; height: 24px"
+												viewBox="0 0 24 24"
+												class="mr-3"
+											>
+												<path
+													fill="currentColor"
+													d="M16,17H7V10.5C7,8 9,6 11.5,6C14,6 16,8 16,10.5M18,16V10.5C18,7.43 15.86,4.86 13,4.18V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V4.18C7.13,4.86 5,7.43 5,10.5V16L3,18V19H20V18M11.5,22A2,2 0 0,0 13.5,20H9.5A2,2 0 0,0 11.5,22Z"
+												/>
+											</svg>
+											Notifikasi
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#" class="d-flex align-items-center">
+											<svg
+												style="width: 24px; height: 24px"
+												viewBox="0 0 24 24"
+												class="mr-3"
+											>
+												<path
+													fill="currentColor"
+													d="M16,17V14H9V10H16V7L21,12L16,17M14,2A2,2 0 0,1 16,4V6H14V4H5V20H14V18H16V20A2,2 0 0,1 14,22H5A2,2 0 0,1 3,20V4A2,2 0 0,1 5,2H14Z"
+												/>
+											</svg>
+											Logout
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-8 col-sm-12">
-						<div class="transaksi">
-							<div class="transaksi-title heading-24-600">Transaksi</div>
-							<hr />
-							<div class="nomor-transaksi">
-								<div class="transaksi-info">
-									<div
-										class="nomor-transaksi-info d-flex justify-content-between"
-									>
-										<div class="title heading-24-600">Nomor Transaksi</div>
-										<div class="nomor-transaksi-kode heading-24-600 grey">
-											210100000000012
-										</div>
-									</div>
-									<div
-										class="nomor-transaksi-data d-flex justify-content-between"
-									>
-										<div class="title heading-18-400">Tanggal Pemesanan</div>
-										<div class="nomor-transaksi-tanggal heading-18-400 grey">
-											27 Mei 2021, 11:15 WIB
-										</div>
-									</div>
-									<div class="status-pesanan d-flex justify-content-between">
-										<div class="status-pesanan-title heading-18-400">
-											Status Pesanan
-										</div>
-										<div class="status-pesanan-data heading-18-600 green">
-											Sedang Diproses
-										</div>
-									</div>
-								</div>
+						<div class="col-md-8 col-sm-12">
+							<div class="transaksi">
+								<div class="transaksi-title heading-24-600">Transaksi</div>
 								<hr />
-								<div class="produk">
-									<div
-										class="produk-pesanan-items d-flex justify-content-between"
-									>
-										<div
+								<div class="urutkanWrapper">
+									<div class="dropdown">
+										<button
 											class="
-												produk-img
+												urutkan
 												d-flex
 												align-items-center
-												justify-content-center
+												justify-content-between
+												heading-16-400
+											"
+											type="button"
+											id="dropdownMenuButton"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											Urutkan
+											<img src="./images/down.svg" alt="" />
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</div>
+								<div class="nomor-transaksi">
+									<div class="transaksi-info">
+										<div
+											class="
+												nomor-transaksi-info
+												d-flex
+												justify-content-between
 											"
 										>
-											<img src="./images/standing-pouch.png" alt="" />
-										</div>
-										<div class="produk-pesanan-info no-display-mobile">
-											<div class="produk-name heading-18-600">
-												keripik milenial
-											</div>
-											<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
-												Standing Pouch + Zipper
-											</div>
-											<div class="produk-pesanan-kode heading-16-400 grey">
-												OPP Matte20/VMPET12/LLDPE60
+											<div class="title heading-24-600">Nomor Transaksi</div>
+											<div class="nomor-transaksi-kode heading-24-600 grey">
+												210100000000012
 											</div>
 										</div>
-										<div class="produk-pesanan-total no-display-mobile">
-											<div class="produk-pesanan-prices heading-18-400">
-												Rp 2.738
-											</div>
-											<div class="produk-pesanan-value my-3 heading-18-400">
-												x 500
-											</div>
-											<div class="produk-pesanan-total-price heading-18-600">
-												Rp 1.369.000
+										<div
+											class="
+												nomor-transaksi-data
+												d-flex
+												justify-content-between
+											"
+										>
+											<div class="title heading-18-400">Tanggal Pemesanan</div>
+											<div class="nomor-transaksi-tanggal heading-18-400 grey">
+												27 Mei 2021, 11:15 WIB
 											</div>
 										</div>
-										<!-- mobile -->
-										<div class="column-mobile no-display-web show-mobile pt-3">
-											<div class="produk-pesanan-info">
-												<div class="produk-name heading-14-600">
+										<div class="status-pesanan d-flex justify-content-between">
+											<div class="status-pesanan-title heading-18-400">
+												Status Pesanan
+											</div>
+											<div class="status-pesanan-data heading-18-600 green">
+												Sedang Diproses
+											</div>
+										</div>
+									</div>
+									<hr />
+									<div class="produk">
+										<div
+											class="
+												produk-pesanan-items
+												d-flex
+												justify-content-between
+											"
+										>
+											<div
+												class="
+													produk-img
+													d-flex
+													align-items-center
+													justify-content-center
+												"
+											>
+												<img src="./images/standing-pouch.png" alt="" />
+											</div>
+											<div class="produk-pesanan-info no-display-mobile">
+												<div class="produk-name heading-18-600">
 													keripik milenial
 												</div>
 												<div
-													class="
-														produk-pesanan-tipe
-														mt-3
-														heading-10-400 heading-16-400
-														grey
-													"
+													class="produk-pesanan-tipe my-3 heading-16-400 grey"
 												>
 													Standing Pouch + Zipper
 												</div>
-												<div
-													class="
-														produk-pesanan-kode
-														heading-10-400 heading-16-400
-														grey
-													"
-												>
+												<div class="produk-pesanan-kode heading-16-400 grey">
 													OPP Matte20/VMPET12/LLDPE60
 												</div>
 											</div>
-											<div
-												class="
-													produk-pesanan-total
-													d-flex
-													align-items-center
-													justify-content-between
-													mt-3
-												"
-											>
-												<div class="info-unit-price">
-													<div class="title heading-14-400 text-right grey">
-														Unit Price*
-													</div>
-													<div class="produk-pesanan-prices heading-18-400">
-														Rp 2.738
-													</div>
+											<div class="produk-pesanan-total no-display-mobile">
+												<div class="produk-pesanan-prices heading-18-400">
+													Rp 2.738
 												</div>
-												<div class="info-quantity">
-													<div class="title heading-14-400 grey">Quantity</div>
-													<div class="produk-pesanan-value heading-18-400">
-														x 500
-													</div>
+												<div class="produk-pesanan-value my-3 heading-18-400">
+													x 500
 												</div>
-											</div>
-											<div class="d-flex flex-column mt-3">
-												<div class="title heading-14-400 grey">Total Price</div>
 												<div class="produk-pesanan-total-price heading-18-600">
 													Rp 1.369.000
 												</div>
 											</div>
+											<!-- mobile -->
+											<div
+												class="column-mobile no-display-web show-mobile pt-3"
+											>
+												<div class="produk-pesanan-info">
+													<div class="produk-name heading-14-600">
+														keripik milenial
+													</div>
+													<div
+														class="
+															produk-pesanan-tipe
+															mt-3
+															heading-10-400 heading-16-400
+															grey
+														"
+													>
+														Standing Pouch + Zipper
+													</div>
+													<div
+														class="
+															produk-pesanan-kode
+															heading-10-400 heading-16-400
+															grey
+														"
+													>
+														OPP Matte20/VMPET12/LLDPE60
+													</div>
+												</div>
+												<div
+													class="
+														produk-pesanan-total
+														d-flex
+														align-items-center
+														justify-content-between
+														mt-3
+													"
+												>
+													<div class="info-unit-price">
+														<div class="title heading-14-400 text-right grey">
+															Unit Price*
+														</div>
+														<div class="produk-pesanan-prices heading-18-400">
+															Rp 2.738
+														</div>
+													</div>
+													<div class="info-quantity">
+														<div class="title heading-14-400 grey">
+															Quantity
+														</div>
+														<div class="produk-pesanan-value heading-18-400">
+															x 500
+														</div>
+													</div>
+												</div>
+												<div class="d-flex flex-column mt-3">
+													<div class="title heading-14-400 grey">
+														Total Price
+													</div>
+													<div
+														class="produk-pesanan-total-price heading-18-600"
+													>
+														Rp 1.369.000
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="border-bottom"></div>
-									<!-- end items -->
-									<!-- items -->
-									<div
-										class="produk-pesanan-items d-flex justify-content-between"
-									>
+										<div class="border-bottom"></div>
+										<!-- end items -->
+										<!-- items -->
 										<div
 											class="
-												produk-img
+												produk-pesanan-items
 												d-flex
-												align-items-center
-												justify-content-center
+												justify-content-between
 											"
 										>
-											<img src="./images/standing-pouch.png" alt="" />
-										</div>
-										<div class="produk-pesanan-info no-display-mobile">
-											<div class="produk-name heading-18-600">
-												keripik milenial
+											<div
+												class="
+													produk-img
+													d-flex
+													align-items-center
+													justify-content-center
+												"
+											>
+												<img src="./images/standing-pouch.png" alt="" />
 											</div>
-											<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
-												Standing Pouch + Zipper
-											</div>
-											<div class="produk-pesanan-kode heading-16-400 grey">
-												OPP Matte20/VMPET12/LLDPE60
-											</div>
-										</div>
-										<div class="produk-pesanan-total no-display-mobile">
-											<div class="produk-pesanan-prices heading-18-400">
-												Rp 2.738
-											</div>
-											<div class="produk-pesanan-value my-3 heading-18-400">
-												x 500
-											</div>
-											<div class="produk-pesanan-total-price heading-18-600">
-												Rp 1.369.000
-											</div>
-										</div>
-										<!-- mobile -->
-										<div class="column-mobile no-display-web show-mobile pt-3">
-											<div class="produk-pesanan-info">
-												<div class="produk-name heading-14-600">
+											<div class="produk-pesanan-info no-display-mobile">
+												<div class="produk-name heading-18-600">
 													keripik milenial
 												</div>
 												<div
-													class="
-														produk-pesanan-tipe
-														mt-3
-														heading-10-400 heading-16-400
-														grey
-													"
+													class="produk-pesanan-tipe my-3 heading-16-400 grey"
 												>
 													Standing Pouch + Zipper
 												</div>
-												<div
-													class="
-														produk-pesanan-kode
-														heading-10-400 heading-16-400
-														grey
-													"
-												>
+												<div class="produk-pesanan-kode heading-16-400 grey">
 													OPP Matte20/VMPET12/LLDPE60
 												</div>
 											</div>
-											<div
-												class="
-													produk-pesanan-total
-													d-flex
-													align-items-center
-													justify-content-between
-													mt-3
-												"
-											>
-												<div class="info-unit-price">
-													<div class="title heading-14-400 text-right grey">
-														Unit Price*
-													</div>
-													<div class="produk-pesanan-prices heading-18-400">
-														Rp 2.738
-													</div>
+											<div class="produk-pesanan-total no-display-mobile">
+												<div class="produk-pesanan-prices heading-18-400">
+													Rp 2.738
 												</div>
-												<div class="info-quantity">
-													<div class="title heading-14-400 grey">Quantity</div>
-													<div class="produk-pesanan-value heading-18-400">
-														x 500
-													</div>
+												<div class="produk-pesanan-value my-3 heading-18-400">
+													x 500
 												</div>
-											</div>
-											<div class="d-flex flex-column mt-3">
-												<div class="title heading-14-400 grey">Total Price</div>
 												<div class="produk-pesanan-total-price heading-18-600">
 													Rp 1.369.000
 												</div>
 											</div>
-										</div>
-									</div>
-									<div class="border-bottom"></div>
-									<!-- end items -->
-								</div>
-								<div class="detail-pesanan">
-									<a href="#" class="primary-color heading-18-600"
-										>Lihat Detail Pesanan</a
-									>
-								</div>
-							</div>
-							<div class="nomor-transaksi mt-3">
-								<div class="transaksi-info">
-									<div
-										class="nomor-transaksi-info d-flex justify-content-between"
-									>
-										<div class="title heading-24-600">Nomor Transaksi</div>
-										<div class="nomor-transaksi-kode heading-24-600 grey">
-											210100000000012
-										</div>
-									</div>
-									<div
-										class="nomor-transaksi-data d-flex justify-content-between"
-									>
-										<div class="title heading-18-400">Tanggal Pemesanan</div>
-										<div class="nomor-transaksi-tanggal heading-18-400 grey">
-											27 Mei 2021, 11:15 WIB
-										</div>
-									</div>
-									<div class="status-pesanan d-flex justify-content-between">
-										<div class="status-pesanan-title heading-18-400">
-											Status Pesanan
-										</div>
-										<div class="status-pesanan-data heading-18-600 orange">
-											Menunggu Pembayaran
-										</div>
-									</div>
-								</div>
-								<hr />
-								<div class="produk-item">
-									<div
-										class="produk-pesanan-items d-flex justify-content-between"
-									>
-										<div
-											class="
-												produk-img
-												d-flex
-												align-items-center
-												justify-content-center
-											"
-										>
-											<img src="./images/standing-pouch.png" alt="" />
-										</div>
-										<div class="produk-pesanan-info no-display-mobile">
-											<div class="produk-name heading-18-600">
-												keripik milenial
-											</div>
-											<div class="produk-pesanan-tipe my-3 heading-16-400 grey">
-												Standing Pouch + Zipper
-											</div>
-											<div class="produk-pesanan-kode heading-16-400 grey">
-												OPP Matte20/VMPET12/LLDPE60
-											</div>
-										</div>
-										<div class="produk-pesanan-total no-display-mobile">
-											<div class="produk-pesanan-prices heading-18-400">
-												Rp 2.738
-											</div>
-											<div class="produk-pesanan-value my-3 heading-18-400">
-												x 500
-											</div>
-											<div class="produk-pesanan-total-price heading-18-600">
-												Rp 1.369.000
-											</div>
-										</div>
-										<!-- mobile -->
-										<div class="column-mobile no-display-web show-mobile pt-3">
-											<div class="produk-pesanan-info">
-												<div class="produk-name heading-14-600">
-													keripik milenial
-												</div>
-												<div
-													class="
-														produk-pesanan-tipe
-														mt-3
-														heading-10-400 heading-16-400
-														grey
-													"
-												>
-													Standing Pouch + Zipper
-												</div>
-												<div
-													class="
-														produk-pesanan-kode
-														heading-10-400 heading-16-400
-														grey
-													"
-												>
-													OPP Matte20/VMPET12/LLDPE60
-												</div>
-											</div>
+											<!-- mobile -->
 											<div
-												class="
-													produk-pesanan-total
-													d-flex
-													align-items-center
-													justify-content-between
-													mt-3
-												"
+												class="column-mobile no-display-web show-mobile pt-3"
 											>
-												<div class="info-unit-price">
-													<div class="title heading-14-400 text-right grey">
-														Unit Price*
+												<div class="produk-pesanan-info">
+													<div class="produk-name heading-14-600">
+														keripik milenial
 													</div>
-													<div class="produk-pesanan-prices heading-18-400">
-														Rp 2.738
+													<div
+														class="
+															produk-pesanan-tipe
+															mt-3
+															heading-10-400 heading-16-400
+															grey
+														"
+													>
+														Standing Pouch + Zipper
+													</div>
+													<div
+														class="
+															produk-pesanan-kode
+															heading-10-400 heading-16-400
+															grey
+														"
+													>
+														OPP Matte20/VMPET12/LLDPE60
 													</div>
 												</div>
-												<div class="info-quantity">
-													<div class="title heading-14-400 grey">Quantity</div>
-													<div class="produk-pesanan-value heading-18-400">
-														x 500
+												<div
+													class="
+														produk-pesanan-total
+														d-flex
+														align-items-center
+														justify-content-between
+														mt-3
+													"
+												>
+													<div class="info-unit-price">
+														<div class="title heading-14-400 text-right grey">
+															Unit Price*
+														</div>
+														<div class="produk-pesanan-prices heading-18-400">
+															Rp 2.738
+														</div>
+													</div>
+													<div class="info-quantity">
+														<div class="title heading-14-400 grey">
+															Quantity
+														</div>
+														<div class="produk-pesanan-value heading-18-400">
+															x 500
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="d-flex flex-column mt-3">
-												<div class="title heading-14-400 grey">Total Price</div>
-												<div class="produk-pesanan-total-price heading-18-600">
-													Rp 1.369.000
+												<div class="d-flex flex-column mt-3">
+													<div class="title heading-14-400 grey">
+														Total Price
+													</div>
+													<div
+														class="produk-pesanan-total-price heading-18-600"
+													>
+														Rp 1.369.000
+													</div>
 												</div>
 											</div>
 										</div>
+										<div class="border-bottom"></div>
+										<!-- end items -->
 									</div>
-									<div class="border-bottom"></div>
-									<!-- end items -->
-								</div>
-								<div
-									class="
-										info-detail
-										d-flex
-										align-items-center
-										justify-content-between
-									"
-								>
 									<div class="detail-pesanan">
-										<a href="#" class="primary-color heading-16-600"
+										<a href="#" class="primary-color heading-18-600"
 											>Lihat Detail Pesanan</a
 										>
 									</div>
-									<div class="d-flex align-items-center">
+								</div>
+								<div class="nomor-transaksi mt-3">
+									<div class="transaksi-info">
 										<div
-											class="waktu-pembayaran-limit mr-3"
-											style="width: 100%"
+											class="
+												nomor-transaksi-info
+												d-flex
+												justify-content-between
+											"
 										>
-											Bayar sebelum 28 Mei 2021, 11:20 WIB
+											<div class="title heading-24-600">Nomor Transaksi</div>
+											<div class="nomor-transaksi-kode heading-24-600 grey">
+												210100000000012
+											</div>
 										</div>
 										<div
-											class="btn btn-primaryku heading-16-500"
-											style="width: 50%"
+											class="
+												nomor-transaksi-data
+												d-flex
+												justify-content-between
+											"
 										>
-											Bayar Sekarang
+											<div class="title heading-18-400">Tanggal Pemesanan</div>
+											<div class="nomor-transaksi-tanggal heading-18-400 grey">
+												27 Mei 2021, 11:15 WIB
+											</div>
+										</div>
+										<div class="status-pesanan d-flex justify-content-between">
+											<div class="status-pesanan-title heading-18-400">
+												Status Pesanan
+											</div>
+											<div class="status-pesanan-data heading-18-600 orange">
+												Menunggu Pembayaran
+											</div>
+										</div>
+									</div>
+									<hr />
+									<div class="produk-item">
+										<div
+											class="
+												produk-pesanan-items
+												d-flex
+												justify-content-between
+											"
+										>
+											<div
+												class="
+													produk-img
+													d-flex
+													align-items-center
+													justify-content-center
+												"
+											>
+												<img src="./images/standing-pouch.png" alt="" />
+											</div>
+											<div class="produk-pesanan-info no-display-mobile">
+												<div class="produk-name heading-18-600">
+													keripik milenial
+												</div>
+												<div
+													class="produk-pesanan-tipe my-3 heading-16-400 grey"
+												>
+													Standing Pouch + Zipper
+												</div>
+												<div class="produk-pesanan-kode heading-16-400 grey">
+													OPP Matte20/VMPET12/LLDPE60
+												</div>
+											</div>
+											<div class="produk-pesanan-total no-display-mobile">
+												<div class="produk-pesanan-prices heading-18-400">
+													Rp 2.738
+												</div>
+												<div class="produk-pesanan-value my-3 heading-18-400">
+													x 500
+												</div>
+												<div class="produk-pesanan-total-price heading-18-600">
+													Rp 1.369.000
+												</div>
+											</div>
+											<!-- mobile -->
+											<div
+												class="column-mobile no-display-web show-mobile pt-3"
+											>
+												<div class="produk-pesanan-info">
+													<div class="produk-name heading-14-600">
+														keripik milenial
+													</div>
+													<div
+														class="
+															produk-pesanan-tipe
+															mt-3
+															heading-10-400 heading-16-400
+															grey
+														"
+													>
+														Standing Pouch + Zipper
+													</div>
+													<div
+														class="
+															produk-pesanan-kode
+															heading-10-400 heading-16-400
+															grey
+														"
+													>
+														OPP Matte20/VMPET12/LLDPE60
+													</div>
+												</div>
+												<div
+													class="
+														produk-pesanan-total
+														d-flex
+														align-items-center
+														justify-content-between
+														mt-3
+													"
+												>
+													<div class="info-unit-price">
+														<div class="title heading-14-400 text-right grey">
+															Unit Price*
+														</div>
+														<div class="produk-pesanan-prices heading-18-400">
+															Rp 2.738
+														</div>
+													</div>
+													<div class="info-quantity">
+														<div class="title heading-14-400 grey">
+															Quantity
+														</div>
+														<div class="produk-pesanan-value heading-18-400">
+															x 500
+														</div>
+													</div>
+												</div>
+												<div class="d-flex flex-column mt-3">
+													<div class="title heading-14-400 grey">
+														Total Price
+													</div>
+													<div
+														class="produk-pesanan-total-price heading-18-600"
+													>
+														Rp 1.369.000
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="border-bottom"></div>
+										<!-- end items -->
+									</div>
+									<div
+										class="
+											info-detail
+											d-flex
+											align-items-center
+											justify-content-between
+										"
+									>
+										<div class="detail-pesanan">
+											<a href="#" class="primary-color heading-16-600"
+												>Lihat Detail Pesanan</a
+											>
+										</div>
+										<div class="d-flex align-items-center">
+											<div
+												class="waktu-pembayaran-limit mr-3"
+												style="width: 100%"
+											>
+												Bayar sebelum 28 Mei 2021, 11:20 WIB
+											</div>
+											<a href="payment-02.html" style="width: 100%">
+												<div class="btn btn-primaryku heading-16-500">
+													Bayar Sekarang
+												</div>
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div
-							class="
-								d-flex
-								container
-								column-mobile
-								pagination-page
-								align-items-center
-								mt-3
-							"
-						>
-							<ul
-								class="pagination container d-flex justify-content-center mt-5"
+							<div
+								class="
+									d-flex
+									container
+									column-mobile
+									pagination-page
+									align-items-center
+									mt-3
+								"
 							>
-								<li class="page-item">
-									<a class="page-link grey" href="#" aria-label="Previous">
-										<span aria-hidden="true">
-											<img src="./images/chevron-left.svg" alt="" />
-										</span>
-									</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link grey page-active" href="#">1</a>
-								</li>
-								<!-- <li class="page-item">
+								<ul
+									class="
+										pagination
+										container
+										d-flex
+										justify-content-center
+										mt-5
+									"
+								>
+									<li class="page-item">
+										<a class="page-link grey" href="#" aria-label="Previous">
+											<span aria-hidden="true">
+												<img src="./images/chevron-left.svg" alt="" />
+											</span>
+										</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link grey page-active" href="#">1</a>
+									</li>
+									<!-- <li class="page-item">
 									<a class="page-link grey" href="#">2</a>
 								</li>
 								<li class="page-item" aria-current="page">
@@ -780,14 +994,15 @@
 								<li class="page-item">
 									<a class="page-link grey" href="#">5</a>
 								</li> -->
-								<li class="page-item">
-									<a class="page-link grey" href="#" aria-label="Next">
-										<span aria-hidden="true">
-											<img src="./images/chevron-right.svg" alt="" />
-										</span>
-									</a>
-								</li>
-							</ul>
+									<li class="page-item">
+										<a class="page-link grey" href="#" aria-label="Next">
+											<span aria-hidden="true">
+												<img src="./images/chevron-right.svg" alt="" />
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -814,6 +1029,7 @@
 
 			// user menu
 			let user_panel = document.getElementById('user__panel');
+			let user_panel_web = document.getElementById('user__panel-web');
 			let bag_user = document.getElementById('bag__user');
 			let notif_user = document.getElementById('notif__user');
 			// user bag dropdown
@@ -822,7 +1038,28 @@
 			let user_notif = document.getElementById('user_notif');
 			let overlay = document.getElementById('overlay');
 
+			let navbarMenu = document.getElementById('navbarSupportedContent');
+			let overlayNav = document.querySelector('.overlay');
+
 			user_panel.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+					navbarMenu.classList.remove('show');
+					overlayNav.classList.add('d-none');
+				} else {
+					overlay.classList.remove('show-overlay');
+					overlayNav.classList.remove('d-none');
+				}
+
+				return;
+			});
+
+			user_panel_web.addEventListener('click', function () {
 				user_panel_action.classList.toggle('show-overlay');
 				user_bag.classList.remove('show-overlay');
 				user_notif.classList.remove('show-overlay');
@@ -866,12 +1103,31 @@
 
 				return;
 			});
+			const arrow_icon_nav_mobile = document.getElementById('arrow-icon');
 
 			overlay.addEventListener('click', function () {
 				user_bag.classList.remove('show-overlay');
 				user_panel_action.classList.remove('show-overlay');
 				user_notif.classList.remove('show-overlay');
 				overlay.classList.remove('show-overlay');
+				arrow_icon_nav_mobile.classList.remove('open');
+				overlayNav.classList.add('d-none');
+			});
+
+			const open_trigger_navbar_mobile = document.getElementById(
+				'open-menu-user-mobile'
+			);
+			const open_param_navbar_mobile =
+				document.getElementById('user-action-panel');
+
+			open_trigger_navbar_mobile.addEventListener('click', function () {
+				if (open_param_navbar_mobile.classList.contains('show-overlay')) {
+					console.log(1);
+					arrow_icon_nav_mobile.classList.add('open');
+				} else {
+					arrow_icon_nav_mobile.classList.remove('open');
+					overlayNav.classList.add('d-none');
+				}
 			});
 		</script>
 		<script src="scripts/vendor.js"></script>

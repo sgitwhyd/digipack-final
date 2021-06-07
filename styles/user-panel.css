@@ -116,7 +116,7 @@ form input {
 }
 
 .detail-pesanan {
-	padding: 20px 0px 0px 20px;
+	padding: 20px 0px 0px 30px;
 }
 
 .w-30 {
@@ -127,10 +127,11 @@ form input {
 	color: #898f9e !important;
 	font-size: 14px;
 	font-weight: 300;
+	padding-top: 40px;
 }
 
 .info-detail {
-	padding: 0px 30px;
+	padding: 0px 30px 0px 5px;
 }
 
 .transaksi-title,
@@ -271,4 +272,35 @@ form input {
 
 .mt-0 {
 	margin-top: 0px !important;
+}
+
+.user-email {
+	background: #f0f1f1;
+	border-radius: 10px;
+	padding: 15px 30px;
+}
+
+.urutkanWrapper {
+	padding: 30px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.urutkan {
+	width: 150px;
+	padding: 10px 15px;
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 6px;
+	background: none;
+}
+
+.upload-button {
+	width: 30%;
+}
+
+.upload-info {
+	width: 55%;
+	text-align: center;
+	color: #898f9e;
 }

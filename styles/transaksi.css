@@ -67,6 +67,54 @@
 	color: #ed1c24;
 }
 
+.wait-pay {
+	border: 1px solid;
+	border-radius: 200%;
+	padding: 15px;
+	border-color: #c0c4cd;
+}
+
+.border-orange {
+	border-color: #fbab20 !important;
+}
+
+.wait-jam {
+	width: 20%;
+}
+
+.flow-pembayaran-wrapper {
+	margin-top: 50px;
+}
+
+.line-flow-pembayaran {
+	background: #c0c4cd;
+	width: 100px;
+	height: 1px;
+	margin-top: -55px;
+	/* position: absolute; */
+}
+
+.line-orange {
+	background: #fbab20;
+}
+
+.ml-m-12 {
+	margin-left: -12px;
+}
+
+.mr-m-12 {
+	margin-right: -12px;
+}
+
+.justify-center-m {
+	text-align: center;
+}
+
+.align-center-m {
+	display: flex;
+	align-items: center;
+}
+
 @media (max-width: 578px) {
 	.show-mobile {
 		display: block !important;
@@ -78,5 +126,45 @@
 
 	.arrow-back img {
 		transform: rotate(180deg);
+	}
+
+	.line-flow-pembayaran {
+		/* background: #c0c4cd; */
+		width: 1px;
+		height: 100px;
+		margin-top: 35px;
+		/* position: absolute; */
+	}
+
+	.border-orange {
+		border-color: #fbab20 !important;
+	}
+
+	.ml-m-12 {
+		margin-left: 0px;
+	}
+
+	.mr-m-12 {
+		margin-right: 0px;
+	}
+
+	.mt-40-m {
+		margin-top: 40px;
+	}
+
+	.text-center-m {
+		text-align: center;
+	}
+
+	.flow-pembayaran-wrapper img {
+		width: 100px;
+	}
+
+	.flow-pembayaran-wrapper {
+		margin-top: 30px;
+	}
+
+	.wait-pay {
+		padding: 20px;
 	}
 }

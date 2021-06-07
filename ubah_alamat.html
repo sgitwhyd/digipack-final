@@ -427,156 +427,164 @@
 							</div>
 						</div>
 						<div class="col-md-8 col-sm-12">
-							<div class="notifikasiWrapper">
-								<div class="notifikasi-title heading-24-600">Notifikasi</div>
+							<div class="tambahAlamat">
+								<div class="tambahAlamat-title heading-24-600">Alamat</div>
 								<hr />
-								<div class="notifAllWrapper">
-									<a href="#" class="notif-user-item">
-										<div class="notif-item notifRead">
-											<div class="notifUserWrapper">
-												<div class="notif-info heading-18-500">
-													Selamat! Anda mendapatkan voucher belanja
-												</div>
-												<div class="notif-tanggal heading-14-500 grey mt-2">
-													12 Mei 2021
-												</div>
-											</div>
-											<hr />
+								<div class="tambahAlamatWrapper">
+									<div class="tambahAlamatInfo mb-4">
+										<div class="heading-24-600">Ubah Alamat Pengiriman</div>
+										<div class="heading-18-400 grey">
+											Silahkan ubah alamat pengiriman yang dituju
 										</div>
-									</a>
-									<a href="#" class="notif-user-item">
-										<div class="notif-item notifRead">
-											<div class="notifUserWrapper">
-												<div class="notif-info heading-18-500">
-													Pesanan Anda dengan nomor transaksi #210100000000012
-													telah dikirim
-												</div>
-												<div class="notif-tanggal heading-14-500 grey mt-2">
-													12 Mei 2021
-												</div>
-											</div>
-											<hr />
+									</div>
+									<form>
+										<div class="form-group">
+											<label for="exampleFormControlInput1"
+												>Alamat Sebagai<span style="color: red">*</span></label
+											>
+											<input
+												type="text"
+												class="form-control form-control-lg inputAlamat"
+												id="alamatSebagai"
+												placeholder="Contoh: Rumah, Kantor, Gudang, dll."
+												value="Atika Widjaya"
+												oninput="fillInput()"
+											/>
 										</div>
-									</a>
-									<a href="#" class="notif-user-item">
-										<div class="notif-item notifRead">
-											<div class="notifUserWrapper">
-												<div class="notif-info heading-18-500">
-													Pesanan Anda dengan nomor transaksi #210100000000012
-													dalam proses produksi
-												</div>
-												<div class="notif-tanggal heading-14-500 grey mt-2">
-													12 Mei 2021
-												</div>
-											</div>
-											<hr />
+										<div class="form-group mt-3">
+											<label for="exampleFormControlInput2"
+												>Nama Penerima<span style="color: red">*</span></label
+											>
+											<input
+												type="text"
+												class="form-control form-control-lg inputAlamat"
+												id="namaPenerima"
+												placeholder="Nama Penerima"
+												value="Maman Suherman"
+												oninput="fillInput()"
+											/>
 										</div>
-									</a>
-									<a href="#" class="notif-user-item">
-										<div class="notif-item">
-											<div class="notifUserWrapper">
-												<div class="notif-info heading-18-500">
-													Pembayaran pesanan nomor transaksi #210100000000012
-													telah diterima
-												</div>
-												<div class="notif-tanggal heading-14-500 grey mt-2">
-													12 Mei 2021
-												</div>
-											</div>
-											<hr />
+										<div class="form-group mt-3">
+											<label for="exampleFormControlInput2"
+												>No Handphone<span style="color: red">*</span></label
+											>
+											<input
+												type="number"
+												class="form-control form-control-lg inputAlamat"
+												id="noHP"
+												placeholder="No Handphone"
+												value="081234567890"
+												oninput="fillInput()"
+											/>
 										</div>
-									</a>
-									<a href="#" class="notif-user-item">
-										<div class="notif-item">
-											<div class="notifUserWrapper">
-												<div class="notif-info heading-18-500">
-													Anda mempunyai transaksi yang belum diselesaikan
-												</div>
-												<div class="notif-tanggal heading-14-500 grey mt-2">
-													12 Mei 2021
-												</div>
+										<div class="d-flex flex-column">
+											<div class="label">
+												<label for="selectgrade"
+													>Provinsi<span style="color: red">*</span></label
+												>
 											</div>
-											<hr />
-										</div>
-									</a>
-									<a href="#" class="notif-user-item">
-										<div class="notif-item">
-											<div class="notifUserWrapper">
-												<div class="notif-info heading-18-500">
-													Bingung menentukan kemasan terbaik? Yuk! segera
-													hubungi kami
-												</div>
-												<div class="notif-tanggal heading-14-500 grey mt-2">
-													12 Mei 2021
-												</div>
+											<div class="custom-select">
+												<select
+													class="form-control form-control-lg inputAlamat"
+												>
+													<option value="0">Jawa Barat</option>
+													<option value="0" class="select-option">
+														Pilih Provinsi
+													</option>
+													<option value="1">Provinsi 1</option>
+													<option value="2">Provinsi 2</option>
+													<option value="3">Provinsi 3</option>
+												</select>
 											</div>
-											<hr />
 										</div>
-									</a>
-									<a href="#" class="notif-user-item">
-										<div class="notif-item">
-											<div class="notifUserWrapper">
-												<div class="notif-info heading-18-500">
-													Selamat! Pendaftaran akun Anda berhasil
-												</div>
-												<div class="notif-tanggal heading-14-500 grey mt-2">
-													12 Mei 2021
-												</div>
+										<div class="d-flex flex-column mt-3">
+											<div class="label">
+												<label for="selectgrade"
+													>Kabupaten / Kota<span style="color: red"
+														>*</span
+													></label
+												>
 											</div>
-											<hr />
+											<div class="custom-select">
+												<select
+													class="form-control form-control-lg inputAlamat"
+												>
+													<option value="0">Bekasi</option>
+													<option value="0" class="select-option">
+														Pilih Kabupaten / kota
+													</option>
+													<option value="1">Kabupaten / kota 1</option>
+													<option value="2">Kabupaten / kota 2</option>
+													<option value="3">Kabupaten / kota 3</option>
+												</select>
+											</div>
 										</div>
-									</a>
+										<div class="form-group mt-3">
+											<label for="exampleFormControlInput2"
+												>Kecamatan<span style="color: red">*</span></label
+											>
+											<input
+												type="text"
+												class="form-control form-control-lg inputAlamat"
+												id="kecamatan"
+												placeholder="Pilih Kecamatan"
+												value="Bekasi Barat"
+												oninput="fillInput()"
+											/>
+										</div>
+										<div class="form-group mt-3">
+											<label for="exampleFormControlInput2"
+												>Kode Pos<span style="color: red">*</span></label
+											>
+											<input
+												type="text"
+												class="form-control form-control-lg inputAlamat"
+												id="kodepos"
+												placeholder="Tulis Kode pos"
+												value="17136"
+												oninput="fillInput()"
+											/>
+										</div>
+										<div class="form-group mt-3">
+											<label for="exampleFormControlTextarea1"
+												>Alamat Lengkap<span style="color: red">*</span></label
+											>
+											<textarea
+												class="form-control inputAlamat"
+												placeholder="Tulis Alamat Lengkap"
+												id="alamatLengkap"
+												rows="3"
+												oninput="fillInput()"
+											>
+Jalan Bintara Jaya III Raya No 80 RT 006 RW 02 Bintara Jaya Bekasi Barat 17136
+                                        </textarea
+											>
+										</div>
+										<div class="form-check mt-3">
+											<input
+												class="form-check-input"
+												type="checkbox"
+												value=""
+												id="flexCheckDefault"
+											/>
+											<label class="form-check-label" for="flexCheckDefault">
+												Atur sebagai alamat utama
+											</label>
+										</div>
+										<div class="button-action-tambahAlamat d-flex">
+											<a href="alamat_user.html" class="">
+												<button class="btn btn-orange heading-20-500">
+													Batal
+												</button>
+											</a>
+											<a href="alamat_user.html">
+												<button class="btn btn-primaryku heading-20-500 mt-0">
+													Simpan
+												</button>
+											</a>
+										</div>
+									</form>
 								</div>
-							</div>
-							<div
-								class="
-									d-flex
-									container
-									column-mobile
-									pagination-page
-									align-items-center
-									mt-3
-								"
-							>
-								<ul
-									class="
-										pagination
-										container
-										d-flex
-										justify-content-center
-										mt-5
-									"
-								>
-									<li class="page-item">
-										<a class="page-link grey" href="#" aria-label="Previous">
-											<span aria-hidden="true">
-												<img src="./images/chevron-left.svg" alt="" />
-											</span>
-										</a>
-									</li>
-									<li class="page-item">
-										<a class="page-link grey page-active" href="#">1</a>
-									</li>
-									<!-- <li class="page-item">
-									<a class="page-link grey" href="#">2</a>
-								</li>
-								<li class="page-item" aria-current="page">
-									<a class="page-link grey" href="#">3</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link grey" href="#">4</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link grey" href="#">5</a>
-								</li> -->
-									<li class="page-item">
-										<a class="page-link grey" href="#" aria-label="Next">
-											<span aria-hidden="true">
-												<img src="./images/chevron-right.svg" alt="" />
-											</span>
-										</a>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
@@ -704,6 +712,96 @@
 					overlayNav.classList.add('d-none');
 				}
 			});
+
+			// selcect
+			var x, i, j, l, ll, selElmnt, a, b, c;
+			/*look for any elements with the class "custom-select":*/
+			x = document.getElementsByClassName('custom-select');
+			l = x.length;
+			for (i = 0; i < l; i++) {
+				selElmnt = x[i].getElementsByTagName('select')[0];
+				ll = selElmnt.length;
+				/*for each element, create a new DIV that will act as the selected item:*/
+				a = document.createElement('DIV');
+				a.setAttribute('class', 'select-selected');
+				a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+				x[i].appendChild(a);
+				/*for each element, create a new DIV that will contain the option list:*/
+				b = document.createElement('DIV');
+				b.setAttribute('class', 'select-items select-hide');
+				for (j = 1; j < ll; j++) {
+					/*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+					c = document.createElement('DIV');
+					c.innerHTML = selElmnt.options[j].innerHTML;
+					c.addEventListener('click', function (e) {
+						/*when an item is clicked, update the original select box,
+        and the selected item:*/
+						var y, i, k, s, h, sl, yl;
+						s = this.parentNode.parentNode.getElementsByTagName('select')[0];
+						sl = s.length;
+						h = this.parentNode.previousSibling;
+						for (i = 0; i < sl; i++) {
+							if (s.options[i].innerHTML == this.innerHTML) {
+								s.selectedIndex = i;
+								h.innerHTML = this.innerHTML;
+								y = this.parentNode.getElementsByClassName('same-as-selected');
+								yl = y.length;
+								for (k = 0; k < yl; k++) {
+									y[k].removeAttribute('class');
+								}
+								this.setAttribute('class', 'same-as-selected');
+								console.log(s.value);
+								break;
+							}
+						}
+						h.click();
+					});
+					b.appendChild(c);
+				}
+				x[i].appendChild(b);
+				a.addEventListener('click', function (e) {
+					/*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+					e.stopPropagation();
+					closeAllSelect(this);
+					this.nextSibling.classList.toggle('select-hide');
+					this.classList.toggle('select-arrow-active');
+				});
+			}
+			function closeAllSelect(elmnt) {
+				/*a function that will close all select boxes in the document,
+  except the current select box:*/
+				var x,
+					y,
+					i,
+					xl,
+					yl,
+					custom_select,
+					arrNo = [];
+				x = document.getElementsByClassName('select-items');
+				y = document.getElementsByClassName('select-selected');
+				custom_select = document.getElementsByClassName('custom-select');
+				xl = x.length;
+				yl = y.length;
+				for (i = 0; i < yl; i++) {
+					if (elmnt == y[i]) {
+						arrNo.push(i);
+						custom_select[i].classList.add('border-blue');
+						y[i].classList.toggle('bg-grey');
+					} else {
+						y[i].classList.remove('select-arrow-active');
+					}
+				}
+				for (i = 0; i < xl; i++) {
+					if (arrNo.indexOf(i)) {
+						x[i].classList.add('select-hide');
+					}
+				}
+			}
+			/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+			document.addEventListener('click', closeAllSelect);
 		</script>
 		<script src="scripts/vendor.js"></script>
 		<script src="scripts/main.js"></script>

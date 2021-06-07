@@ -41,17 +41,45 @@
 							<a class="navbar-brand" href="#"
 								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
 							/></a>
-							<button
-								class="navbar-toggler collapsed"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
+							<div class="d-flex">
+								<button
+									class="navbar-toggler collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="navbar-toggler-icon" id="toggleIcon"></span>
+								</button>
+								<div
+									class="no-display-web show-mobile ml-3"
+									id="open-menu-user-mobile"
+								>
+									<div
+										class="user-active d-flex align-items-center"
+										id="user__panel"
+									>
+										<div class="dropdown d-flex align-items-center">
+											<img
+												src="./images/Profile.svg"
+												class="w-15"
+												style="cursor: pointer"
+												alt=""
+											/>
+											<div class="dropdown-toggle">
+												<img
+													src="./images/down.svg"
+													id="arrow-icon"
+													class="default w-15"
+													alt=""
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav" id="navbar-nav-mobile">
@@ -80,26 +108,46 @@
 										align-items-center
 									"
 								>
-									<div class="info-user">
+									<div class="info-user column-mobile-reverse">
 										<div class="notif-user">
-											<a href="#" class="notification">
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="notif__user"
+											>
 												<img
 													src="./images/Notification.svg"
-													id="notif__user"
+													class="mt-13"
 													alt=""
 												/>
-												<span class="badge">1</span>
+												<div class="show-mobile no-display-web ml-4">
+													Notifikasi
+												</div>
+												<!-- <span class="badge">1</span> -->
 											</a>
 										</div>
 										<div class="bag-user">
-											<a href="#" class="notification">
-												<img src="./images/Bag.svg" id="bag__user" alt="" />
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="bag__user"
+											>
+												<img src="./images/Bag.svg" alt="" />
+												<div class="show-mobile no-display-web ml-3">
+													Keranjang Belanja
+												</div>
 												<!-- <span class="badge">3</span> -->
 											</a>
 										</div>
+
 										<div
-											class="user-active d-flex align-items-center"
-											id="user__panel"
+											class="
+												user-active
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+											id="user__panel-web"
 										>
 											<div class="dropdown d-flex">
 												<img
@@ -114,6 +162,14 @@
 											</div>
 										</div>
 									</div>
+									<div
+										class="menu-act show-mobile no-display-web no-mt-bt mb-40"
+									>
+										<ul class="lang mb-0 pl-0">
+											<li class="active"><a href="#">ID</a></li>
+											<li class="mr-0"><a href="#">EN</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</nav>
@@ -121,7 +177,7 @@
 				</div>
 
 				<div class="container">
-					<div class="user-interaction">
+					<div class="user-interaction" style="z-index: 998 !important">
 						<div class="container">
 							<!-- user-action -->
 							<div class="position-relative">
@@ -203,45 +259,25 @@
 							<!-- end user notif -->
 							<!-- user-notif -->
 							<div class="position-relative">
-								<div class="user-action-panel" id="user-action-panel">
-									<div class="user-info">
-										<img src="./images/Profile.svg" class="mr-3" alt="" />
-										<span>Atika Widjaya</span>
+								<div
+									class="user-action-panel mobile-menuUser"
+									id="user-action-panel"
+								>
+									<div class="no-display-mobile">
+										<div class="user-info">
+											<img src="./images/Profile.svg" class="mr-3" alt="" />
+											<span>Atika Widjaya</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
 									<div class="action-menu">
-										<div
-											class="
-												user-action-menu user-panel
-												d-flex
-												align-items-center
-											"
-										>
+										<div class="user-action-menu d-flex align-items-center">
 											<a href="#">
-												<svg
-													width="20"
-													height="20"
-													viewBox="0 0 20 20"
+												<img
+													src="./images/edit-profile-icon.svg"
 													class="mr-3"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M14.4198 5.41562C14.4198 7.8543 12.4428 9.83124 10.0041 9.83124C7.56546 9.83124 5.58852 7.8543 5.58852 5.41562C5.58852 2.97694 7.56546 1 10.0041 1C12.4428 1 14.4198 2.97694 14.4198 5.41562Z"
-														stroke="#312D75"
-														stroke-width="1.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-													<path
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M3.00001 15.9725C2.99883 15.6621 3.06825 15.3555 3.20303 15.0758C3.62598 14.2299 4.81871 13.7816 5.80842 13.5786C6.52219 13.4263 7.24583 13.3245 7.97393 13.2741C9.32196 13.1557 10.6778 13.1557 12.0258 13.2741C12.7539 13.3251 13.4774 13.4268 14.1913 13.5786C15.181 13.7816 16.3738 14.1876 16.7967 15.0758C17.0678 15.6459 17.0678 16.3076 16.7967 16.8776C16.3738 17.7658 15.181 18.1719 14.1913 18.3664C13.4784 18.525 12.7545 18.6297 12.0258 18.6794C10.9286 18.7724 9.82632 18.7894 8.72679 18.7301C8.47302 18.7301 8.2277 18.7301 7.97393 18.6794C7.24798 18.6303 6.52685 18.5256 5.81688 18.3664C4.81871 18.1719 3.63444 17.7658 3.20303 16.8776C3.06894 16.5947 2.99959 16.2855 3.00001 15.9725Z"
-														stroke="#312D75"
-														stroke-width="1.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-												</svg>
+													alt=""
+												/>
 												Edit Profile
 											</a>
 										</div>
@@ -274,11 +310,43 @@
 												Permainan
 											</a>
 										</div>
-										<div class="user-action-menu d-flex align-items-center">
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+										>
 											<a href="#">
 												<img src="./images/logout.svg" class="mr-3" alt="" />
 												Logout
 											</a>
+										</div>
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-web
+												show-mobile
+											"
+										>
+											<a href="#" class="red">
+												<img
+													src="./images/logout-red.svg"
+													class="mr-3"
+													width="20px"
+													alt=""
+												/>
+												Logout
+											</a>
+										</div>
+										<div class="menu-act show-mobile no-display-web no-mt-bt">
+											<ul class="lang mb-0 pl-0">
+												<li class="active"><a href="#">ID</a></li>
+												<li class="mr-0"><a href="#">EN</a></li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -288,192 +356,224 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- masukan konten disini -->
-		<div class="content-wrapper pt-5 mt-5">
-			<div class="container content-user-panel">
-				<div class="row">
-					<div class="col-md-4 col-sm-12">
-						<div class="user-menu">
-							<div class="d-flex justify-content-center">
-								<div class="d-flex flex-column">
-									<div class="user-foto d-flex justify-content-center">
-										<img src="./images/user-profile.svg" alt="" />
-									</div>
-									<div
-										class="d-flex flex-column text-center heading-18-500 mt-3"
-									>
-										<div class="user-name">Atika Widjaya</div>
-										<div class="user-email">hi.atikawidjaya@gmail.com</div>
+			<!-- masukan konten disini -->
+			<div class="content-wrapper pt-5 mt-5">
+				<div class="container content-user-panel">
+					<div class="row">
+						<div class="col-md-4 col-sm-12">
+							<div class="user-menu">
+								<div class="d-flex justify-content-center">
+									<div class="d-flex flex-column">
+										<div class="user-foto d-flex justify-content-center">
+											<img src="./images/user-profile.svg" alt="" />
+										</div>
+										<div
+											class="d-flex flex-column text-center heading-18-500 mt-3"
+										>
+											<div class="user-name">Atika Widjaya</div>
+											<div class="user-email">hi.atikawidjaya@gmail.com</div>
+										</div>
 									</div>
 								</div>
-							</div>
-							<hr />
-							<div class="action-menu">
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img
-											src="./images/edit-profile-icon.svg"
-											class="mr-3"
-											alt=""
-										/>
-										Edit Profile
-									</a>
-								</div>
+								<hr />
+								<div class="action-menu">
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#">
+											<img
+												src="./images/edit-profile-icon.svg"
+												class="mr-3"
+												alt=""
+											/>
+											Edit Profile
+										</a>
+									</div>
 
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img
-											src="./images/ubah-katasandi.svg"
-											class="mr-3"
-											alt=""
-										/>
-										Ubah Kata Sandi
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="checkout.html">
-										<img src="./images/transaksi.svg" class="mr-3" alt="" />
-										Transaksi
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img src="./images/alamat.svg" class="mr-3" alt="" />
-										Alamat
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img src="./images/permainan.svg" class="mr-3" alt="" />
-										Permainan
-									</a>
-								</div>
-								<div class="user-action-menu d-flex align-items-center">
-									<a href="#">
-										<img src="./images/logout.svg" class="mr-3" alt="" />
-										Logout
-									</a>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#">
+											<img
+												src="./images/ubah-katasandi.svg"
+												class="mr-3"
+												alt=""
+											/>
+											Ubah Kata Sandi
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="checkout.html">
+											<img src="./images/transaksi.svg" class="mr-3" alt="" />
+											Transaksi
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#">
+											<img src="./images/alamat.svg" class="mr-3" alt="" />
+											Alamat
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#">
+											<img src="./images/permainan.svg" class="mr-3" alt="" />
+											Permainan
+										</a>
+									</div>
+									<div class="user-action-menu d-flex align-items-center">
+										<a href="#">
+											<img src="./images/logout.svg" class="mr-3" alt="" />
+											Logout
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-8 col-sm-12">
-						<div class="alamatWrapper">
-							<div class="alamatTitle heading-24-600">Alamat</div>
-							<hr />
-							<div class="alamatUserAllWrapper">
-								<div class="alamat-user-wrapper mt-3 alamatChoose">
-									<div class="d-flex justify-content-between">
-										<div class="alamat-tipe heading-14-600">Alamat Kantor</div>
-										<div class="d-flex">
-											<div class="alamat-tipe heading-14-600 orange mr-3">
-												Alamat Utama
+						<div class="col-md-8 col-sm-12">
+							<div class="alamatWrapper">
+								<div class="alamatTitle heading-24-600">Alamat</div>
+								<hr />
+								<div class="alamatUserAllWrapper">
+									<div class="alamat-user-wrapper mt-3 alamatChoose">
+										<div class="d-flex justify-content-between">
+											<div class="alamat-tipe heading-14-600">
+												Alamat Kantor
 											</div>
-											<div class="alamat-tipe">
-												<a href="#" class="primary-color heading-14-600"
-													>Ubah</a
-												>
+											<div class="d-flex">
+												<div class="alamat-tipe heading-14-600 orange mr-3">
+													Alamat Utama
+												</div>
+												<div class="alamat-tipe">
+													<a href="#" class="primary-color heading-14-600"
+														>Ubah</a
+													>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<div class="d-flex">
+											<div
+												class="
+													user-info-modal
+													heading-16-500 heading-10-400
+													mr-5
+												"
+											>
+												<div class="user-name">Atika Widjaya</div>
+												<div class="no-user grey">081283238328</div>
+											</div>
+											<div
+												class="user-alamat heading-16-400 grey heading-10-400"
+											>
+												Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
+												Selatan, Kab. Bekasi 17560
 											</div>
 										</div>
 									</div>
-									<hr />
-									<div class="d-flex">
-										<div
-											class="user-info-modal heading-16-500 heading-10-400 mr-5"
-										>
-											<div class="user-name">Atika Widjaya</div>
-											<div class="no-user grey">081283238328</div>
+									<div class="alamat-user-wrapper mt-3">
+										<div class="d-flex justify-content-between">
+											<div class="alamat-tipe heading-14-600">
+												Alamat Kantor
+											</div>
+											<div class="d-flex">
+												<div class="alamat-tipe">
+													<a href="#" class="primary-color heading-14-600"
+														>Ubah</a
+													>
+												</div>
+											</div>
 										</div>
-										<div class="user-alamat heading-16-400 grey heading-10-400">
-											Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
-											Selatan, Kab. Bekasi 17560
+										<hr />
+										<div class="d-flex">
+											<div
+												class="
+													user-info-modal
+													heading-16-500 heading-10-400
+													mr-5
+												"
+											>
+												<div class="user-name">Atika Widjaya</div>
+												<div class="no-user grey">081283238328</div>
+											</div>
+											<div
+												class="user-alamat heading-16-400 grey heading-10-400"
+											>
+												Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
+												Selatan, Kab. Bekasi 17560
+											</div>
+										</div>
+									</div>
+									<div class="alamat-user-wrapper mt-3">
+										<div class="d-flex justify-content-between">
+											<div class="alamat-tipe heading-14-600">
+												Alamat Kantor
+											</div>
+											<div class="d-flex">
+												<div class="alamat-tipe">
+													<a href="#" class="primary-color heading-14-600"
+														>Ubah</a
+													>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<div class="d-flex">
+											<div
+												class="
+													user-info-modal
+													heading-16-500 heading-10-400
+													mr-5
+												"
+											>
+												<div class="user-name">Atika Widjaya</div>
+												<div class="no-user grey">081283238328</div>
+											</div>
+											<div
+												class="user-alamat heading-16-400 grey heading-10-400"
+											>
+												Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
+												Selatan, Kab. Bekasi 17560
+											</div>
+										</div>
+									</div>
+									<div class="alamat-user-wrapper mt-3">
+										<div class="d-flex justify-content-between">
+											<div class="alamat-tipe heading-14-600">
+												Alamat Kantor
+											</div>
+											<div class="d-flex">
+												<div class="alamat-tipe">
+													<a href="#" class="primary-color heading-14-600"
+														>Ubah</a
+													>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<div class="d-flex">
+											<div
+												class="
+													user-info-modal
+													heading-16-500 heading-10-400
+													mr-5
+												"
+											>
+												<div class="user-name">Atika Widjaya</div>
+												<div class="no-user grey">081283238328</div>
+											</div>
+											<div
+												class="user-alamat heading-16-400 grey heading-10-400"
+											>
+												Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
+												Selatan, Kab. Bekasi 17560
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="alamat-user-wrapper mt-3">
-									<div class="d-flex justify-content-between">
-										<div class="alamat-tipe heading-14-600">Alamat Kantor</div>
-										<div class="d-flex">
-											<div class="alamat-tipe">
-												<a href="#" class="primary-color heading-14-600"
-													>Ubah</a
-												>
-											</div>
-										</div>
-									</div>
-									<hr />
-									<div class="d-flex">
-										<div
-											class="user-info-modal heading-16-500 heading-10-400 mr-5"
-										>
-											<div class="user-name">Atika Widjaya</div>
-											<div class="no-user grey">081283238328</div>
-										</div>
-										<div class="user-alamat heading-16-400 grey heading-10-400">
-											Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
-											Selatan, Kab. Bekasi 17560
-										</div>
-									</div>
+								<div class="btn-tambahAlamat d-flex justify-content-center">
+									<a href="tambah_alamat_baru.html">
+										<button class="btn btn-primaryku heading-20-500">
+											Tambah Alamat Baru
+										</button>
+									</a>
 								</div>
-								<div class="alamat-user-wrapper mt-3">
-									<div class="d-flex justify-content-between">
-										<div class="alamat-tipe heading-14-600">Alamat Kantor</div>
-										<div class="d-flex">
-											<div class="alamat-tipe">
-												<a href="#" class="primary-color heading-14-600"
-													>Ubah</a
-												>
-											</div>
-										</div>
-									</div>
-									<hr />
-									<div class="d-flex">
-										<div
-											class="user-info-modal heading-16-500 heading-10-400 mr-5"
-										>
-											<div class="user-name">Atika Widjaya</div>
-											<div class="no-user grey">081283238328</div>
-										</div>
-										<div class="user-alamat heading-16-400 grey heading-10-400">
-											Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
-											Selatan, Kab. Bekasi 17560
-										</div>
-									</div>
-								</div>
-								<div class="alamat-user-wrapper mt-3">
-									<div class="d-flex justify-content-between">
-										<div class="alamat-tipe heading-14-600">Alamat Kantor</div>
-										<div class="d-flex">
-											<div class="alamat-tipe">
-												<a href="#" class="primary-color heading-14-600"
-													>Ubah</a
-												>
-											</div>
-										</div>
-									</div>
-									<hr />
-									<div class="d-flex">
-										<div
-											class="user-info-modal heading-16-500 heading-10-400 mr-5"
-										>
-											<div class="user-name">Atika Widjaya</div>
-											<div class="no-user grey">081283238328</div>
-										</div>
-										<div class="user-alamat heading-16-400 grey heading-10-400">
-											Jalan Cikarang Selatan Blok LL No 1 Pasirsari, Cikarang
-											Selatan, Kab. Bekasi 17560
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="btn-tambahAlamat d-flex justify-content-center">
-								<a href="#">
-									<button class="btn btn-primaryku heading-20-500">
-										Tambah Alamat Baru
-									</button>
-								</a>
 							</div>
 						</div>
 					</div>
@@ -501,6 +601,7 @@
 
 			// user menu
 			let user_panel = document.getElementById('user__panel');
+			let user_panel_web = document.getElementById('user__panel-web');
 			let bag_user = document.getElementById('bag__user');
 			let notif_user = document.getElementById('notif__user');
 			// user bag dropdown
@@ -509,7 +610,28 @@
 			let user_notif = document.getElementById('user_notif');
 			let overlay = document.getElementById('overlay');
 
+			let navbarMenu = document.getElementById('navbarSupportedContent');
+			let overlayNav = document.querySelector('.overlay');
+
 			user_panel.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+					navbarMenu.classList.remove('show');
+					overlayNav.classList.add('d-none');
+				} else {
+					overlay.classList.remove('show-overlay');
+					overlayNav.classList.remove('d-none');
+				}
+
+				return;
+			});
+
+			user_panel_web.addEventListener('click', function () {
 				user_panel_action.classList.toggle('show-overlay');
 				user_bag.classList.remove('show-overlay');
 				user_notif.classList.remove('show-overlay');
@@ -553,12 +675,31 @@
 
 				return;
 			});
+			const arrow_icon_nav_mobile = document.getElementById('arrow-icon');
 
 			overlay.addEventListener('click', function () {
 				user_bag.classList.remove('show-overlay');
 				user_panel_action.classList.remove('show-overlay');
 				user_notif.classList.remove('show-overlay');
 				overlay.classList.remove('show-overlay');
+				arrow_icon_nav_mobile.classList.remove('open');
+				overlayNav.classList.add('d-none');
+			});
+
+			const open_trigger_navbar_mobile = document.getElementById(
+				'open-menu-user-mobile'
+			);
+			const open_param_navbar_mobile =
+				document.getElementById('user-action-panel');
+
+			open_trigger_navbar_mobile.addEventListener('click', function () {
+				if (open_param_navbar_mobile.classList.contains('show-overlay')) {
+					console.log(1);
+					arrow_icon_nav_mobile.classList.add('open');
+				} else {
+					arrow_icon_nav_mobile.classList.remove('open');
+					overlayNav.classList.add('d-none');
+				}
 			});
 		</script>
 		<script src="scripts/vendor.js"></script>

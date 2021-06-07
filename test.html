@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
@@ -20,128 +20,1033 @@
 		<link rel="stylesheet" href="styles/vendor.css" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/modal.css" />
-		<link rel="stylesheet" href="styles/checkout.css" />
 		<script src="scripts/modernizr.js"></script>
-		<style>
-			.line-checkout {
-				width: 300px;
-				height: 1px;
-				background-color: #c0c4cd;
-			}
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 
-			@media (max-width: 578px) {
-				.line-checkout {
-					width: 50px;
-
-					background-color: #312d75 !important;
-				}
-			}
-		</style>
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<div class="pengirman-dropdown mt-3">
-				<a
-					data-toggle="collapse"
-					href="#pilihJasaPengiriman"
-					role="button"
-					aria-expanded="false"
-					aria-controls="pilihJasaPengiriman"
-					id="jasa-pengiriman"
-				>
-					<div class="dropdown-wrapper d-flex justify-content-between">
-						<div
-							class="
-								title
-								d-flex
-								align-center-center
-								heading-16-600
-								primary-color
-							"
-						>
-							Pilih Jasa Pengiriman
-						</div>
-						<div class="down d-flex align-items-center">
-							<img
-								src="./images/down-chevron.svg"
-								width="20px"
-								alt=""
-								id="arrow-icon"
-								class="default open"
-							/>
-						</div>
-					</div>
-				</a>
+		<!--[if IE]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve
+				your experience.
+			</p>
+		<![endif]-->
+		<div id="wrapper" class="position-relative">
+			<div class="overlay d-none"></div>
 
-				<div class="collapse show" id="pilihJasaPengiriman">
-					<div class="card no-padding-bottom card-body heading-16-400" id="jne">
-						<div class="form-check">
-							<input
-								class="form-check-input"
-								type="radio"
-								name="flexRadioDefault"
-								id="flexRadioDefault1"
-								value="JNE"
-							/>
-							<label
-								class="
-									form-check-label
-									d-flex
-									align-items-center
-									justify-content-between
-									ml-2
-								"
-								for="flexRadioDefault1"
-							>
-								<div class="ekpedisi-info d-flex align-center-center">
-									<div class="ekpedisi-logo mr-3">
-										<img src="./images/JNE.png" alt="" />
+			<div class="position-fixed" style="z-index: 999; width: 100%">
+				<div id="header">
+					<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light p-0">
+							<a class="navbar-brand" href="#"
+								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
+							/></a>
+							<div class="d-flex">
+								<button
+									class="navbar-toggler collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="navbar-toggler-icon" id="toggleIcon"></span>
+								</button>
+								<div
+									class="no-display-web show-mobile ml-3"
+									id="open-menu-user-mobile"
+								>
+									<div
+										class="user-active d-flex align-items-center"
+										id="user__panel"
+									>
+										<div class="dropdown d-flex align-items-center">
+											<img
+												src="./images/Profile.svg"
+												class="w-15"
+												style="cursor: pointer"
+												alt=""
+											/>
+											<div class="dropdown-toggle">
+												<img
+													src="./images/down.svg"
+													id="arrow-icon"
+													class="default w-15"
+													alt=""
+												/>
+											</div>
+										</div>
 									</div>
-									<div class="ekpedisi-name pt-1 heading-16-400">JNE</div>
 								</div>
-								<div class="down d-flex align-items-center">
-									<div class="ekpedisi-harga mr-3 heading-16-400">
-										Rp 69.300
+							</div>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav" id="navbar-nav-mobile">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Beranda</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">Tentang Kami</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="pilih-kemasan.html"
+											>Pilihan Kemasan</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="blog.html">Blog</a>
+									</li>
+								</ul>
+								<div
+									class="
+										menu-act
+										ml-auto
+										mr-5
+										my-2 my-lg-0
+										d-flex
+										align-items-center
+									"
+								>
+									<div class="info-user column-mobile-reverse">
+										<div class="notif-user">
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="notif__user"
+											>
+												<img
+													src="./images/Notification.svg"
+													class="mt-13"
+													alt=""
+												/>
+												<div class="show-mobile no-display-web ml-4">
+													Notifikasi
+												</div>
+												<!-- <span class="badge">1</span> -->
+											</a>
+										</div>
+										<div class="bag-user">
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="bag__user"
+											>
+												<img src="./images/Bag.svg" alt="" />
+												<div class="show-mobile no-display-web ml-3">
+													Keranjang Belanja
+												</div>
+												<!-- <span class="badge">3</span> -->
+											</a>
+										</div>
+
+										<div
+											class="
+												user-active
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+											id="user__panel-web"
+										>
+											<div class="dropdown d-flex">
+												<img
+													src="./images/Profile.svg"
+													style="cursor: pointer"
+													alt=""
+												/>
+												<button class="btn dropdown-toggle">
+													<span class="user">Atika Widjaya</span>
+													<img src="./images/down.svg" class="ml-4" alt="" />
+												</button>
+											</div>
+										</div>
+									</div>
+									<div
+										class="menu-act show-mobile no-display-web no-mt-bt mb-40"
+									>
+										<ul class="lang mb-0 pl-0">
+											<li class="active"><a href="#">ID</a></li>
+											<li class="mr-0"><a href="#">EN</a></li>
+										</ul>
 									</div>
 								</div>
-							</label>
-						</div>
+							</div>
+						</nav>
 					</div>
-					<div class="card no-padding-bottom card-body heading-16-400" id="jnt">
-						<div class="form-check">
-							<input
-								class="form-check-input"
-								type="radio"
-								name="flexRadioDefault"
-								id="flexRadioDefault2"
-								value="JNT"
-							/>
-							<label
-								class="
-									form-check-label
-									d-flex
-									align-items-center
-									justify-content-between
-									ml-2
-								"
-								for="flexRadioDefault2"
-							>
-								<div class="ekpedisi-info d-flex align-center-center">
-									<div class="ekpedisi-logo mr-3">
-										<img src="./images/JNT.png" alt="" />
+				</div>
+
+				<div class="container">
+					<div class="user-interaction" style="z-index: 998 !important">
+						<div class="container">
+							<!-- user-action -->
+							<div class="position-relative">
+								<div class="user-action" id="user_notif">
+									<div class="user-action-title">Notifikasi</div>
+									<hr />
+									<div class="user-action-notif">
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
+										<div class="notif">
+											<div class="user-notif">
+												<a href="#">
+													<div class="notif-value">
+														Anda Mendapatkan 3000 poin
+													</div>
+													<div class="receive-notif">12 Mei 2021</div>
+												</a>
+											</div>
+											<hr />
+										</div>
 									</div>
-									<div class="ekpedisi-name pt-1 heading-16-400">JNT</div>
-								</div>
-								<div class="down d-flex align-items-center">
-									<div class="ekpedisi-harga mr-3 heading-16-400">
-										Rp 69.300
+									<div class="user-action-all text-center">
+										<a href="#">Lihat Semua</a>
 									</div>
 								</div>
-							</label>
+							</div>
+							<!-- end user action -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div class="bag-notif" id="user-bag">
+									<div class="bag-img d-flex justify-content-center">
+										<!-- <img
+								src="./images/standing-pouch.png"
+								width="100px
+                        "
+								alt=""
+							/> -->
+									</div>
+									<div class="posititon-relative">
+										<div
+											class="position-absolute"
+											style="
+												position: absolute;
+												bottom: 30px;
+												padding: 0px 50px;
+											"
+										>
+											<div class="bag-info text-center mt-5">
+												Ops <br />
+												Keranjang Belanja Masih Kosong Nih
+											</div>
+											<div class="d-flex justify-content-center mt-3 mb-3">
+												<div class="btn btn-blue">Yuk Mulai Belanja</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
+							<!-- user-notif -->
+							<div class="position-relative">
+								<div
+									class="user-action-panel mobile-menuUser"
+									id="user-action-panel"
+								>
+									<div class="no-display-mobile">
+										<div class="user-info">
+											<img src="./images/Profile.svg" class="mr-3" alt="" />
+											<span>Atika Widjaya</span>
+										</div>
+										<hr />
+									</div>
+									<div class="action-menu">
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/edit-profile-icon.svg"
+													class="mr-3"
+													alt=""
+												/>
+												Edit Profile
+											</a>
+										</div>
+
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img
+													src="./images/ubah-katasandi.svg"
+													class="mr-3"
+													alt=""
+												/>
+												Ubah Kata Sandi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="checkout.html">
+												<img src="./images/transaksi.svg" class="mr-3" alt="" />
+												Transaksi
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/alamat.svg" class="mr-3" alt="" />
+												Alamat
+											</a>
+										</div>
+										<div class="user-action-menu d-flex align-items-center">
+											<a href="#">
+												<img src="./images/permainan.svg" class="mr-3" alt="" />
+												Permainan
+											</a>
+										</div>
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+										>
+											<a href="#">
+												<img src="./images/logout.svg" class="mr-3" alt="" />
+												Logout
+											</a>
+										</div>
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-web
+												show-mobile
+											"
+										>
+											<a href="#" class="red">
+												<img
+													src="./images/logout-red.svg"
+													class="mr-3"
+													width="20px"
+													alt=""
+												/>
+												Logout
+											</a>
+										</div>
+										<div class="menu-act show-mobile no-display-web no-mt-bt">
+											<ul class="lang mb-0 pl-0">
+												<li class="active"><a href="#">ID</a></li>
+												<li class="mr-0"><a href="#">EN</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end user notif -->
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<!-- masukan konten disini -->
+			<div class="content-wrapper pt-5 mt-5">
+				<div id="home-slider" class="mt-5 wow fadeInDown" data-wow-delay="0.2s">
+					<div class="container">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="images/banner-1.jpg" alt="" class="img-fluid" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="images/banner-1.jpg" alt="" class="img-fluid" />
+									</a>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<div id="after-home-slider-wrapper">
+					<div class="container">
+						<div class="after-home-slider">
+							<div class="top p-4">
+								<div class="row">
+									<div class="col-3 wow fadeInDown" data-wow-delay="0.5s">
+										<div
+											class="d-flex align-items-center justify-content-center"
+										>
+											<div class="icon">
+												<img src="images/time.svg" alt="" class="img-fluid" />
+											</div>
+											<label class="mb-0 ml-3 d-none d-lg-block" for=""
+												>Pengerjaan 15 hari</label
+											>
+										</div>
+									</div>
+									<div class="col-3 wow fadeInDown" data-wow-delay="0.8s">
+										<div
+											class="d-flex align-items-center justify-content-center"
+										>
+											<div class="icon">
+												<img
+													src="images/thumbs-up.svg"
+													alt=""
+													class="img-fluid"
+												/>
+											</div>
+											<label class="mb-0 ml-3 d-none d-lg-block" for=""
+												>Kualitas Cetak Oke</label
+											>
+										</div>
+									</div>
+									<div class="col-3 wow fadeInDown" data-wow-delay="1s">
+										<div
+											class="d-flex align-items-center justify-content-center"
+										>
+											<div class="icon">
+												<img src="images/box.svg" alt="" class="img-fluid" />
+											</div>
+											<label class="mb-0 ml-3 d-none d-lg-block" for=""
+												>Min. Pemesanan 500 Pcs</label
+											>
+										</div>
+									</div>
+									<div class="col-3 wow fadeInDown" data-wow-delay="1.2s">
+										<div
+											class="d-flex align-items-center justify-content-center"
+										>
+											<div class="icon">
+												<img src="images/daun.svg" alt="" class="img-fluid" />
+											</div>
+											<label class="mb-0 ml-3 d-none d-lg-block" for=""
+												>Food Grade</label
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					id="choose-packaging"
+					class="my-5 wow fadeInDown"
+					data-wow-delay="0.5s"
+				>
+					<div class="container">
+						<div class="title-section text-center mb-5">
+							<h1 class="title">Pilihan Kemasan</h1>
+						</div>
+						<div class="slider multiple-items pt-5">
+							<div class="block-wrapper">
+								<div class="block text-center">
+									<div
+										class="img d-flex justify-content-center position-relative"
+									>
+										<img
+											src="images/produk-centralseal.png"
+											alt=""
+											class="img-fluid"
+										/>
+										<div class="pattern position-absolute pattern-right">
+											<img
+												id="hide-on-mobile"
+												src="images/pattern-centralseal.png"
+												alt=""
+												class="img-fluid"
+											/>
+										</div>
+									</div>
+									<div class="title my-4"><a href="#">Central Seal</a></div>
+									<div class="shortdesc">
+										<p>
+											Packaging dengan seal dibagian tengah, bawah, dan atas.
+											Sering digunakan untuk mengemas snack dan makanan ringan
+											lainnya.
+										</p>
+									</div>
+									<div class="more">
+										<a href="#" class="btn rounded">Detail Packaging</a>
+									</div>
+								</div>
+							</div>
+							<div class="block-wrapper">
+								<div class="block text-center">
+									<div
+										class="img d-flex justify-content-center position-relative"
+									>
+										<img
+											src="images/produk-standingpouch.png"
+											alt=""
+											class="img-fluid"
+										/>
+										<div class="pattern position-absolute pattern-left">
+											<img
+												id="hide-on-mobile"
+												src="images/pattern-standingpouch.png"
+												alt=""
+												class="img-fluid"
+											/>
+										</div>
+									</div>
+									<div class="title my-4"><a href="#">Standing Pouch</a></div>
+									<div class="shortdesc">
+										<p>
+											Packaging yang dilengkapi dengan zipper lock untuk menjaga
+											kualitas produk. Sering digunakan untuk mengemas minuman
+											bubuk
+										</p>
+									</div>
+									<div class="more">
+										<a href="#" class="btn rounded">Detail Packaging</a>
+									</div>
+								</div>
+							</div>
+							<div class="block-wrapper">
+								<div class="block text-center">
+									<div
+										class="img d-flex justify-content-center position-relative"
+									>
+										<img
+											src="images/produk-vacuumpack.png"
+											alt=""
+											class="img-fluid"
+										/>
+										<div class="pattern position-absolute pattern-left">
+											<img
+												id="hide-on-mobile"
+												src="images/pattern-vacuumpack.png"
+												alt=""
+												class="img-fluid"
+											/>
+										</div>
+									</div>
+									<div class="title my-4"><a href="#">Vacuum Pack</a></div>
+									<div class="shortdesc">
+										<p>
+											Packaging yang didesain kedap udara agar produk tidak
+											mudah basi. Sering digunakan untuk mengemas produk frozen
+											food
+										</p>
+									</div>
+									<div class="more">
+										<a href="#" class="btn rounded">Detail Packaging</a>
+									</div>
+								</div>
+							</div>
+							<div class="block-wrapper">
+								<div class="block text-center">
+									<div
+										class="img d-flex justify-content-center position-relative"
+									>
+										<img
+											src="images/produk-gusset.png"
+											alt=""
+											class="img-fluid"
+										/>
+										<div class="pattern position-absolute pattern-right">
+											<img
+												id="hide-on-mobile"
+												src="images/pattern-gusset.png"
+												alt=""
+												class="img-fluid"
+											/>
+										</div>
+									</div>
+									<div class="title my-4"><a href="#">Gusset Pouch</a></div>
+									<div class="shortdesc">
+										<p>
+											Packaging dengan seal dibagian tengah, bawah, dan atas.
+											Sering digunakan untuk mengemas snack dan makanan ringan
+											lainnya.
+										</p>
+									</div>
+									<div class="more">
+										<a href="#" class="btn rounded">Detail Packaging</a>
+									</div>
+								</div>
+							</div>
+							<div class="block-wrapper">
+								<div class="block text-center">
+									<div
+										class="img d-flex justify-content-center position-relative"
+									>
+										<img
+											src="images/produk-sachet.png"
+											alt=""
+											class="img-fluid"
+										/>
+										<div class="pattern position-absolute pattern-left">
+											<img
+												id="hide-on-mobile"
+												src="images/pattern-sachet.png"
+												alt=""
+												class="img-fluid"
+											/>
+										</div>
+									</div>
+									<div class="title my-4"><a href="#">Three Block Seal</a></div>
+									<div class="shortdesc">
+										<p>
+											Packaging yang dilengkapi dengan zipper lock untuk menjaga
+											kualitas produk. Sering digunakan untuk mengemas minuman
+											bubuk
+										</p>
+									</div>
+									<div class="more">
+										<a href="#" class="btn rounded">Detail Packaging</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="how-to-order" class="my-5 wow fadeInUp">
+					<div class="container">
+						<a href="#"
+							><img src="images/banner-pesan.jpg" alt="" class="img-fluid"
+						/></a>
+					</div>
+				</div>
+				<div id="blog" class="my-5 wow fadeInUp">
+					<div class="container">
+						<div class="title-section text-center mb-5">
+							<h1 class="title">Blog</h1>
+						</div>
+						<div class="blog-wrapper mt-4 pt-4">
+							<div class="row">
+								<div class="col-md-4 col-12 mb-sm-0 mb-4">
+									<div class="block">
+										<div class="top">
+											<div class="img">
+												<img src="images/blog-1.png" alt="" class="img-fluid" />
+											</div>
+										</div>
+										<div class="bottom p-sm-4 p-3 px-4">
+											<div class="title mb-3">
+												<a href="#"
+													>Apa sih pentingnya analisa peluang usaha?</a
+												>
+											</div>
+											<div class="shortdesc">
+												<p>
+													Kalau kamu lagi berencana membangun sebuah usaha,
+													penting melakukan analisis peluang usaha sebelum
+													menjalankan usaha yang sukses dan berkelanjutan. Hal
+													ini tentu berlaku...
+												</p>
+											</div>
+											<div class="more">
+												<a href="#" class="hvr-icon-forward"
+													>Baca selengkapnya
+													<img src="./images/arrow-blog.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-12 mb-sm-0 mb-4">
+									<div class="block">
+										<div class="top">
+											<div class="img">
+												<img src="images/blog-2.png" alt="" class="img-fluid" />
+											</div>
+										</div>
+										<div class="bottom p-sm-4 p-3 px-4">
+											<div class="title mb-3">
+												<a href="#"
+													>Wajib dicoba! 10 jenis keripik unik untuk usaha yang
+													laris di pasar online</a
+												>
+											</div>
+											<div class="shortdesc">
+												<p>
+													Bisnis usaha aneka keripik bukanlah usaha yang sulit
+													untuk dimulai. Karena selain membutuhkan modal yang
+													relatif kecil dan peralatan yang tidak ribet, pasarnya
+													pun jelas sudah ada...
+												</p>
+											</div>
+											<div class="more">
+												<a href="#" class="hvr-icon-forward"
+													>Baca selengkapnya
+													<img src="./images/arrow-blog.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-12 mb-sm-0 mb-4 d-none d-sm-block">
+									<div class="block">
+										<div class="top">
+											<div class="img">
+												<img src="images/blog-3.png" alt="" class="img-fluid" />
+											</div>
+										</div>
+										<div class="bottom p-sm-4 p-3 px-4">
+											<div class="title mb-3">
+												<a href="#"
+													>Kegunaan pakai Vacuum Packaging untuk usaha frozen
+													food</a
+												>
+											</div>
+											<div class="shortdesc">
+												<p>
+													Untuk kamu yang memiliki banyak waktu luang karena
+													pandemi ini, kamu bisa mulai usaha kecil-kecilan untuk
+													menambah penghasilan. Terlebih yang memiliki bakat
+													memasak...
+												</p>
+											</div>
+											<div class="more">
+												<a href="#" class="hvr-icon-forward"
+													>Baca selengkapnya
+													<img src="./images/arrow-blog.svg" alt="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="my-sm-5 my-2 see-more">
+									<a href="#" class="btn">Lihat Semua Blog</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sosmed" class="mt-5 wow fadeInUp">
+					<div class="container">
+						<div class="title-section text-center mb-5">
+							<h1 class="title">Instagram</h1>
+						</div>
+						<div class="instagram-wrapper position-relative">
+							<div class="slider instagram-slider">
+								<div class="block">
+									<a href="#"
+										><img src="images/instagram-1.png" alt="" class="img-fluid"
+									/></a>
+								</div>
+								<div class="block">
+									<a href="#"
+										><img src="images/instagram-2.png" alt="" class="img-fluid"
+									/></a>
+								</div>
+								<div class="block">
+									<a href="#"
+										><img src="images/instagram-3.png" alt="" class="img-fluid"
+									/></a>
+								</div>
+								<div class="block">
+									<a href="#"
+										><img src="images/instagram-4.png" alt="" class="img-fluid"
+									/></a>
+								</div>
+								<div class="block">
+									<a href="#"
+										><img src="images/instagram-2.png" alt="" class="img-fluid"
+									/></a>
+								</div>
+								<div class="block">
+									<a href="#"
+										><img src="images/instagram-4.png" alt="" class="img-fluid"
+									/></a>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="my-5 see-more">
+									<a
+										href="https://www.instagram.com/"
+										target="_blank"
+										class="btn"
+										>Kunjungi Instagram</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="before-footer">
+					<div class="container">
+						<a href="#" class="d-none d-sm-block"
+							><img
+								src="images/before-footer.jpg"
+								alt=""
+								class="img-fluid wow slideInRight"
+						/></a>
+						<a href="#" class="d-sm-none d-block"
+							><img
+								src="images/cta-mobile.png"
+								alt=""
+								class="img-fluid wow slideInRight"
+						/></a>
+					</div>
+				</div>
+				<div id="footer" class="">
+					<div class="container">
+						<div class="row">
+							<div class="logo col-12 mb-5">
+								<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="block" id="min-m-mobile">
+									<div class="title-section">Alamat</div>
+									<div class="column-address">
+										<div class="desc">
+											<p class="mb-0">
+												Kawasan Industri Jababeka II Jalan Industri Selatan Blok
+												LL No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 -
+												Indonesia
+											</p>
+											<strong>Jam Operasional</strong>
+											<p>
+												Senin - Jumat
+												<span class="d-block">08:00 - 17:00 WIB</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="block">
+									<div class="title-section">Hubungi Kami</div>
+									<div class="column">
+										<div class="list-contact">
+											<ul class="pl-0 ml-0">
+												<li class="mb-2">
+													<span class="font-weight-bold">Email :</span
+													><a href="mailto:marketing@supernova-id.com"
+														>marketing@supernova-id.com</a
+													>
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">No.Telpon :</span>+62
+													21 8983 1969
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">Fax :</span>+62 21 8983
+													1967
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">Whatsapp :</span>+62
+													8231 7714 488
+												</li>
+											</ul>
+										</div>
+										<div class="list-sosmed my-sm-5 my-4">
+											<ul class="pl-0 ml-0">
+												<li>
+													<a href="https://www.facebook.com/" target="_blank"
+														><i class="fab fa-facebook-f"></i
+													></a>
+												</li>
+												<li>
+													<a href="https://www.instagram.com/" target="_blank"
+														><i class="fab fa-instagram"></i
+													></a>
+												</li>
+												<li>
+													<a href="https://www.linkedin.com/" target="_blank"
+														><i class="fab fa-linkedin-in"></i
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="block pl-sm-5">
+									<div class="title-section">Informasi</div>
+									<div class="column">
+										<div class="menus">
+											<ul class="ml-0 pl-0">
+												<li class="mb-2">
+													<a href="about-us.html">Tentang Supernova Digipack</a>
+												</li>
+												<li class="mb-2">
+													<a href="pilih-kemasan.html">Pilihan Kemasan</a>
+												</li>
+												<li class="mb-2"><a href="blog.html">Blog</a></li>
+												<li class="mb-2">
+													<a href="panduan_belanja.html">Panduan Belanja</a>
+												</li>
+												<li class="mb-2">
+													<a href="syarat_ketentuan.html">Syarat & Ketentuan</a>
+												</li>
+												<li class="mb-2">
+													<a href="kebijakan.html">Kebijakan Privasi</a>
+												</li>
+												<li class="mb-2"><a href="faq.html">FAQs</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="copyright">
+							<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
+								Copyright &copy; 2021 Supernova Digipack
+								<span id="hide-on-mobile">-</span> PT Supernova Flexible
+								Packaging
+							</p>
+						</div>
+						<!-- <div class="floating position-fixed">
+							<a href="#"
+								><img src="images/wa.svg" alt="" class="img-fluid"
+							/></a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!-- end masukan konten disini -->
 		</div>
+
+		<div class="content-wrapper content-overlay pt-5 mt-5" id="overlay"></div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function (b, o, i, l, e, r) {
+				b.GoogleAnalyticsObject = l;
+				b[l] ||
+					(b[l] = function () {
+						(b[l].q = b[l].q || []).push(arguments);
+					});
+				b[l].l = +new Date();
+				e = o.createElement(i);
+				r = o.getElementsByTagName(i)[0];
+				e.src = 'https://www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e, r);
+			})(window, document, 'script', 'ga');
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+
+			// user menu
+			let user_panel = document.getElementById('user__panel');
+			let user_panel_web = document.getElementById('user__panel-web');
+			let bag_user = document.getElementById('bag__user');
+			let notif_user = document.getElementById('notif__user');
+			// user bag dropdown
+			let user_panel_action = document.getElementById('user-action-panel');
+			let user_bag = document.getElementById('user-bag');
+			let user_notif = document.getElementById('user_notif');
+			let overlay = document.getElementById('overlay');
+
+			let navbarMenu = document.getElementById('navbarSupportedContent');
+			let overlayNav = document.querySelector('.overlay');
+
+			user_panel.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+					navbarMenu.classList.remove('show');
+					overlayNav.classList.add('d-none');
+				} else {
+					overlay.classList.remove('show-overlay');
+					overlayNav.classList.remove('d-none');
+				}
+
+				return;
+			});
+
+			user_panel_web.addEventListener('click', function () {
+				user_panel_action.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+
+				if (user_panel_action.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			bag_user.addEventListener('click', function () {
+				user_bag.classList.toggle('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_bag.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+
+			notif_user.addEventListener('click', function () {
+				user_notif.classList.toggle('show-overlay');
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				// overlay.classList.toggle('show-overlay');
+
+				if (user_notif.classList.contains('show-overlay')) {
+					overlay.classList.add('show-overlay');
+				} else {
+					overlay.classList.remove('show-overlay');
+				}
+
+				return;
+			});
+			const arrow_icon_nav_mobile = document.getElementById('arrow-icon');
+
+			overlay.addEventListener('click', function () {
+				user_bag.classList.remove('show-overlay');
+				user_panel_action.classList.remove('show-overlay');
+				user_notif.classList.remove('show-overlay');
+				overlay.classList.remove('show-overlay');
+				arrow_icon.classList.remove('open');
+				overlayNav.classList.add('d-none');
+			});
+
+			const open_trigger_navbar_mobile = document.getElementById(
+				'open-menu-user-mobile'
+			);
+			const open_param_navbar_mobile =
+				document.getElementById('user-action-panel');
+
+			open_trigger_navbar_mobile.addEventListener('click', function () {
+				if (open_param_navbar_mobile.classList.contains('show-overlay')) {
+					console.log(1);
+					arrow_icon_nav_mobile.classList.add('open');
+				} else {
+					arrow_icon.classList.remove('open');
+					overlayNav.classList.add('d-none');
+				}
+			});
+		</script>
+		<script src="scripts/vendor.js"></script>
+		<script src="scripts/main.js"></script>
 	</body>
 </html>
