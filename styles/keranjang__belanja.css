@@ -15,7 +15,7 @@
 	background: red;
 } */
 
-.notification .badge {
+/* .notification .badge {
 	position: absolute;
 	top: -5px;
 	right: -10px;
@@ -23,7 +23,7 @@
 	border-radius: 50%;
 	background: linear-gradient(193.44deg, #ff2728 11.59%, #d91d1e 94.41%);
 	color: white;
-}
+} */
 
 .user-active .dropdown button {
 	font-size: 14px;

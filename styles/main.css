@@ -668,6 +668,10 @@ section.pabrik .right .info a:hover {
 	color: white;
 }
 
+.badge-3 {
+	margin-top: -6px !important;
+}
+
 .user-active .dropdown button {
 	font-size: 14px;
 	font-weight: 500;
@@ -2299,6 +2303,10 @@ section.pabrik .right .info a:hover {
 	.notification .badge {
 		top: -8px;
 		right: 143px;
+	}
+
+	.badge-3 {
+		margin-top: 4px !important;
 	}
 }
 

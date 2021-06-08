@@ -181,6 +181,10 @@ form input {
 	background: #f8f8f8 !important;
 	border: 1px solid transparent;
 }
+.alamat-tipe a:hover {
+	text-decoration: none;
+	color: #fbab20 !important;
+}
 
 .notifRead {
 	background: #f9fafa !important;
@@ -303,4 +307,18 @@ form input {
 	width: 55%;
 	text-align: center;
 	color: #898f9e;
+}
+
+.userPanelMenuWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.userPanelActive {
+	color: #fbab20 !important;
+}
+
+.logout {
+	color: #d91d1e !important;
 }

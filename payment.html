@@ -40,17 +40,45 @@
 							<a class="navbar-brand" href="#"
 								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
 							/></a>
-							<button
-								class="navbar-toggler collapsed"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
+							<div class="d-flex">
+								<button
+									class="navbar-toggler collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="navbar-toggler-icon" id="toggleIcon"></span>
+								</button>
+								<div
+									class="no-display-web show-mobile ml-3"
+									id="open-menu-user-mobile"
+								>
+									<div
+										class="user-active d-flex align-items-center"
+										id="user__panel"
+									>
+										<div class="dropdown d-flex align-items-center">
+											<img
+												src="./images/Profile.svg"
+												class="w-15"
+												style="cursor: pointer"
+												alt=""
+											/>
+											<div class="dropdown-toggle">
+												<img
+													src="./images/down.svg"
+													id="arrow-icon"
+													class="default w-15"
+													alt=""
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav" id="navbar-nav-mobile">
@@ -79,26 +107,46 @@
 										align-items-center
 									"
 								>
-									<div class="info-user">
+									<div class="info-user column-mobile-reverse">
 										<div class="notif-user">
-											<a href="#" class="notification">
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="notif__user"
+											>
 												<img
 													src="./images/Notification.svg"
-													id="notif__user"
+													class="mt-13"
 													alt=""
 												/>
-												<!-- <span class="badge">3</span> -->
+												<div class="show-mobile no-display-web ml-4">
+													Notifikasi
+												</div>
+												<!-- <span class="badge">1</span> -->
 											</a>
 										</div>
 										<div class="bag-user">
-											<a href="#" class="notification">
-												<img src="./images/Bag.svg" id="bag__user" alt="" />
-												<!-- <span class="badge">3</span> -->
+											<a
+												href="#"
+												class="notification d-items-center-mobile"
+												id="bag__user"
+											>
+												<img src="./images/Bag.svg" alt="" />
+												<div class="show-mobile no-display-web ml-3">
+													Keranjang Belanja
+												</div>
+												<span class="badge badge-3">2</span>
 											</a>
 										</div>
+
 										<div
-											class="user-active d-flex align-items-center"
-											id="user__panel"
+											class="
+												user-active
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+											id="user__panel-web"
 										>
 											<div class="dropdown d-flex">
 												<img
@@ -113,6 +161,14 @@
 											</div>
 										</div>
 									</div>
+									<div
+										class="menu-act show-mobile no-display-web no-mt-bt mb-40"
+									>
+										<ul class="lang mb-0 pl-0">
+											<li class="active"><a href="#">ID</a></li>
+											<li class="mr-0"><a href="#">EN</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</nav>
@@ -120,7 +176,7 @@
 				</div>
 
 				<div class="container">
-					<div class="user-interaction">
+					<div class="user-interaction" style="z-index: 998 !important">
 						<div class="container">
 							<!-- user-action -->
 							<div class="position-relative">
@@ -202,15 +258,20 @@
 							<!-- end user notif -->
 							<!-- user-notif -->
 							<div class="position-relative">
-								<div class="user-action-panel" id="user-action-panel">
-									<div class="user-info">
-										<img src="./images/Profile.svg" class="mr-3" alt="" />
-										<span>Atika Widjaya</span>
+								<div
+									class="user-action-panel mobile-menuUser"
+									id="user-action-panel"
+								>
+									<div class="no-display-mobile">
+										<div class="user-info">
+											<img src="./images/Profile.svg" class="mr-3" alt="" />
+											<span>Atika Widjaya</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
 									<div class="action-menu">
 										<div class="user-action-menu d-flex align-items-center">
-											<a href="#">
+											<a href="edit-profile.html">
 												<img
 													src="./images/edit-profile-icon.svg"
 													class="mr-3"
@@ -221,7 +282,7 @@
 										</div>
 
 										<div class="user-action-menu d-flex align-items-center">
-											<a href="#">
+											<a href="ubah_kata_sandi.html">
 												<img
 													src="./images/ubah-katasandi.svg"
 													class="mr-3"
@@ -231,13 +292,13 @@
 											</a>
 										</div>
 										<div class="user-action-menu d-flex align-items-center">
-											<a href="#">
+											<a href="transaksi.html">
 												<img src="./images/transaksi.svg" class="mr-3" alt="" />
 												Transaksi
 											</a>
 										</div>
 										<div class="user-action-menu d-flex align-items-center">
-											<a href="#">
+											<a href="alamat_user.html">
 												<img src="./images/alamat.svg" class="mr-3" alt="" />
 												Alamat
 											</a>
@@ -248,11 +309,43 @@
 												Permainan
 											</a>
 										</div>
-										<div class="user-action-menu d-flex align-items-center">
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-mobile
+											"
+										>
 											<a href="#">
 												<img src="./images/logout.svg" class="mr-3" alt="" />
 												Logout
 											</a>
+										</div>
+										<div
+											class="
+												user-action-menu
+												d-flex
+												align-items-center
+												no-display-web
+												show-mobile
+											"
+										>
+											<a href="#" class="red">
+												<img
+													src="./images/logout-red.svg"
+													class="mr-3"
+													width="20px"
+													alt=""
+												/>
+												Logout
+											</a>
+										</div>
+										<div class="menu-act show-mobile no-display-web no-mt-bt">
+											<ul class="lang mb-0 pl-0">
+												<li class="active"><a href="#">ID</a></li>
+												<li class="mr-0"><a href="#">EN</a></li>
+											</ul>
 										</div>
 									</div>
 								</div>
