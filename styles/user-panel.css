@@ -1,5 +1,6 @@
 .content-user-panel {
 	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
 .user-menu {
@@ -230,9 +231,9 @@ form input {
 	width: 9%;
 }
 
-.pagination-page {
+/* .pagination-page {
 	margin-bottom: 60px;
-}
+} */
 
 .tambahAlamatWrapper form {
 	padding: 0 !important;
@@ -285,7 +286,7 @@ form input {
 }
 
 .urutkanWrapper {
-	padding: 30px;
+	padding: 10px 30px 20px 30px;
 	display: flex;
 	justify-content: flex-end;
 }
