@@ -36,7 +36,25 @@
 			<div class="overlay d-none"></div>
 			<div class="position-fixed" style="z-index: 999; width: 100%">
 				<div id="header">
-					<div class="container">
+					<div class="kembali no-display-web show-mobile">
+						<a href="user-panel.html" class="align-items-center heading-24-600">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								fill="currentColor"
+								class="bi bi-chevron-left mr-3 mb-1"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+								/>
+							</svg>
+							Ubah Kata Sandi
+						</a>
+					</div>
+					<div class="container no-display-mobile">
 						<nav class="navbar navbar-expand-lg navbar-light p-0">
 							<a class="navbar-brand" href="#"
 								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
@@ -362,7 +380,7 @@
 				<div class="container content-user-panel">
 					<div class="row">
 						<div class="col-md-4 col-sm-12">
-							<div class="user-menu">
+							<div class="user-menu no-display-mobile">
 								<div class="d-flex justify-content-center">
 									<div class="d-flex flex-column">
 										<div class="user-foto d-flex justify-content-center">
@@ -529,10 +547,12 @@
 						</div>
 						<div class="col-md-8 col-sm-12">
 							<div class="ubah_kata_sandi">
-								<div class="ubahKataSandi_title heading-24-600">
+								<div
+									class="ubahKataSandi_title heading-24-600 no-display-mobile"
+								>
 									Ubah Kata Sandi
 								</div>
-								<hr />
+								<hr class="no-display-mobile" />
 								<div class="passAllWrapper">
 									<div class="password mb-3">
 										<label for="password" class="heading-16-500"
@@ -610,9 +630,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="btn-ubahKataSandi d-flex justify-content-center">
+								<div class="btn-ubahKataSandi">
 									<a href="#">
-										<button class="btn btn-primaryku heading-20-500">
+										<button
+											class="btn btn-primaryku heading-20-500 heading-12-400"
+										>
 											Ubah Kata Sandi
 										</button>
 									</a>

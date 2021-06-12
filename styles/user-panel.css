@@ -162,10 +162,10 @@ form input {
 	padding: 8px !important;
 }
 
-.btn-ubahKataSandi,
+/* .btn-ubahKataSandi,
 .btn-tambahAlamat {
 	width: 100%;
-}
+} */
 
 .btn-ubahKataSandi a,
 .btn-tambahAlamat a {
@@ -322,4 +322,159 @@ form input {
 
 .logout {
 	color: #d91d1e !important;
+}
+
+.btn-simpan,
+.btn-ubahKataSandi,
+.btn-tambahAlamat {
+	margin: 0px 60px;
+}
+
+@media (max-width: 578px) {
+	.upload-button {
+		width: 80%;
+	}
+
+	.alamatWrapper,
+	.tambahAlamat,
+	.edit-profile,
+	.ubah_kata_sandi,
+	.user-menu {
+		border: none;
+	}
+
+	.alamatUserAllWrapper,
+	.tambahAlamatWrapper,
+	.passAllWrapper {
+		padding: 0px;
+	}
+	.content-user-panel {
+		margin-top: 0px;
+	}
+
+	.button-action-tambahAlamat a {
+		margin: 50px 0px 0px 0px;
+		padding: 0px;
+	}
+
+	.simpanAlamatBtn,
+	.tambahAlamatBaruBtn {
+		margin-top: -20px !important;
+	}
+
+	.notifikasiWrapper,
+	.transaksi {
+		padding: 0px;
+		border: none;
+	}
+
+	.notifAllWrapper {
+		padding: 30px 0px 0px 0px;
+	}
+
+	.notifUserWrapper {
+		padding-left: 15px;
+		width: 90%;
+	}
+
+	.nomor-transaksi {
+		margin: 0px;
+	}
+
+	.column-reverse-m {
+		display: flex !important;
+		flex-direction: column-reverse !important;
+	}
+
+	.info-detail,
+	.alamatWrapper,
+	.user-menu {
+		padding: 0px;
+	}
+
+	.waktu-pembayaran-limit {
+		margin-right: 0px !important;
+	}
+
+	.detail-pesanan a {
+		text-align: left !important;
+	}
+
+	.no-items-center-mobile {
+		align-items: stretch !important;
+	}
+
+	.buttonBayarWrapper {
+		margin: 0px 20px;
+	}
+
+	.waktu-pembayaran-limit {
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	.btnBayar {
+		margin: 0px 20px;
+	}
+
+	.upload-info {
+		width: 55%;
+	}
+
+	.edit-profile form {
+		padding: 0px;
+	}
+
+	.profile img {
+		width: 30%;
+	}
+
+	.input-group-append {
+		margin-left: 60px;
+	}
+
+	/* .btn-ubahKataSandi,
+	.btn-tambahAlamat {
+		margin-top: 30px;
+		width: 100%;
+	} */
+
+	.button-action-tambahAlamat {
+		margin-top: 30px;
+	}
+
+	.button-action-tambahAlamat a {
+		margin: 30px 0px 0px 0px;
+	}
+
+	.no-padding-mobile {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.btn-simpan,
+	.btn-ubahKataSandi,
+	.btn-tambahAlamat,
+	.button-action-tambahAlamat {
+		margin: 30px 20px 0px 20px;
+	}
+
+	.user-email {
+		background: none;
+		border-radius: 0px;
+		padding: 0px;
+	}
+
+	.user-foto img {
+		width: 80%;
+	}
+
+	.userPanelMenuWrapper {
+		align-items: flex-start;
+	}
+
+	.action-menu {
+		padding: 0px;
+		width: 100%;
+	}
 }

@@ -36,7 +36,25 @@
 			<div class="overlay d-none"></div>
 			<div class="position-fixed" style="z-index: 999; width: 100%">
 				<div id="header">
-					<div class="container">
+					<div class="kembali no-display-web show-mobile">
+						<a href="user-panel.html" class="align-items-center heading-24-600">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								fill="currentColor"
+								class="bi bi-chevron-left mr-3 mb-1"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+								/>
+							</svg>
+							Ubah Alamat
+						</a>
+					</div>
+					<div class="container no-display-mobile">
 						<nav class="navbar navbar-expand-lg navbar-light p-0">
 							<a class="navbar-brand" href="#"
 								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
@@ -362,7 +380,7 @@
 				<div class="container content-user-panel">
 					<div class="row">
 						<div class="col-md-4 col-sm-12">
-							<div class="user-menu">
+							<div class="user-menu no-display-mobile">
 								<div class="d-flex justify-content-center">
 									<div class="d-flex flex-column">
 										<div class="user-foto d-flex justify-content-center">
@@ -529,10 +547,14 @@
 						</div>
 						<div class="col-md-8 col-sm-12">
 							<div class="tambahAlamat">
-								<div class="tambahAlamat-title heading-24-600">Alamat</div>
-								<hr />
+								<div
+									class="tambahAlamat-title heading-24-600 no-display-mobile"
+								>
+									Alamat
+								</div>
+								<hr class="no-display-mobile" />
 								<div class="tambahAlamatWrapper">
-									<div class="tambahAlamatInfo mb-4">
+									<div class="tambahAlamatInfo mb-4 no-display-mobile">
 										<div class="heading-24-600">Ubah Alamat Pengiriman</div>
 										<div class="heading-18-400 grey">
 											Silahkan ubah alamat pengiriman yang dituju
@@ -672,14 +694,29 @@ Jalan Bintara Jaya III Raya No 80 RT 006 RW 02 Bintara Jaya Bekasi Barat 17136
 												Atur sebagai alamat utama
 											</label>
 										</div>
-										<div class="button-action-tambahAlamat d-flex">
+										<div
+											class="
+												button-action-tambahAlamat
+												d-flex
+												column-mobile-reverse
+											"
+										>
 											<a href="alamat_user.html" class="">
-												<button class="btn btn-orange heading-20-500">
+												<button
+													class="btn btn-orange heading-20-500 heading-12-400"
+												>
 													Batal
 												</button>
 											</a>
 											<a href="alamat_user.html">
-												<button class="btn btn-primaryku heading-20-500 mt-0">
+												<button
+													class="
+														btn btn-primaryku
+														simpanAlamatBtn
+														heading-20-500 heading-12-400
+														mt-0
+													"
+												>
 													Simpan
 												</button>
 											</a>

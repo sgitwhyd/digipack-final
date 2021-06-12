@@ -37,7 +37,25 @@
 			<div class="overlay d-none"></div>
 			<div class="position-fixed" style="z-index: 999; width: 100%">
 				<div id="header">
-					<div class="container">
+					<div class="kembali no-display-web show-mobile">
+						<a href="user-panel.html" class="align-items-center heading-24-600">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								fill="currentColor"
+								class="bi bi-chevron-left mr-3 mb-1"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+								/>
+							</svg>
+							Transaksi
+						</a>
+					</div>
+					<div class="container no-display-mobile">
 						<nav class="navbar navbar-expand-lg navbar-light p-0">
 							<a class="navbar-brand" href="#"
 								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
@@ -363,7 +381,7 @@
 				<div class="container content-user-panel">
 					<div class="row">
 						<div class="col-md-4 col-sm-12">
-							<div class="user-menu">
+							<div class="user-menu no-display-mobile">
 								<div class="d-flex justify-content-center">
 									<div class="d-flex flex-column">
 										<div class="user-foto d-flex justify-content-center">
@@ -530,8 +548,10 @@
 						</div>
 						<div class="col-md-8 col-sm-12">
 							<div class="transaksi">
-								<div class="transaksi-title heading-24-600">Transaksi</div>
-								<hr />
+								<div class="transaksi-title heading-24-600 no-display-mobile">
+									Transaksi
+								</div>
+								<hr class="no-display-mobile" />
 								<div class="urutkanWrapper">
 									<div class="dropdown">
 										<button
@@ -570,8 +590,16 @@
 												justify-content-between
 											"
 										>
-											<div class="title heading-24-600">Nomor Transaksi</div>
-											<div class="nomor-transaksi-kode heading-24-600 grey">
+											<div class="title heading-24-600 heading-14-600">
+												Nomor Transaksi
+											</div>
+											<div
+												class="
+													nomor-transaksi-kode
+													heading-24-600 heading-14-600
+													grey
+												"
+											>
 												210100000000012
 											</div>
 										</div>
@@ -582,16 +610,35 @@
 												justify-content-between
 											"
 										>
-											<div class="title heading-18-400">Tanggal Pemesanan</div>
-											<div class="nomor-transaksi-tanggal heading-18-400 grey">
+											<div class="title heading-18-400 heading-12-400">
+												Tanggal Pemesanan
+											</div>
+											<div
+												class="
+													nomor-transaksi-tanggal
+													heading-12-400 heading-18-400
+													grey
+												"
+											>
 												27 Mei 2021, 11:15 WIB
 											</div>
 										</div>
 										<div class="status-pesanan d-flex justify-content-between">
-											<div class="status-pesanan-title heading-18-400">
+											<div
+												class="
+													status-pesanan-title
+													heading-18-400 heading-12-400
+												"
+											>
 												Status Pesanan
 											</div>
-											<div class="status-pesanan-data heading-18-600 green">
+											<div
+												class="
+													status-pesanan-data
+													heading-18-600 heading-12-400
+													green
+												"
+											>
 												Sedang Diproses
 											</div>
 										</div>
@@ -668,35 +715,31 @@
 													</div>
 												</div>
 												<div
-													class="
-														produk-pesanan-total
-														d-flex
-														align-items-center
-														justify-content-between
-														mt-3
-													"
+													class="produk-pesanan-total d-flex flex-column mt-3"
 												>
 													<div class="info-unit-price">
-														<div class="title heading-14-400 text-right grey">
+														<!-- <div class="title heading-14-400 text-right grey">
 															Unit Price*
-														</div>
+														</div> -->
 														<div class="produk-pesanan-prices heading-18-400">
 															Rp 2.738
 														</div>
 													</div>
 													<div class="info-quantity">
-														<div class="title heading-14-400 grey">
+														<!-- <div class="title heading-14-400 grey">
 															Quantity
-														</div>
-														<div class="produk-pesanan-value heading-18-400">
+														</div> -->
+														<div
+															class="produk-pesanan-value heading-18-400 mt-3"
+														>
 															x 500
 														</div>
 													</div>
 												</div>
 												<div class="d-flex flex-column mt-3">
-													<div class="title heading-14-400 grey">
+													<!-- <div class="title heading-14-400 grey">
 														Total Price
-													</div>
+													</div> -->
 													<div
 														class="produk-pesanan-total-price heading-18-600"
 													>
@@ -778,35 +821,31 @@
 													</div>
 												</div>
 												<div
-													class="
-														produk-pesanan-total
-														d-flex
-														align-items-center
-														justify-content-between
-														mt-3
-													"
+													class="produk-pesanan-total d-flex flex-column mt-3"
 												>
 													<div class="info-unit-price">
-														<div class="title heading-14-400 text-right grey">
+														<!-- <div class="title heading-14-400 text-right grey">
 															Unit Price*
-														</div>
+														</div> -->
 														<div class="produk-pesanan-prices heading-18-400">
 															Rp 2.738
 														</div>
 													</div>
 													<div class="info-quantity">
-														<div class="title heading-14-400 grey">
+														<!-- <div class="title heading-14-400 grey">
 															Quantity
-														</div>
-														<div class="produk-pesanan-value heading-18-400">
+														</div> -->
+														<div
+															class="produk-pesanan-value heading-18-400 mt-3"
+														>
 															x 500
 														</div>
 													</div>
 												</div>
 												<div class="d-flex flex-column mt-3">
-													<div class="title heading-14-400 grey">
+													<!-- <div class="title heading-14-400 grey">
 														Total Price
-													</div>
+													</div> -->
 													<div
 														class="produk-pesanan-total-price heading-18-600"
 													>
@@ -819,7 +858,9 @@
 										<!-- end items -->
 									</div>
 									<div class="detail-pesanan">
-										<a href="#" class="primary-color heading-18-600"
+										<a
+											href="#"
+											class="primary-color heading-18-600 heading-14-600"
 											>Lihat Detail Pesanan</a
 										>
 									</div>
@@ -833,8 +874,16 @@
 												justify-content-between
 											"
 										>
-											<div class="title heading-24-600">Nomor Transaksi</div>
-											<div class="nomor-transaksi-kode heading-24-600 grey">
+											<div class="title heading-24-600 heading-14-600">
+												Nomor Transaksi
+											</div>
+											<div
+												class="
+													nomor-transaksi-kode
+													heading-24-600 heading-14-600
+													grey
+												"
+											>
 												210100000000012
 											</div>
 										</div>
@@ -845,16 +894,36 @@
 												justify-content-between
 											"
 										>
-											<div class="title heading-18-400">Tanggal Pemesanan</div>
-											<div class="nomor-transaksi-tanggal heading-18-400 grey">
+											<div class="title heading-18-400 heading-12-400">
+												Tanggal Pemesanan
+											</div>
+											<div
+												class="
+													nomor-transaksi-tanggal
+													heading-18-400 heading-12-400
+													grey
+												"
+											>
 												27 Mei 2021, 11:15 WIB
 											</div>
 										</div>
 										<div class="status-pesanan d-flex justify-content-between">
-											<div class="status-pesanan-title heading-18-400">
+											<div
+												class="
+													status-pesanan-title
+													heading-18-400 heading-12-400
+												"
+											>
 												Status Pesanan
 											</div>
-											<div class="status-pesanan-data heading-18-600 orange">
+											<div
+												class="
+													status-pesanan-data
+													heading-18-600
+													orange
+													heading-12-400
+												"
+											>
 												Menunggu Pembayaran
 											</div>
 										</div>
@@ -931,35 +1000,31 @@
 													</div>
 												</div>
 												<div
-													class="
-														produk-pesanan-total
-														d-flex
-														align-items-center
-														justify-content-between
-														mt-3
-													"
+													class="produk-pesanan-total d-flex flex-column mt-3"
 												>
 													<div class="info-unit-price">
-														<div class="title heading-14-400 text-right grey">
+														<!-- <div class="title heading-14-400 text-right grey">
 															Unit Price*
-														</div>
+														</div> -->
 														<div class="produk-pesanan-prices heading-18-400">
 															Rp 2.738
 														</div>
 													</div>
 													<div class="info-quantity">
-														<div class="title heading-14-400 grey">
+														<!-- <div class="title heading-14-400 grey">
 															Quantity
-														</div>
-														<div class="produk-pesanan-value heading-18-400">
+														</div> -->
+														<div
+															class="produk-pesanan-value heading-18-400 mt-3"
+														>
 															x 500
 														</div>
 													</div>
 												</div>
 												<div class="d-flex flex-column mt-3">
-													<div class="title heading-14-400 grey">
+													<!-- <div class="title heading-14-400 grey">
 														Total Price
-													</div>
+													</div> -->
 													<div
 														class="produk-pesanan-total-price heading-18-600"
 													>
@@ -976,15 +1041,28 @@
 											info-detail
 											d-flex
 											align-items-center
+											no-items-center-mobile
 											justify-content-between
+											buttonBayarWrapper
+											no-display-mobile
 										"
 									>
 										<div class="detail-pesanan">
-											<a href="#" class="primary-color heading-16-600"
+											<a
+												href="#"
+												class="primary-color heading-16-600 heading-14-600"
 												>Lihat Detail Pesanan</a
 											>
 										</div>
-										<div class="d-flex align-items-center">
+
+										<div
+											class="
+												d-flex
+												align-items-center
+												column-mobile-reverse
+												position-relative
+											"
+										>
 											<div
 												class="waktu-pembayaran-limit mr-3"
 												style="width: 100%"
@@ -996,8 +1074,43 @@
 													Bayar Sekarang
 												</div>
 											</a>
+											<div class="lineM"></div>
 										</div>
 									</div>
+									<!-- mobile -->
+									<div
+										class="
+											d-flex
+											flex-column
+											no-display-web
+											show-mobile
+											bayarSekarangWrapper
+											justify-content-center
+										"
+									>
+										<div class="btnBayar">
+											<a
+												href="#"
+												class="btn btn-primaryku heading-18-500 heading-12-400"
+												>Bayar Sekarang</a
+											>
+										</div>
+										<div
+											class="waktu-pembayaran-limit mr-3"
+											style="width: 100%"
+										>
+											Bayar sebelum 28 Mei 2021, 11:20 WIB
+										</div>
+										<hr />
+										<div class="detail-pesanan">
+											<a
+												href="#"
+												class="primary-color heading-16-600 heading-14-600"
+												>Lihat Detail Pesanan</a
+											>
+										</div>
+									</div>
+									<!-- end mobile -->
 								</div>
 							</div>
 							<div

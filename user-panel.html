@@ -36,25 +36,7 @@
 			<div class="overlay d-none"></div>
 			<div class="position-fixed" style="z-index: 999; width: 100%">
 				<div id="header">
-					<div class="kembali no-display-web show-mobile">
-						<a href="user-panel.html" class="align-items-center heading-24-600">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								fill="currentColor"
-								class="bi bi-chevron-left mr-3 mb-1"
-								viewBox="0 0 16 16"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-								/>
-							</svg>
-							Edit Profile
-						</a>
-					</div>
-					<div class="container no-display-mobile">
+					<div class="container">
 						<nav class="navbar navbar-expand-lg navbar-light p-0">
 							<a class="navbar-brand" href="#"
 								><img src="images/logo.svg" alt="" class="img-fluid logo-top"
@@ -380,17 +362,15 @@
 				<div class="container content-user-panel">
 					<div class="row">
 						<div class="col-md-4 col-sm-12">
-							<div class="user-menu no-display-mobile">
-								<div class="d-flex justify-content-center">
-									<div class="d-flex flex-column">
-										<div class="user-foto d-flex justify-content-center">
+							<div class="user-menu mt-5">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex flex-row">
+										<div class="user-foto d-flex justify-content-center mr-3">
 											<img src="./images/user-profile.svg" alt="" />
 										</div>
-										<div
-											class="d-flex flex-column text-center heading-18-500 mt-3"
-										>
-											<div class="user-name">Atika Widjaya</div>
-											<div class="user-email mt-3">
+										<div class="d-flex flex-column mt-3">
+											<div class="user-name heading-16-600">Atika Widjaya</div>
+											<div class="user-email heading-12-400 mt-2">
 												hi.atikawidjaya@gmail.com
 											</div>
 										</div>
@@ -402,12 +382,7 @@
 										<div class="user-action-menu d-flex align-items-center">
 											<a
 												href="edit-profile.html"
-												class="
-													d-flex
-													align-items-center
-													userPanelActive
-													heading-18-600
-												"
+												class="d-flex align-items-center heading-18-600"
 											>
 												<svg
 													style="width: 24px; height: 24px"
@@ -422,6 +397,7 @@
 												Edit Profile
 											</a>
 										</div>
+										<hr />
 
 										<div class="user-action-menu d-flex align-items-center">
 											<a
@@ -441,6 +417,7 @@
 												Ubah Kata Sandi
 											</a>
 										</div>
+										<hr />
 										<div
 											class="
 												user-action-menu
@@ -466,6 +443,7 @@
 												Transaksi
 											</a>
 										</div>
+										<hr />
 										<div class="user-action-menu d-flex align-items-center">
 											<a
 												href="alamat_user.html"
@@ -484,6 +462,7 @@
 												Alamat
 											</a>
 										</div>
+										<hr />
 										<div class="user-action-menu d-flex align-items-center">
 											<a
 												href="#"
@@ -505,6 +484,7 @@
 												Permainan
 											</a>
 										</div>
+										<hr />
 										<div class="user-action-menu d-flex align-items-center">
 											<a
 												href="user-notif.html"
@@ -523,6 +503,7 @@
 												Notifikasi
 											</a>
 										</div>
+										<hr />
 										<div class="user-action-menu d-flex align-items-center">
 											<a
 												href="#"
@@ -541,166 +522,12 @@
 												Logout
 											</a>
 										</div>
+										<hr />
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-8 col-sm-12">
-							<div class="edit-profile">
-								<div
-									class="edit-profile-title heading-24-600 no-display-mobile"
-								>
-									Edit Profile
-								</div>
-								<hr class="no-display-mobile" />
-								<div class="d-flex justify-content-center profile flex-column">
-									<div class="d-flex flex-column">
-										<div class="d-flex justify-content-center">
-											<img
-												src="./images/user-profile.svg"
-												width="150px"
-												alt=""
-											/>
-										</div>
-										<div class="tab-content mt-3" id="nav-tabContent">
-											<div
-												class="
-													tab-pane
-													fade
-													show
-													active
-													d-flex
-													justify-content-center
-												"
-												id="nav-home"
-												role="tabpanel"
-												aria-labelledby="nav-home-tab"
-											>
-												<label
-													for="file-upload"
-													class="
-														btn
-														upload-button
-														btn-orange
-														py-2
-														px-4
-														rounded-lg
-														px-md-5
-														custom-file-upload
-													"
-												>
-													Upload Foto
-												</label>
-												<input
-													id="file-upload"
-													name="upload_cont_img"
-													type="file"
-													class="d-none"
-												/>
-											</div>
-										</div>
-									</div>
-									<div class="d-flex justify-content-center mt-3 mb-5">
-										<div class="upload-info heading-16-400 no-display-mobile">
-											Besar file maksimum 10.000.000 bytes (10 Megabytes)
-											Ekstensi file yang diperbolehkan .JPG .JPEG .PNG
-										</div>
-
-										<div
-											class="
-												upload-info
-												heading-12-400
-												mobile
-												no-display-web
-												show-mobile
-											"
-										>
-											Besar file maksimum 1 MB Ekstensi file yang diperbolehkan
-											.JPG .JPEG .PNG
-										</div>
-									</div>
-								</div>
-								<form action="">
-									<div class="form-group mb-3">
-										<label for="exampleFormControlInput1">Nama Lengkap</label>
-										<input
-											type="text"
-											class="form-control form-control-lg inputAlamat"
-											id="exampleFormControlInput1"
-											placeholder="Nama Lengkap"
-											oninput="fillInput()"
-										/>
-									</div>
-									<div class="form-group mb-3">
-										<label for="Tanggal Lahir">Tanggal Lahir</label>
-										<input
-											type="date"
-											class="form-control form-control-lg inputAlamat"
-											id="Tanggal Lahir"
-											oninput="fillInput()"
-										/>
-									</div>
-									<div class="form-group mb-4 d-flex flex-column">
-										<label for="gender" class="mb-3">Jenis Kelamin</label>
-										<div class="d-flex flex-row">
-											<div class="form-check form-check-inline pl-3">
-												<input
-													class="form-check-input"
-													type="radio"
-													name="inlineRadioOptions"
-													id="inlineRadio1"
-													value="option1"
-												/>
-												<label class="form-check-label" for="inlineRadio1"
-													>Laki Laki</label
-												>
-											</div>
-											<div class="form-check form-check-inline">
-												<input
-													class="form-check-input"
-													type="radio"
-													name="inlineRadioOptions"
-													id="inlineRadio2"
-													value="option2"
-												/>
-												<label class="form-check-label" for="inlineRadio2"
-													>Perempuan</label
-												>
-											</div>
-										</div>
-									</div>
-									<div class="form-group mb-3">
-										<label for="Nomor Handphone">Nomor Handphone</label>
-										<input
-											type="number"
-											class="form-control form-control-lg inputAlamat"
-											id="Nomor Handphone"
-											placeholder="Nomor Handphone"
-											oninput="fillInput()"
-										/>
-									</div>
-									<div class="form-group mb-3">
-										<label for="Email">Email</label>
-										<input
-											type="email"
-											class="form-control form-control-lg inputAlamat"
-											id="Email"
-											placeholder="Email"
-											oninput="fillInput()"
-										/>
-									</div>
-									<div class="btn-simpan">
-										<a href="#">
-											<button
-												class="btn btn-primaryku heading-20-500 heading-12-400"
-											>
-												Simpan Perubahan
-											</button>
-										</a>
-									</div>
-								</form>
-							</div>
-						</div>
+						<div class="col-md-8 col-sm-12"></div>
 					</div>
 				</div>
 
