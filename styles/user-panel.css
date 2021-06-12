@@ -477,4 +477,8 @@ form input {
 		padding: 0px;
 		width: 100%;
 	}
+
+	.p-30 {
+		padding: 0px 30px;
+	}
 }
