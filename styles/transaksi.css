@@ -172,4 +172,9 @@
 	.wait-pay {
 		padding: 20px;
 	}
+
+	.produk-img {
+		width: 40%;
+		height: 150px;
+	}
 }
