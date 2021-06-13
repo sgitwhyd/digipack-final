@@ -330,6 +330,10 @@ form input {
 	margin: 0px 60px;
 }
 
+.form-edit-profile input {
+	font-size: 16px;
+}
+
 @media (max-width: 578px) {
 	.upload-button {
 		width: 80%;
