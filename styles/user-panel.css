@@ -481,4 +481,9 @@ form input {
 	.p-30 {
 		padding: 0px 30px;
 	}
+
+	.produk-img {
+		width: 40% !important;
+		height: 160px !important;
+	}
 }
