@@ -69,10 +69,15 @@
 }
 
 .wait-pay {
-	border: 1px solid;
-	border-radius: 200%;
-	padding: 15px;
 	border-color: #c0c4cd;
+	padding: 15px;
+}
+
+.img-border {
+	border: 1px solid;
+	height: 65px;
+	border-radius: 200%;
+	margin-bottom: 15px;
 }
 
 /* .wait-pay img {
@@ -155,6 +160,10 @@
 
 	.mt-40-m {
 		margin-top: 40px;
+	}
+
+	.img-border {
+		height: 100px;
 	}
 
 	.text-center-m {
