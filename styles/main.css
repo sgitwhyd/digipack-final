@@ -710,7 +710,7 @@ section.pabrik .right .info a:hover {
 }
 
 .position-relative {
-	position: relative;
+	position: relative !important;
 }
 
 .user-action {
@@ -2307,6 +2307,11 @@ section.pabrik .right .info a:hover {
 
 	.badge-3 {
 		margin-top: 4px !important;
+	}
+
+	#wrapper .position-fixed {
+		overflow-y: scroll;
+		height: 100%;
 	}
 }
 

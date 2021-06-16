@@ -6,10 +6,14 @@ $(document).ready(function () {
 		$('.lang li.active').removeClass('active');
 		$(this).addClass('active');
 	});
+	// $('.navbar-toggler').click(function () {
+	// 	$('#headerParent').removeClass('position-relative');
+	// });
 	$('.navbar-toggler').click(function () {
 		$('.overlay').toggleClass('d-none');
 		$('.show-overlay').removeClass('show-overlay');
 		$('.open').removeClass('open');
+		// $('#headerParent').toggleClass('position-relative');
 	});
 	$('.single-item').slick({
 		responsive: [
