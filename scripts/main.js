@@ -11,7 +11,7 @@ $(document).ready(function () {
 		$('.overlay').toggleClass('d-none');
 		$('.show-overlay').removeClass('show-overlay');
 		$('.open').removeClass('open');
-		$('#headerLogined').toggleClass('headerLogin');
+		$('#headerLogined').toggleClass('headerlogin');
 	});
 	$('.single-item').slick({
 		responsive: [
