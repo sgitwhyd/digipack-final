@@ -98,6 +98,10 @@ body {
 	margin-top: 13px;
 }
 
+.user-action-all a:hover {
+	color: #fbab20;
+}
+
 @media (max-width: 576px) {
 	.open {
 		transform: rotate(180deg) !important;
@@ -2309,7 +2313,7 @@ section.pabrik .right .info a:hover {
 		margin-top: 4px !important;
 	}
 
-	#wrapper .position-fixed {
+	.headerlogin{
 		overflow-y: scroll;
 		height: 100%;
 	}
